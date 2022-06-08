@@ -1,0 +1,70 @@
+---
+title: "Formulas and Functions"
+output: html_document
+date: '2022-06-08'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Conditional Distribution
+
+Compute conditional mean:
+
+```{r}
+93 + t(c(0.1, 2)) %*% solve(matrix(c(9, 2, 2, 9), ncol = 2)) %*% c(2, -1)
+```
+
+Compute conditional variance:
+
+```{r}
+9 - t(c(0.1, 2)) %*% solve(matrix(c(9, 2, 2, 9), ncol = 2)) %*% c(.1, 2)
+```
+
+Compute area under bell curve:
+
+```{r}
+1-pnorm(95, 92.68831, sqrt(8.541688))
+```
+
+Generate white noise:
+
+```{r}
+w <- rnorm(500)
+```
+
+Moving average model (1/3 (wt-1 + w + wt+1)) on white noise:
+We disambiguate from dplyr's filter function
+```{r}
+v <- stats::filter(w, sides = 2, filter = rep(1/3, 3))
+```
+
+Autoregression (with lag 2):
+```{r}
+x <- stats::filter(w, filter = c(1, -0.5), method = "recursive")[-(1:50)]
+```
+
+Random walk (autoregresssion with lag 1):
+```{r}
+rw <- cumsum(w)
+```
+
+Random walk with drift (autoregression with lag 1 and constant delta):
+```{r}
+wd <- w + .2
+rwd <- cumsum(wd)
+```
+
+Signal plus noise:
+In this example we add w to a standard wave function
+```{r}
+
+```
+
+Signal-to-noise ratio (SNR):
+ratio of amplitude over standard deviation of white noise
+This example is A=2 and sigmaw=1 so SNR=2
+```{r}
+
+```

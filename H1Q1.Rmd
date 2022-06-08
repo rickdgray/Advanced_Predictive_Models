@@ -1,0 +1,112 @@
+---
+title: "Homework 1 Question 1"
+author: "Rick Gray"
+date: '2022-06-08'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+library(cowplot)
+```
+
+X_t = 10sin(t/5) + w_t
+
+### Part A
+
+We first solve for if mu is constant:
+
+mu = E[X_t]\
+mu = E[10sin(t/5) + w_t]\
+mu = E[10sin(t/5)] + E[w_t]\
+mu = E[10sin(t/5)] + 0\
+mu = 10 * E[sin(t/5)]\
+mu = 10 * 0\
+mu = 0\
+
+mu does not depend on time so this check is valid.
+
+Next we solve for if the covariance depends only on time, or:\
+gamma(s, t) = gamma(abs(s - t))
+
+gamma_x(s, t) = cov(X_s, X_t)\
+gamma_x(s, t) = cov(10sin(s/5) + w_s, 10sin(t/5) + w_t)\
+gamma_x(s, t) = cov(10sin(s/5), 10sin(t/5)) + cov(w_s, w_t)\
+gamma_x(s, t) = 100 * cov(sin(s/5), sin(t/5)) + sigma^2\
+gamma_x(s, t) = 100 * E[(s - E[sin(s/5)])(t - E[sin(t/5)])] + sigma^2\
+gamma_x(s, t) = 100 * E[(s - 0)(t - 0)] + sigma^2\
+gamma_x(s, t) = 100 * E[st] + sigma^2\
+
+This is not a function of abs(s - t), therefore it does not satisfy the second condition.
+
+This signal plus noise process is NOT stationary.
+
+### Part B
+
+Signal to noise ratio = Amplitude of singal / variance of noise
+
+```{r}
+10 / 1
+```
+
+### Part C
+
+```{r}
+s <- 10*sin(1:120/5)
+swd <- data.frame("Time" = 1:120, "x" = s)
+
+ggplot(swd, aes(x = Time, y = x)) + 
+  geom_line(size = 1, color = "blue") +
+  ggtitle("Sine")
+
+s <- 10*sin(1:120/5)
+
+sw <- ts(s + rnorm(120))
+swd <- data.frame("Time" = 1:120, "x" = sw)
+
+low_noise <- ggplot(swd, aes(x = Time, y = x)) + 
+  geom_line(size = 1, color = "blue") +
+  geom_point(shape = 19, size = 2, fill = "white", color = "blue") +
+  geom_hline(yintercept = 0,
+             color = "darkgrey") +
+  geom_hline(yintercept = mean(swd$x),
+             linetype="dashed", 
+             color = "blue") +
+  scale_y_continuous(
+    limits = c(-15, 15)
+  ) +
+  ggtitle("Signal with Low Noise")
+
+low_noise
+```
+
+### Part D
+
+```{r fig.width = 10}
+sw2 <- ts(s + rnorm(120, 0, 16))
+swd2 <- data.frame("Time" = 1:120, "x" = sw2)
+
+high_noise <- ggplot(swd2, aes(x = Time, y = x)) + 
+  geom_line(size = 1, color = "blue") +
+  geom_point(shape = 19, size = 2, fill = "white", color = "blue") +
+  geom_hline(yintercept = 0,
+             color = "darkgrey") +
+  geom_hline(yintercept = mean(swd$x),
+             linetype="dashed", 
+             color = "blue") +
+  scale_y_continuous(
+    limits = c(-15, 15)
+  ) +
+  ggtitle("Signal with High Noise")
+
+plot_grid(low_noise, high_noise)
+```
+
+The new signal to noise ration is
+
+```{r}
+10 / 16
+```
+
+### Part E
