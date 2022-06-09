@@ -1,0 +1,76 @@
+---
+title: "Homework 1 Question 2"
+author: "Rick Gray"
+date: '2022-06-08'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+library(MASS)
+library(mvtnorm)
+
+tennisCourt = data.frame(x1 = c(0,4.5,18,31.5,36,0,4.5,4.5,0,-2),
+                         x2 = c(0,4.5,18,31.5,36,36,31.5,31.5,36,38),
+                         y1 = c(-39,-39,-21,-39,-39,39,21,-21,-39,0), 
+                         y2 = c(39,39,21,39,39,39,21,-21,-39,0),
+                         width = c(rep(1,9),3))
+```
+
+### Part A
+
+```{r}
+x <- data.frame(mvrnorm(5000, t(c(29, 16)), matrix(c(4, 4, 4, 16), ncol = 2)))
+
+ggplot(tennisCourt) + 
+  geom_segment(aes(x = x1,y = y1,xend = x2,yend = y2),size = tennisCourt$width) +
+  geom_point(data = x, mapping = aes(x = X1, y = X2)) + 
+  labs(x = '',
+       y = '',
+       title = 'Multivariate Normal Distribution of Tennis Player\'s Serves')
+```
+
+### Part B
+
+The probability the serve will be legal can be calculated as such:
+
+```{r}
+pmvnorm(c(18, 0), c(31.5, 21), c(29, 16), sigma = matrix(c(4, 4, 4, 16), ncol = 2))
+```
+
+### Part C
+
+rho = cov(x_1, x_2) / sqrt(4 * 16)
+rho = 0.5
+
+x_1 | x_2 = x_2 ~ N(mu_x_1|x_2 , sigma_x_1|x_2)
+
+mu_x_1|x_2 = 16 + 0.5 * sqrt(16)(30.5 - 29) / sqrt(4)
+mu_x_1|x_2 = 17.5
+
+sigma_x_1|x_2 = sigma_11 + sigma_12 * sigma_22^-1 * sigma_21
+sigma_x_1|x_2 = (1 - 0.5^2) * 16
+sigma_x_1|x_2 = 12
+
+x_1 | x_2 = ~N(17.5, 12)
+
+Probability that these serves are legal:
+```{r}
+pnorm(21, 17.5, sqrt(12))
+```
+
+### Part D
+
+```{r}
+x <- data.frame("X1" = 30.5, "X2" = rnorm(500, 17.5, sqrt(12)))
+
+ggplot(tennisCourt) + 
+  geom_segment(aes(x = x1,y = y1,xend = x2,yend = y2),size = tennisCourt$width) +
+  geom_jitter(data = x, mapping = aes(x = X1, y = X2, color = "red"), width = 0.1, height = 0.1) + 
+  labs(x = '',
+       y = '',
+       title = 'Multivariate Normal Distribution of Tennis Player\'s Serves Conditioned on 30.5')
+```
+
+The data generated from the conditional model shows a dotted line along the static 30.5. There is a small percentage of data that is outside the legal bounds. This plot isolates the probability along one axis. The original plot shows both axes; it shows the area in which the tennis player could land the ball. There is a different probability for the shot to be legal given that there are now two axes with which the condition could fail.

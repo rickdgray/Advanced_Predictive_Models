@@ -42,9 +42,15 @@ This is not a function of abs(s - t), therefore it does not satisfy the second c
 
 This signal plus noise process is NOT stationary.
 
+```{r}
+s2 <- 10*sin(1:120/5)
+x2 <- ts(s2 + rnorm(120))
+acf(x2, lag.max = 100, type = "covariance")
+```
+
 ### Part B
 
-Signal to noise ratio = Amplitude of singal / variance of noise
+Signal to noise ratio = Amplitude of signal / variance of noise
 
 ```{r}
 10 / 1
@@ -103,10 +109,22 @@ high_noise <- ggplot(swd2, aes(x = Time, y = x)) +
 plot_grid(low_noise, high_noise)
 ```
 
-The new signal to noise ration is
+The new signal to noise ratio is
 
 ```{r}
 10 / 16
 ```
 
 ### Part E
+
+#### i) Period
+
+While difficult to see, the period of the wave is actually unaffected.
+
+#### ii) Signal to Noise Ratio
+
+The noise is drastically worse in the second plot; this can also be seen by the calculated SNRs: 10 for the left plot, and 0.625 for the right plot. The lower the SNR, the more obfuscated the signal becomes.
+
+#### ii) Observed value of the generated signal at t = 45
+
+The observed value for the left plot is roughly -2.5, while for the right plot it is roughly 7.5. The noise in the second plot is so drastic that the signal is almost entirely lost. The expected value from the pure sine wave at t = 45 is 0. The left plot is closer.
