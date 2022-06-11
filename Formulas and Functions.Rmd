@@ -68,3 +68,14 @@ This example is A=2 and sigmaw=1 so SNR=2
 ```{r}
 
 ```
+
+Gaussian Kernel Smoother
+```{r}
+k_smoothed_data <- data.frame(
+  SOI = ksmooth(time(soi),
+                as.numeric(soi),
+                kernel = "normal",
+                bandwidth = 1)$y,
+  Time = as.Date(time(soi))
+)
+```
