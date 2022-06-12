@@ -1,0 +1,16 @@
+---
+title: "Homework 2 Question 1"
+author: "Rick Gray"
+date: '2022-06-12'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Part A
+
+```{r}
+
+```
