@@ -7,10 +7,101 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+library(gridExtra)
+library(tidyverse)
+library(astsa)
+library(xts)
+library(lubridate)
+library(readr)
 ```
 
 ### Part A
 
 ```{r}
+x <- ts(read_csv("ARMAData1.csv", show_col_types = FALSE)[2] %>% pull(x))
 
+p <- c(1, 2, 3)
+q <- c(1, 2, 3)
+
+for (p in c(1, 2, 3)) {
+  for (q in c(1, 2, 3)) {
+    if (!(p == 2 && q == 2)) {
+      print(paste("p:", p, " q:", q, " AICc:", sarima(x, p, 0, q, no.constant = TRUE, details = FALSE)$AICc))
+    }
+  }
+}
 ```
+
+The best ARMA model for this dataset is ARMA(3, 1) with an AICc of 2.964.
+
+### Part B
+
+```{r}
+fit <- sarima(x, 3, 0, 1, no.constant = TRUE, details = FALSE)
+
+fit$fit$coef
+fit$fit$sigma2
+```
+
+The ARMA(3, 1) model for this dataset is as follows:
+
+<center>$x_{t} = w_{t} + 0.7996x_{t-1} + 0.5480x_{t-2} - 0.7759x_{t-3} + 0.5535w_{t-1}$</center>
+
+Where
+
+<center>$\sigma_{w}^{2} = 1.0284$</center>
+
+### Part C
+
+```{r}
+x <- ts(read_csv("ARMAData2.csv", show_col_types = FALSE)[2] %>% pull(x))
+x_train <- window(x, start = 1, end = 150)
+x_test <- window(x, start = 151, end = 250)
+
+fit_train <- sarima(x_train, 2, 0, 2, no.constant = TRUE, details = FALSE)
+fit_train$AICc
+```
+
+### Part D
+
+```{r fig.width=10}
+fit_for <- sarima.for(x_train, 100, 2, 0, 2, plot = F)
+
+n <- 250
+n_train <- 150
+
+fit_data <- bind_rows(
+  data.frame(Time = 1:n,
+             Type = factor(rep("Simulated Data", n),
+                              levels = c("Simulated Data",
+                                         "Pred")),
+             x = as.numeric(x)),
+  data.frame(Time = 1:n,
+             Type = factor(rep("Pred", n),
+                              levels = c("Simulated Data",
+                                         "Pred")),
+             x = c(as.numeric(x_train) - 
+                     as.numeric(resid(fit_train$fit)), 
+                   as.numeric(fit_for$pred))))
+fit_pred_data <- data.frame(Time = 1:n,
+                            x = c(as.numeric(x_train) - 
+                                    as.numeric(resid(fit_train$fit)), 
+                                  as.numeric(fit_for$pred)),
+                            SE = c(rep(sqrt(fit_train$fit$sigma2), n_train), 
+                                   as.numeric(fit_for$se)))
+
+gg_fit <- ggplot(fit_data,
+                 aes(x = Time)) +
+  geom_line(aes(y = x, col = Type)) +
+  geom_ribbon(data = fit_pred_data,
+              aes(x = Time, 
+                  ymin = x - 1.96*SE,
+                  ymax = x + 1.96*SE),
+              alpha = .2) +
+  geom_vline(xintercept = n_train)
+
+gg_fit
+```
+
+Over the training set, the model makes an excellent predictor; it is very close to the true data line. After the training set when making predictions, it initially starts close. It follows the positive trend initially, and drops low on the first dip in the true data. The farther from the start of the predictions loses amplitude, but the cyclical nature of the data continues to be tracked. It can be seen at each hill and valley of the prediction that it matches the peaks and troughs of the true data. After the prediction line flattens, it is no longer useful as a predictor.
