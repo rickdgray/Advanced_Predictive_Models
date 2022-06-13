@@ -7,33 +7,38 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-library(ggplot2)
-library(gridExtra)
 library(tidyverse)
 library(astsa)
-library(xts)
-library(lubridate)
 library(readr)
 ```
 
 ### Part A
 
 ```{r}
-x <- ts(read_csv("ARMAData1.csv", show_col_types = FALSE)[2] %>% pull(x))
+x <- ts(read_csv("ARMAData1.csv", show_col_types = F)[2] %>% pull(x))
+z <- c(1, 2, 3)
+combs <- crossing(p = z, q = z)
 
-p <- c(1, 2, 3)
-q <- c(1, 2, 3)
-
-for (p in c(1, 2, 3)) {
-  for (q in c(1, 2, 3)) {
-    if (!(p == 2 && q == 2)) {
-      print(paste("p:", p, " q:", q, " AICc:", sarima(x, p, 0, q, no.constant = TRUE, details = FALSE)$AICc))
-    }
+fit_models <- function(row) {
+  if (row$p != 2 || row$q != 2) {
+    print(paste("p:", row$p, "q:", row$q, " AICc:", sarima(x, row$p, 0, row$q, no.constant = T, details = F)$AICc))
   }
 }
+
+walk(1:nrow(combs), ~fit_models(combs[., ]))
 ```
 
-The best ARMA model for this dataset is ARMA(3, 1) with an AICc of 2.964.
+The optimal model seen below was found using the code above:
+
+<center>$ARMA(3, 1)$</center>
+
+with the following parameters:
+
+<center>$p=3, q=1$</center>
+
+and the resulting AICc:
+
+<center>$AICc=2.964$</center>
 
 ### Part B
 
@@ -48,7 +53,7 @@ The ARMA(3, 1) model for this dataset is as follows:
 
 <center>$x_{t} = w_{t} + 0.7996x_{t-1} + 0.5480x_{t-2} - 0.7759x_{t-3} + 0.5535w_{t-1}$</center>
 
-Where
+where
 
 <center>$\sigma_{w}^{2} = 1.0284$</center>
 
@@ -57,11 +62,16 @@ Where
 ```{r}
 x <- ts(read_csv("ARMAData2.csv", show_col_types = FALSE)[2] %>% pull(x))
 x_train <- window(x, start = 1, end = 150)
-x_test <- window(x, start = 151, end = 250)
 
 fit_train <- sarima(x_train, 2, 0, 2, no.constant = TRUE, details = FALSE)
 fit_train$AICc
 ```
+
+<center>$ARMA(2, 2)$</center>
+
+The resulting AICc for the model specified above is
+
+<center>$AICc=3.034$</center>
 
 ### Part D
 
@@ -99,7 +109,10 @@ gg_fit <- ggplot(fit_data,
                   ymin = x - 1.96*SE,
                   ymax = x + 1.96*SE),
               alpha = .2) +
-  geom_vline(xintercept = n_train)
+  geom_vline(xintercept = n_train) +
+  labs(
+    title = "95% Confidence Prediction on Time Series Data"
+  )
 
 gg_fit
 ```

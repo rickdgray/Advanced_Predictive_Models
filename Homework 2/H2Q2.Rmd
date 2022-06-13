@@ -7,10 +7,229 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(astsa)
 ```
 
 ### Part A
 
-```{r}
+Given that temperatures are cyclical with a period of one year, it would be logical to use a twelve month seasonality.
 
+<center>$S = 12$</center>
+
+### Part B
+
+```{r}
+x <- read_csv("MeanDallasTemps.csv", col_types = "Dn")
+z <- c(0, 1)
+combs <- crossing(p = z, d = z, q = z, P = z, D = z, Q = z)
+
+fit_models <- function(row) {
+  if (row$P != 1 || row$D != 0 || row$Q != 1 || row$d != 0) {
+    paste("p:", row$p, "d:", row$d, "q:", row$q, "P:", row$P, "D:", row$D, " Q:", row$Q,
+          " AICc:", sarima(x$AvgTemp, row$p, row$d, row$q, row$P, row$D, row$Q, 12,
+                           no.constant = T, details = F)$AICc)
+  }
+}
+
+walk(1:nrow(combs), ~fit_models(combs[., ]))
 ```
+
+The optimal model seen below was found using the code above:
+
+<center>$SARIMA(1, 0, 1) \times (0, 1, 1)_{12}$</center>
+
+with the following parameters:
+
+<center>$p=1, d=0, q=1, P=0, D=1, Q=1$</center>
+
+and the resulting AICc:
+
+<center>$AICc=5.3425$</center>
+
+The estimated parameters can be seen below:
+
+```{r}
+sarima(x$AvgTemp, 1, 0, 1, 0, 1, 1, 12, no.constant = T, details = F)$fit$coef
+```
+
+### Part C
+
+```{r fig.width=10}
+preds <- data.frame(x)
+preds[,c("Pred", "SE")] <- NA
+
+for (i in 181:240) {
+  fit <- sarima.for(
+    window(x$AvgTemp, start = 1, end = i),
+    12, 1, 0, 1, 0, 1, 1, 12, no.constant = T, plot = F
+  )
+  
+  preds[i + 12,3] <- tail(fit$pred, n = 1)
+  preds[i + 12,4] <- tail(fit$se, n = 1)
+}
+
+preds %>%
+  filter(Month >= "2010-01-01") %>%
+  ggplot(aes(Month)) +
+  geom_line(aes(y = AvgTemp, color = "red")) +
+  geom_line(aes(y = Pred, color = "blue")) +
+  geom_ribbon(
+    data = ~ .[73:132,],
+    aes(
+      x = Month,
+      ymin = Pred - 1.96 * SE,
+      ymax = Pred + 1.96 * SE
+    ),
+    alpha = .2
+  ) +
+  geom_vline(xintercept = as.Date("2016-01-01")) +
+  scale_color_manual(
+    labels = c("Predicted", "Observed"),
+    values = c("red", "blue")
+  ) +
+  labs(
+    title = "SARIMA Predicted Average Monthly Temperature with 95% Confidence in Dallas, Texas",
+    y = "Average Temperature (Fahrenheit)",
+    x = "Time (Months)",
+    color = NULL
+  )
+```
+
+We predict that the average temperature in January 2018 will be
+
+<center>$58.06\pm3.54^{\circ}F$</center>
+
+or
+
+<center>$58.06{\circ}F$</center>
+
+with the following bounds:
+
+<center>$[54.52, 61.60]$</center>
+
+### Part D
+
+```{r fig.width=10}
+sarima(x$AvgTemp, 3, 1, 1, no.constant = T, details = F)$AICc
+
+preds <- data.frame(x)
+preds[,c("Pred", "SE")] <- NA
+
+for (i in 181:240) {
+  fit <- sarima.for(
+    window(x$AvgTemp, start = 1, end = i),
+    12, 3, 1, 1, no.constant = T, plot = F
+  )
+  
+  preds[i + 12,3] <- tail(fit$pred, n = 1)
+  preds[i + 12,4] <- tail(fit$se, n = 1)
+}
+
+preds %>%
+  filter(Month >= "2010-01-01") %>%
+  ggplot(aes(Month)) +
+  geom_line(aes(y = AvgTemp, color = "red")) +
+  geom_line(aes(y = Pred, color = "blue")) +
+  geom_ribbon(
+    data = ~ .[73:132,],
+    aes(
+      x = Month,
+      ymin = Pred - 1.96 * SE,
+      ymax = Pred + 1.96 * SE
+    ),
+    alpha = .2
+  ) +
+  geom_vline(xintercept = as.Date("2016-01-01")) +
+  scale_color_manual(
+    labels = c("Predicted", "Observed"),
+    values = c("red", "blue")
+  ) +
+  labs(
+    title = "ARIMA(3, 1, 1) Predicted Average Monthly Temperature with 95% Confidence in Dallas, Texas",
+    y = "Average Temperature (Fahrenheit)",
+    x = "Time (Months)",
+    color = NULL
+  )
+```
+
+The resulting AICc is:
+
+<center>$AICc=5.9961$</center>
+
+We predict that the average temperature in January 2018 will be
+
+<center>$67.93\pm11.72^{\circ}F$</center>
+
+or
+
+<center>$67.93{\circ}F$</center>
+
+with the following bounds:
+
+<center>$[56.21, 79.65]$</center>
+
+The model does produce predictions that capture seasonal behavior despite not using a seasonal model. Despite this, the model is substantially less reliable. The confidence intervals for each prediction is nearly eight times as wide and the predictions are closer to the mean than the observed. It is undeniably an inferior model.
+
+### Part E
+
+```{r fig.width=10}
+sarima(x$AvgTemp, 12, 1, 0, no.constant = T, details = F)$AICc
+
+preds <- data.frame(x)
+preds[,c("Pred", "SE")] <- NA
+
+for (i in 181:240) {
+  fit <- sarima.for(
+    window(x$AvgTemp, start = 1, end = i),
+    12, 12, 1, 0, no.constant = T, plot = F
+  )
+  
+  preds[i + 12,3] <- tail(fit$pred, n = 1)
+  preds[i + 12,4] <- tail(fit$se, n = 1)
+}
+
+preds %>%
+  filter(Month >= "2010-01-01") %>%
+  ggplot(aes(Month)) +
+  geom_line(aes(y = AvgTemp, color = "red")) +
+  geom_line(aes(y = Pred, color = "blue")) +
+  geom_ribbon(
+    data = ~ .[73:132,],
+    aes(
+      x = Month,
+      ymin = Pred - 1.96 * SE,
+      ymax = Pred + 1.96 * SE
+    ),
+    alpha = .2
+  ) +
+  geom_vline(xintercept = as.Date("2016-01-01")) +
+  scale_color_manual(
+    labels = c("Predicted", "Observed"),
+    values = c("red", "blue")
+  ) +
+  labs(
+    title = "ARIMA(12, 1, 0) Predicted Average Monthly Temperature with 95% Confidence in Dallas, Texas",
+    y = "Average Temperature (Fahrenheit)",
+    x = "Time (Months)",
+    color = NULL
+  )
+```
+
+The resulting AICc is:
+
+<center>$AICc=5.5323$</center>
+
+We predict that the average temperature in January 2018 will be
+
+<center>$62.06\pm4.41^{\circ}F$</center>
+
+or
+
+<center>$62.06{\circ}F$</center>
+
+with the following bounds:
+
+<center>$[57.65, 66.47]$</center>
+
+The model does produce predictions that capture seasonal behavior despite not using a seasonal model. This model, however, is more reliable than the ARIMA(3,1,1) model. The confidence intervals for each prediction are nearly as close as the SARIMA(1,0,1)×(0,1,1) model, though still slightly larger. The means follow nearly the same trend as the SARIMA model as well. It is arguable that this model could be used for the seasonal data instead of the SARIMA model.
