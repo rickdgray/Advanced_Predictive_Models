@@ -1,0 +1,44 @@
+---
+title: "Homework 2 Question 3"
+author: "Rick Gray"
+date: '2022-06-12'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+### Part A
+
+The bandwidth of $a_2$ is much greater than $a_1$. The result is that a larger area of the original dataset is averaged into the computed data point and is therefore pulled closer to the mean. This smooths the moving average line.
+
+### Part B
+
+```{r fig.width=10}
+data <- read_csv("TexasAccidents.csv", col_types = "Dnc")
+data[,"MA"] <- stats::filter(
+  data$Freq,
+  sides = 2,
+  filter = c(rep(c(1/7, rep(0, 6)), 6), 1/7)
+)
+data <- data[22:1072,]
+
+data %>%
+  ggplot(aes(Date, MA, color = DayOfWeek)) + 
+  geom_line(size = .5) +
+  geom_point(shape = 21, size = 1, fill = "black", color = "black") +
+  labs(
+    title = "Moving Average Filter of the Number of RecordedCar Crashes Each Day in Texas from 2017 to 2020",
+    x = "Time",
+    y = "Number of Recorded Car Crashes",
+    color = "Day of Week"
+  )
+```
+
+The plot shown above is significantly more effective at conveying the cycle that appears every other year and the effect of the day of the week. The weights in $a_3$ do not align well with the cycles in the data, while the weights in $a_4$ appear to fit the data quite well.
+
+### Part C
+
+The plot above is a good representation of why a simple visual inspection can be misleading. The frequency of car accidents follows a cycle that aligns with an event (perhaps an election), that occurs biannually on weekends. This would not be discernible without proper exploratory data analysis.
