@@ -1,0 +1,15 @@
+---
+title: "Homework 3 Question 1"
+output: html_document
+date: '2022-06-16'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Part A
+
+```{r}
+
+```
