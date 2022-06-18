@@ -6,10 +6,174 @@ date: '2022-06-16'
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(dlm)
 ```
 
 ### Part A
 
-```{r}
+```{r fig.width=10}
+x <- read_csv("DLM_Data.csv", show_col_types = F)
 
+filtered_data <- dlmFilter(
+  y = x$yt,
+  mod = dlm(
+    FF = 1.2,
+    GG = 0.8,
+    V = 9,
+    W = 4,
+    m0 = 0,
+    C0 = 25
+  ),
+  simplify = T
+)
+
+pse_data <- sqrt(unlist(
+  dlmSvd2var(
+    filtered_data$U.R,
+    filtered_data$D.R
+  )
+))
+
+filtered_data$a[40]
+pse_data[40]
+
+x %>%
+  mutate(
+    pred = filtered_data$a,
+    se = pse_data
+  ) %>%
+  ggplot(aes(time)) +
+  geom_line(aes(y = yt, color = 'red')) +
+  geom_line(aes(y = pred, color = 'blue')) +
+  geom_ribbon(
+    aes(
+      ymin = pred - 1.96 * se,
+      ymax = pred + 1.96 * se
+    ),
+    alpha = 0.2
+  ) +
+  scale_color_manual(
+    labels = c("Predicted", "Observed"),
+    values = c("red", "blue")
+  ) +
+  labs(
+    title = expression(paste(
+      "One-Step-Ahead Predictions of ",
+      theta[t],
+      " w/ Standard Errors"
+    )),
+    y = "Observations and Predictions",
+    x = "Time",
+    color = NULL
+  )
 ```
+
+We report the following numerical values:
+
+<center>$a_{40}=3.53$ and $R_{40}=2.44$</center>
+
+### Part B
+
+nfi
+
+### Part C
+
+```{r fig.width=10}
+fse_data <- dropFirst(sqrt(unlist(
+  dlmSvd2var(
+    filtered_data$U.C,
+    filtered_data$D.C
+  )
+)))
+
+dropFirst(filtered_data$m)[40]
+fse_data[40]
+
+x %>%
+  mutate(
+    filtered = dropFirst(filtered_data$m),
+    se = fse_data
+  ) %>%
+  ggplot(aes(time)) +
+  geom_line(aes(y = yt, color = 'red')) +
+  geom_line(aes(y = filtered, color = 'blue')) +
+  geom_ribbon(
+    aes(
+      ymin = filtered - 1.96 * se,
+      ymax = filtered + 1.96 * se
+    ),
+    alpha = 0.2
+  ) +
+  scale_color_manual(
+    labels = c("Filtered", "Observed"),
+    values = c("red", "blue")
+  ) +
+  labs(
+    title = expression(paste(
+      "Mean of the filtering distribution of ",
+      theta[t],
+      " w/ Standard Errors"
+    )),
+    y = "Observations and Predictions",
+    x = "Time",
+    color = NULL
+  )
+```
+
+We report the following numerical values:
+
+<center>$m_{40}=0.50$ and $C_{40}=1.75$</center>
+
+### Part D
+
+nfi
+
+### Part E
+
+```{r fig.width=10}
+smoothed_data <- dlmSmooth(filtered_data)
+
+sse_data <- dropFirst(sqrt(unlist(
+  dlmSvd2var(
+    smoothed_data$U.S,
+    smoothed_data$D.S
+  )
+)))
+
+x %>%
+  mutate(
+    smoothed = dropFirst(smoothed_data$s),
+    se = sse_data
+  ) %>%
+  ggplot(aes(time)) +
+  geom_line(aes(y = yt, color = 'red')) +
+  geom_line(aes(y = smoothed, color = 'blue')) +
+  geom_ribbon(
+    aes(
+      ymin = smoothed - 1.96 * se,
+      ymax = smoothed + 1.96 * se
+    ),
+    alpha = 0.2
+  ) +
+  scale_color_manual(
+    labels = c("Smoothed", "Observed"),
+    values = c("red", "blue")
+  ) +
+  labs(
+    title = expression(paste(
+      "Smoothed Values of ",
+      theta[t],
+      " w/ Standard Errors"
+    )),
+    y = "Observations and Predictions",
+    x = "Time",
+    color = NULL
+  )
+
+x %>%
+  mutate(smoothed = dropFirst(smoothed_data$s)) %>%
+  filter(is.na(yt)) %>%
+  select(time, smoothed)
+```
+
