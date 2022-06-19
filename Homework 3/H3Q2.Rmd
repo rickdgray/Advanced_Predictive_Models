@@ -6,10 +6,21 @@ date: '2022-06-16'
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(gamlss.data)
 ```
 
 ### Part A
 
 ```{r}
+
+polio
+
+eq_mod <- depmix(
+  count ~ 1,
+  data = eq_dat,
+  family = poisson(),
+  nstates = 2,
+  ntimes = length(year)
+)
 
 ```

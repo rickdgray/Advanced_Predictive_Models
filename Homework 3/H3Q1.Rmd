@@ -13,43 +13,48 @@ library(dlm)
 ### Part A
 
 ```{r fig.width=10}
+F_t <- 1.2
+G_t <- 0.8
+V_t <- 9
+W_t <- 4
+m_0 <- 0
+C_0 <- 25
+
 x <- read_csv("DLM_Data.csv", show_col_types = F)
 
 filtered_data <- dlmFilter(
   y = x$yt,
   mod = dlm(
-    FF = 1.2,
-    GG = 0.8,
-    V = 9,
-    W = 4,
-    m0 = 0,
-    C0 = 25
+    FF = F_t,
+    GG = G_t,
+    V = V_t,
+    W = W_t,
+    m0 = m_0,
+    C0 = C_0
   ),
   simplify = T
 )
 
-pse_data <- sqrt(unlist(
-  dlmSvd2var(
-    filtered_data$U.R,
-    filtered_data$D.R
+x <- x %>%
+  mutate(
+    a = filtered_data$a,
+    R = unlist(dlmSvd2var(
+      filtered_data$U.R,
+      filtered_data$D.R
+    ))
   )
-))
 
-filtered_data$a[40]
-pse_data[40]
+x$a[40]
+x$R[40]
 
 x %>%
-  mutate(
-    pred = filtered_data$a,
-    se = pse_data
-  ) %>%
   ggplot(aes(time)) +
   geom_line(aes(y = yt, color = 'red')) +
-  geom_line(aes(y = pred, color = 'blue')) +
+  geom_line(aes(y = a, color = 'blue')) +
   geom_ribbon(
     aes(
-      ymin = pred - 1.96 * se,
-      ymax = pred + 1.96 * se
+      ymin = a - 1.96 * sqrt(R),
+      ymax = a + 1.96 * sqrt(R)
     ),
     alpha = 0.2
   ) +
@@ -71,37 +76,77 @@ x %>%
 
 We report the following numerical values:
 
-<center>$a_{40}=3.53$ and $R_{40}=2.44$</center>
+<center>$a_{40}=3.53$</center>
+<center>$R_{40}=5.95$</center>
 
 ### Part B
 
-nfi
+```{r fig.width=10}
+x <- x %>%
+  mutate(
+    f = filtered_data$f,
+    Q = F_t*R*F_t + V_t
+  )
+
+x$f[40]
+x$Q[40]
+
+x %>%
+  ggplot(aes(time)) +
+  geom_line(aes(y = yt, color = 'red')) +
+  geom_line(aes(y = f, color = 'blue')) +
+  geom_ribbon(
+    aes(
+      ymin = f - 1.96 * sqrt(Q),
+      ymax = f + 1.96 * sqrt(Q)
+    ),
+    alpha = 0.2
+  ) +
+  scale_color_manual(
+    labels = c("Predicted", "Observed"),
+    values = c("red", "blue")
+  ) +
+  labs(
+    title = expression(paste(
+      "One-Step-Ahead Predictions of ",
+      y[t],
+      " w/ Standard Errors"
+    )),
+    y = "Observations and Predictions",
+    x = "Time",
+    color = NULL
+  )
+
+```
+
+We report the following numerical values:
+
+<center>$f_{40}=4.23$</center>
+<center>$Q_{40}=17.57$</center>
 
 ### Part C
 
 ```{r fig.width=10}
-fse_data <- dropFirst(sqrt(unlist(
-  dlmSvd2var(
-    filtered_data$U.C,
-    filtered_data$D.C
+x <- x %>%
+  mutate(
+    m = dropFirst(filtered_data$m),
+    C = dropFirst(unlist(dlmSvd2var(
+        filtered_data$U.C,
+        filtered_data$D.C
+      )))
   )
-)))
 
-dropFirst(filtered_data$m)[40]
-fse_data[40]
+x$m[40]
+x$C[40]
 
 x %>%
-  mutate(
-    filtered = dropFirst(filtered_data$m),
-    se = fse_data
-  ) %>%
   ggplot(aes(time)) +
   geom_line(aes(y = yt, color = 'red')) +
-  geom_line(aes(y = filtered, color = 'blue')) +
+  geom_line(aes(y = m, color = 'blue')) +
   geom_ribbon(
     aes(
-      ymin = filtered - 1.96 * se,
-      ymax = filtered + 1.96 * se
+      ymin = m - 1.96 * sqrt(C),
+      ymax = m + 1.96 * sqrt(C)
     ),
     alpha = 0.2
   ) +
@@ -115,7 +160,7 @@ x %>%
       theta[t],
       " w/ Standard Errors"
     )),
-    y = "Observations and Predictions",
+    y = "Observations and Filtering",
     x = "Time",
     color = NULL
   )
@@ -123,36 +168,68 @@ x %>%
 
 We report the following numerical values:
 
-<center>$m_{40}=0.50$ and $C_{40}=1.75$</center>
+<center>$m_{40}=0.50$</center>
+<center>$C_{40}=3.05$</center>
 
 ### Part D
 
-nfi
+$F_t=1.2$\
+$G_t=0.8$\
+$\sigma_v^2=9$\
+$\sigma_{\omega}^2=4$\
+
+$m_{22}=3.539$\
+$c_{22}=3.048$\
+
+$a_{23}=0.8(3.539)=2.831$\
+$a_{24}=0.8(2.831)=2.265$\
+$a_{25}=0.8(2.265)=1.812$\
+$a_{26}=0.8(1.812)=1.450$\
+$a_{27}=0.8(1.450)=1.160$\
+$a_{28}=0.8(1.160)=0.928$\
+
+$R_{23}=0.8(3.048)0.8+4=5.951$\
+$Q_{23}=1.2(5.951)1.2+9=17.570$\
+$C_{23}=(5.951)-(5.951)1.2(17.570)1.2(5.951)=-890.062$\
+
+$R_{24}=0.8()0.8+4=$\
+$Q_{24}=1.2()1.2+9=$\
+$C_{24}=()-()1.2()1.2()=$\
+$R_{25}=0.8()0.8+4=$\
+$Q_{25}=1.2()1.2+9=$\
+$C_{25}=()-()1.2()1.2()=$\
+$R_{26}=0.8()0.8+4=$\
+$Q_{26}=1.2()1.2+9=$\
+$C_{26}=()-()1.2()1.2()=$\
+$R_{27}=0.8()0.8+4=$\
+$Q_{27}=1.2()1.2+9=$\
+$C_{27}=()-()1.2()1.2()=$\
+$R_{28}=0.8()0.8+4=$\
+$Q_{28}=1.2()1.2+9=$\
+$C_{28}=()-()1.2()1.2()=$\
 
 ### Part E
 
 ```{r fig.width=10}
 smoothed_data <- dlmSmooth(filtered_data)
 
-sse_data <- dropFirst(sqrt(unlist(
-  dlmSvd2var(
-    smoothed_data$U.S,
-    smoothed_data$D.S
+x <- x %>%
+  mutate(
+    theta = dropFirst(smoothed_data$s),
+    S = dropFirst(unlist(dlmSvd2var(
+      smoothed_data$U.S,
+      smoothed_data$D.S
+    )))
   )
-)))
 
 x %>%
-  mutate(
-    smoothed = dropFirst(smoothed_data$s),
-    se = sse_data
-  ) %>%
   ggplot(aes(time)) +
   geom_line(aes(y = yt, color = 'red')) +
-  geom_line(aes(y = smoothed, color = 'blue')) +
+  geom_line(aes(y = theta, color = 'blue')) +
   geom_ribbon(
     aes(
-      ymin = smoothed - 1.96 * se,
-      ymax = smoothed + 1.96 * se
+      ymin = theta - 1.96 * sqrt(S),
+      ymax = theta + 1.96 * sqrt(S)
     ),
     alpha = 0.2
   ) +
@@ -166,14 +243,81 @@ x %>%
       theta[t],
       " w/ Standard Errors"
     )),
-    y = "Observations and Predictions",
+    y = "Observations and Smoothing",
     x = "Time",
     color = NULL
   )
+```
+
+We report the following $\theta_t$ values for all $t$ such that $y_t$ is missing:
+
+```{r echo=FALSE, results='asis'}
+x %>%
+  filter(is.na(yt)) %>%
+  select(time, theta) %>%
+  knitr::kable(align = 'll')
+```
+
+### Part F
+
+```{r fig.width=10}
+forecast <- dlmForecast(filtered_data, 10)
+
+for (i in 1:10) {
+  x[nrow(x) + 1,] = rep(NA, ncol(x))
+  x$time[i + 100] = i + 100
+}
+
+x$a[101:110] = forecast$a[,1]
+x$R[101:110] = unlist(forecast$R)
+x$f[101:110] = forecast$f[,1]
+x$Q[101:110] = unlist(forecast$Q)
 
 x %>%
-  mutate(smoothed = dropFirst(smoothed_data$s)) %>%
-  filter(is.na(yt)) %>%
-  select(time, smoothed)
+  ggplot(aes(time)) +
+  geom_line(aes(y = yt, color = 'red')) +
+  geom_line(aes(y = f, color = 'blue')) +
+  geom_ribbon(
+    aes(
+      ymin = f - 1.96 * sqrt(Q),
+      ymax = f + 1.96 * sqrt(Q)
+    ),
+    alpha = 0.2
+  ) +
+  scale_color_manual(
+    labels = c("Predicted", "Observed"),
+    values = c("red", "blue")
+  ) +
+  labs(
+    title = expression(paste(
+      "Forecasts of ",
+      y[t],
+      " w/ Standard Errors"
+    )),
+    y = "Observations and Forecasts",
+    x = "Time",
+    color = NULL
+  )
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
