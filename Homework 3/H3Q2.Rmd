@@ -11,6 +11,7 @@ library(tidyverse)
 library(gamlss.data)
 library(xts)
 library(depmixS4)
+set.seed(42)
 ```
 
 ### Part A
@@ -68,6 +69,7 @@ x %>%
 
 AIC(phmm)
 exp(getpars(phmm)[7:8])
+getpars(phmm)[3:6]
 ```
 
 We report the resulting $AIC$ to be:
@@ -81,11 +83,14 @@ We report the resulting $\lambda$ to be:
 
 We report the resulting state transition probability matrix $\Gamma(t)$ to be:
 
-<center>$\Gamma(t)=???$</center>
+<center>$$\Gamma(t)=\begin{bmatrix}
+0.932&0.068 \\
+0.330&0.670 \\
+\end{bmatrix}$$</center>
 
 ### Part B
 
-
+The log rate parameter of the first component is $0.790$ and the log rate parameter of the second component is $4.178$. As these are Poisson distributions, these parameters are also the means or expected values of their respective states. If we observe at least 4 polio cases, we are likely to be in state 2 as the $\lambda$, and therefore mean, of state 2 is $4.178$. By the state transition matrix, there is a $67.0%$ chance that at time $t+1$, we will remain in state 2 and observe an expected value of $4.178$ polio cases again. By what we know about epidemiology, the likelihood of polio cases when there were few reported in recent past will be low. Likewise, the likelihood of polio cases when there were many recent reports will be high, as the poliomyelitis virus will have been able to spread.
 
 ### Part C
 
@@ -137,19 +142,24 @@ x %>%
   )
 
 AIC(phmm)
-exp(getpars(phmm)[7:9])
+exp(getpars(phmm)[13:15])
+getpars(phmm)[4:12]
 ```
 
 We report the resulting $AIC$ to be:
 
-<center>$AIC=530.00$</center>
+<center>$AIC=529.96$</center>
 
 We report the resulting $\lambda$ to be:
 
-<center>$\lambda_1=1.000$</center>
-<center>$\lambda_2=2.478$</center>
-<center>$\lambda_3=1.097$</center>
+<center>$\lambda_1=2.298$</center>
+<center>$\lambda_2=0.649$</center>
+<center>$\lambda_3=8.257$</center>
 
 We report the resulting state transition probability matrix $\Gamma(t)$ to be:
 
-<center>$\Gamma(t)=???$</center>
+<center>$$\Gamma(t)=\begin{bmatrix}
+0.696&0.213&0.091 \\
+0.093&0.907&0.000 \\
+0.614&0.106&0.280 \\
+\end{bmatrix}$$</center>
