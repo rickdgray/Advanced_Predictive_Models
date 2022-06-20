@@ -6,21 +6,81 @@ date: '2022-06-16'
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
 library(gamlss.data)
+library(xts)
+library(depmixS4)
 ```
 
 ### Part A
 
-```{r}
-
-polio
-
-eq_mod <- depmix(
-  count ~ 1,
-  data = eq_dat,
-  family = poisson(),
-  nstates = 2,
-  ntimes = length(year)
+```{r fig.width=10}
+x <- data.frame(
+  month = as.Date(index(as.xts(polio))),
+  count = coredata(as.xts(polio))[,1]
 )
 
+repeat {
+  phmm <- fit(depmix(
+    count ~ 1,
+    data = x,
+    family = poisson(),
+    nstates = 2,
+    ntimes = length(x$month)
+  ))
+  
+  if (AIC(phmm) < 531) {
+    break
+  }
+}
+
+x$states <- posterior(phmm, type = "viterbi")$state
+x$states[x$states == 1] <- "1"
+x$states[x$states == 2] <- "2"
+
+x %>%
+  ggplot(aes(
+    month,
+    count,
+    color = states,
+    label = states
+  )) +
+  geom_point(
+    size = 1,
+    color = "black"
+  ) +
+  geom_line(
+    color = "black"
+  ) +
+  geom_text(
+    hjust = 0.6,
+    vjust = -0.6
+  ) +
+  scale_color_discrete(
+    guide="none"
+  ) +
+  labs(
+    title = "Monthly Number of Poliomyelitis cases",
+    y = "Number of Cases",
+    x = "Month"
+  )
+
+AIC(phmm)
+exp(getpars(phmm)[7:8])
 ```
+
+We report the resulting $AIC$ to be:
+
+<center>$AIC=530.07$</center>
+
+We report the resulting $\lambda$ to be:
+
+<center>$\lambda_1=0.790$</center>
+<center>$\lambda_2=4.178$</center>
+
+We report the resulting state transition probability matrix $\Gamma(t)$ to be:
+
+<center>$\Gamma(t)=???$</center>
+
+
+
