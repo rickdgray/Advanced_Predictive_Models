@@ -6,13 +6,14 @@ date: '2022-06-16'
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(fig.width = 10)
 library(tidyverse)
 library(dlm)
 ```
 
 ### Part A
 
-```{r fig.width=10}
+```{r}
 F_t <- 1.2
 G_t <- 0.8
 V_t <- 9
@@ -81,7 +82,7 @@ We report the following numerical values:
 
 ### Part B
 
-```{r fig.width=10}
+```{r}
 x <- x %>%
   mutate(
     f = filtered_data$f,
@@ -126,7 +127,7 @@ We report the following numerical values:
 
 ### Part C
 
-```{r fig.width=10}
+```{r}
 x <- x %>%
   mutate(
     m = dropFirst(filtered_data$m),
@@ -210,7 +211,7 @@ $C_{28}=()-()1.2()1.2()=$\
 
 ### Part E
 
-```{r fig.width=10}
+```{r}
 smoothed_data <- dlmSmooth(filtered_data)
 
 x <- x %>%
@@ -260,7 +261,7 @@ x %>%
 
 ### Part F
 
-```{r fig.width=10}
+```{r}
 forecast <- dlmForecast(filtered_data, 10)
 
 for (i in 1:10) {
