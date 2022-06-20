@@ -258,8 +258,8 @@ for (i in 1:10) {
   x$time[i + 100] = i + 100
 }
 
-x$a[101:110] = forecast$a[,1]
-x$R[101:110] = unlist(forecast$R)
+x$f = NA
+x$Q = NA
 x$f[101:110] = forecast$f[,1]
 x$Q[101:110] = unlist(forecast$Q)
 
