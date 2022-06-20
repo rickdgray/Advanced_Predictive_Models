@@ -300,24 +300,12 @@ x %>%
   )
 ```
 
+We report the following $q_{101:110}$ values:
 
+```{r echo=FALSE, results='asis'}
+x[101:110,] %>%
+  select(time, Q) %>%
+  knitr::kable(align = 'll')
+```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+It can be seen above that the variance of the forecast increases with time. The reason for this is that the farther from the last data point that we forecast, the less confident we are in our prediction as we don't have a nearby reference to compare to.
