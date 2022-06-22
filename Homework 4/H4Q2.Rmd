@@ -1,5 +1,5 @@
 ---
-title: "Homework 4 Question 1"
+title: "Homework 4 Question 2"
 output: html_document
 date: '2022-06-16'
 ---
@@ -11,3 +11,12 @@ library(tidyverse)
 ```
 
 ### Part A
+
+The data we will be exploring today are the locations of sightings of bottlenose dolphin carcasses in the northern Gulf of Mexico. The data are provided by the __National Marine Fisheries Service (NMFS)__ agency within the __National Oceanic and Atmospheric Administration (NOAA)__.
+
+![2019 Bottlenose Dolphin Northern Gulf of Mexico Unusual Mortality Event Dead Animal Locations](dolphins.png)
+
+```{r}
+x <- read_csv("dolphins.csv", show_col_types = F)
+x
+```

@@ -1,338 +1,338 @@
 OBJECTID,Date,Lat,Lon,Genus,Species,Sex,Status,County,State,F_updated,x,y
-1,1554076800000,30.393106,-86.52849,Tursiops,truncatus,Male,Fresh Dead,Okaloosa,FL,1588749604701,772501,44927
-2,1554076800000,30.130453,-85.72718,Tursiops,truncatus,Female,Advanced Decomposition,Bay,FL,1588749604701,856785,76912
-3,1554076800000,30.358763,-89.09889,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,502137,49114
-4,1554163200000,30.43639,-88.105835,Tursiops,truncatus,Male,Moderate Decomposition,Mobile,AL,1588749604701,606590,39648
-5,1554163200000,29.19561,-90.04981,Tursiops,truncatus,Male,Advanced Decomposition,Jefferson,LA,1588749604701,402116,190074
-6,1554249600000,30.228456,-87.983345,Tursiops,truncatus,Male,Fresh Dead,Baldwin,AL,1588749604701,619474,64987
-7,1554249600000,30.35408,-89.09911,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,502114,49685
-8,1554336000000,30.394987,-86.564926,Tursiops,truncatus,Female,Moderate Decomposition,Okaloosa,FL,1588749604701,768668,44697
-9,1554422400000,30.245283,-88.12726,Tursiops,truncatus,Male,Fresh Dead,Mobile,AL,1588749604701,604336,62939
-10,1554422400000,29.673449,-84.86974,Tursiops,truncatus,Female,Moderate Decomposition,Franklin,FL,1588749604701,946974,132363
-11,1554422400000,30.302744,-89.3296,Tursiops,truncatus,Male,Moderate Decomposition,Hancock,MS,1588749604701,477870,55940
-12,1554422400000,30.318083,-89.31908,Tursiops,truncatus,Male,Fresh Dead,Hancock,MS,1588749604701,478977,54072
-13,1554508800000,30.22895,-88.29957,Tursiops,truncatus,Female,Moderate Decomposition,Mobile,AL,1588749604701,586213,64927
-14,1554508800000,30.32087,-87.25886,Tursiops,truncatus,Male,Moderate Decomposition,Escambia,FL,1588749604701,695678,53732
-15,1554508800000,30.276281,-89.373604,Tursiops,truncatus,Female,Moderate Decomposition,Hancock,MS,1588749604701,473242,59164
-16,1554595200000,29.712542,-89.64859,Tursiops,truncatus,Unknown,Condition Unknown,St Bernard,LA,1588749604701,444318,127630
-17,1554595200000,29.712542,-89.64859,Tursiops,truncatus,Unknown,Condition Unknown,St. Bernard,LA,1588749604701,444318,127630
-18,1554595200000,29.712542,-89.64859,Tursiops,truncatus,Unknown,Condition Unknown,St. Bernard,LA,1588749604701,444318,127630
-19,1554681600000,30.215097,-85.69774,Tursiops,truncatus,Female,Moderate Decomposition,Bay,FL,1588749604701,859882,66614
-20,1554681600000,29.431938,-89.54588,Tursiops,truncatus,Unknown,Condition Unknown,Plaquemines,LA,1588749604701,455121,161565
-21,1554768000000,29.75154,-93.64563,Tursiops,truncatus,Male,Advanced Decomposition,Cameron,LA,1588749604701,23895,122906
-22,1554768000000,30.3449,-88.5736,Tursiops,truncatus,Unknown,Moderate Decomposition,Jackson,MS,1588749604701,557389,50804
-23,1554854400000,30.503624,-86.455055,Tursiops,truncatus,Male,Moderate Decomposition,Okaloosa,FL,1588749604701,780225,31442
-24,1554854400000,29.76045,-93.13283,Tursiops,truncatus,Female,Fresh Dead,Cameron,LA,1588749604701,77833,121826
-25,1554854400000,29.7145,-89.463715,Tursiops,truncatus,Male,Advanced Decomposition,St. Bernard,LA,1588749604701,463763,127393
-26,1554854400000,29.737534,-89.51745,Tursiops,truncatus,Male,Advanced Decomposition,St. Bernard,LA,1588749604701,458111,124603
-27,1554854400000,30.22612,-88.58923,Tursiops,truncatus,Male,Fresh Dead,Jackson,MS,1588749604701,555745,65272
-28,1554940800000,30.301666,-87.60527,Tursiops,truncatus,Unknown,Fresh Dead,Baldwin,AL,1588749604701,659241,56072
-29,1554940800000,30.4361,-86.5978,Tursiops,truncatus,Male,Moderate Decomposition,Okaloosa,FL,1588749604701,765210,39683
-30,1554940800000,30.30342,-89.2896,Tursiops,truncatus,Male,Fresh Dead,Harrison,MS,1588749604701,482077,55858
-31,1554940800000,30.21999,-88.92065,Tursiops,truncatus,Unknown,Advanced Decomposition,Harrison,MS,1588749604701,520885,66018
-32,1554940800000,30.2253,-88.90714,Tursiops,truncatus,Female,Advanced Decomposition,Harrison,MS,1588749604701,522306,65372
-33,1555027200000,30.349377,-88.39358,Tursiops,truncatus,Unknown,Fresh Dead,Mobile,AL,1588749604701,576324,50258
-34,1555027200000,30.272627,-87.55192,Tursiops,truncatus,Female,Fresh Dead,Baldwin,AL,1588749604701,664853,59609
-35,1555027200000,30.38751,-88.99926,Tursiops,truncatus,Female,Moderate Decomposition,Harrison,MS,1588749604701,512616,45609
-36,1555027200000,30.37413,-89.06107,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,506115,47240
-37,1555113600000,30.3217,-87.5257,Tursiops,truncatus,Male,Moderate Decomposition,Baldwin,AL,1588749604701,667611,53631
-38,1555113600000,30.294786,-87.473694,Tursiops,truncatus,Unknown,Condition Unknown,Escambia,FL,1588749604701,673081,56910
-39,1555113600000,29.26254,-89.94899,Tursiops,truncatus,Female,Condition Unknown,Jefferson,LA,1588749604701,412720,182007
-40,1555200000000,30.346453,-88.695114,Tursiops,truncatus,Unknown,Moderate Decomposition,Jackson,MS,1588749604701,544607,50614
-41,1555372800000,29.10549,-90.18387,Tursiops,truncatus,Unknown,Advanced Decomposition,La Fourche,LA,1588749604701,388015,200928
-42,1555372800000,29.10699,-90.18175,Tursiops,truncatus,Unknown,Mummified/Skeletal,Lafourche,LA,1588749604701,388238,200747
-43,1555372800000,29.12697,-90.15136,Tursiops,truncatus,Unknown,Mummified/Skeletal,Lafourche,LA,1588749604701,391434,198341
-44,1555459200000,29.691067,-89.74302,Tursiops,truncatus,Unknown,Advanced Decomposition,Plaquemines,LA,1588749604701,434385,130230
-45,1555459200000,29.702803,-89.707825,Tursiops,truncatus,Unknown,Condition Unknown,Plaquemines,LA,1588749604701,438087,128809
-46,1555545600000,30.306475,-87.47246,Tursiops,truncatus,Unknown,Fresh Dead,Baldwin,AL,1588749604701,673211,55486
-47,1555545600000,30.35932,-89.10814,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,501164,49046
-48,1555632000000,30.37412,-89.06141,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,506079,47242
-49,1555718400000,29.198027,-90.05994,Tursiops,truncatus,Male,Advanced Decomposition,Jefferson,LA,1588749604701,401050,189782
-50,1555718400000,30.311302,-87.47689,Tursiops,truncatus,Male,Moderate Decomposition,Escambia,FL,1588749604701,672745,54898
-51,1555718400000,30.23717,-89.06691,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,505501,63927
-52,1555718400000,30.215565,-88.939606,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,518891,66557
-53,1555891200000,30.2284,-88.9196,Tursiops,truncatus,Female,Moderate Decomposition,Harrison,MS,1588749604701,520995,64994
-54,1555891200000,30.366243,-88.39741,Tursiops,truncatus,Male,Moderate Decomposition,Jackson,MS,1588749604701,575922,48202
-55,1556064000000,30.317266,-87.870636,Tursiops,truncatus,Female,Moderate Decomposition,Baldwin,AL,1588749604701,631329,54171
-56,1556064000000,29.96324,-89.37921,Tursiops,truncatus,Unknown,Moderate Decomposition,Saint Bernard,LA,1588749604701,472652,97231
-57,1556064000000,29.725277,-89.675,Tursiops,truncatus,Unknown,Moderate Decomposition,Saint Bernard,LA,1588749604701,441540,126087
-58,1556236800000,30.337835,-88.12956,Tursiops,truncatus,Female,Moderate Decomposition,Mobile,AL,1588749604701,604094,51665
-59,1556236800000,29.876165,-89.22276,Tursiops,truncatus,Female,Moderate Decomposition,St. Bernard,LA,1588749604701,489107,107798
-60,1556236800000,29.728266,-89.68322,Tursiops,truncatus,Unknown,Advanced Decomposition,Saint Bernard,LA,1588749604701,440675,125725
-61,1556236800000,29.931341,-89.24205,Tursiops,truncatus,Unknown,Condition Unknown,St. Bernard,LA,1588749604701,487079,101103
-62,1556323200000,29.70733,-89.55238,Tursiops,truncatus,Unknown,Moderate Decomposition,Saint Bernard,LA,1588749604701,454437,128261
-63,1556323200000,29.89659,-89.73006,Tursiops,truncatus,Male,Advanced Decomposition,Saint Bernard,LA,1588749604701,435748,105320
-64,1556323200000,29.995,-89.86222,Tursiops,truncatus,Unknown,Advanced Decomposition,Saint Bernard,LA,1588749604701,421847,93374
-65,1556323200000,29.741339,-89.68917,Tursiops,truncatus,Unknown,Advanced Decomposition,St. Bernard,LA,1588749604701,440049,124142
-66,1556409600000,29.759653,-89.67471,Tursiops,truncatus,Unknown,Advanced Decomposition,Saint Bernard,LA,1588749604701,441569,121923
-67,1556409600000,29.909483,-89.5746,Tursiops,truncatus,Unknown,Advanced Decomposition,St Bernard,LA,1588749604701,452100,103756
-68,1556409600000,29.693365,-89.34137,Tursiops,truncatus,Unknown,Advanced Decomposition,Saint Bernard,LA,1588749604701,476632,129952
-69,1556409600000,30.33481,-89.4422,Tursiops,truncatus,Male,Moderate Decomposition,Hancock,MS,1588749604701,466026,52033
-70,1556409600000,30.241856,-89.13802,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,498021,63356
-71,1556409600000,30.312056,-89.25085,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,486154,54806
-72,1556496000000,29.235905,-89.984406,Tursiops,truncatus,Female,Moderate Decomposition,Jefferson,LA,1588749604701,408995,185218
-73,1556496000000,29.71133,-89.43244,Tursiops,truncatus,Unknown,Advanced Decomposition,St. Bernard,LA,1588749604701,467053,127777
-74,1556496000000,29.719116,-89.53323,Tursiops,truncatus,Female,Advanced Decomposition,Saint Bernard,LA,1588749604701,456451,126834
-75,1556496000000,29.652678,-89.64828,Tursiops,truncatus,Male,Advanced Decomposition,Plaquemines,LA,1588749604701,444350,134878
-76,1556496000000,30.290485,-89.35287,Tursiops,truncatus,Male,Alive,Hancock,MS,1588749604701,475423,57434
-77,1556496000000,30.303291,-89.286705,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,482382,55874
-78,1556582400000,30.25825,-85.6976,Tursiops,truncatus,Unknown,Advanced Decomposition,Bay,FL,1588749604701,859897,61360
-79,1556582400000,30.37944,-89.03456,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,508903,46593
-80,1556582400000,30.36254,-89.08477,Tursiops,truncatus,Female,Moderate Decomposition,Harrison,MS,1588749604701,503622,48653
-81,1556582400000,30.280033,-89.37045,Tursiops,truncatus,Female,Moderate Decomposition,Hancock,MS,1588749604701,473573,58707
-82,1564790400000,30.41583,-88.7936,Tursiops,truncatus,Female,Fresh Dead,Harrison,MS,1588749604701,534248,42155
-83,1564963200000,30.35369,-89.12609,Tursiops,truncatus,Female,Fresh Dead,Harrison,MS,1588749604701,499276,49732
-84,1565049600000,29.46902,-89.342,Tursiops,truncatus,Unknown,Advanced Decomposition,Plaquemines,LA,1588749604701,476566,157086
-85,1565136000000,30.22806,-88.32533,Tursiops,truncatus,Unknown,Moderate Decomposition,Mobile,AL,1588749604701,583503,65036
-86,1565136000000,30.393335,-88.894424,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,523643,44899
-87,1565308800000,30.315765,-87.52932,Tursiops,truncatus,Male,Moderate Decomposition,Baldwin,AL,1588749604701,667230,54354
-88,1565568000000,29.74506,-93.68958,Tursiops,truncatus,Unknown,Mummified/Skeletal,Cameron,LA,1588749604701,19272,123691
-89,1565740800000,29.7728,-93.3552,Tursiops,truncatus,Male,Alive,Cameron,LA,1588749604701,54443,120330
-90,1566345600000,29.7427,-93.8728,Tursiops,truncatus,Unknown,Moderate Decomposition,Cameron,LA,1588749604701,0,123977
-91,1566518400000,30.387983,-88.9913,Tursiops,truncatus,Male,Condition Unknown,Harrison,MS,1588749604701,513453,45551
-92,1567123200000,30.288757,-88.04901,Tursiops,truncatus,Unknown,Fresh Dead,Mobile,AL,1588749604701,612567,57644
-93,1549065600000,29.769281,-93.43838,Tursiops,truncatus,Female,Moderate Decomposition,Cameron,LA,1588749604701,45694,120756
-94,1549065600000,30.37343,-89.06442,Tursiops,truncatus,Male,Fresh Dead,Harrison,MS,1588749604701,505763,47326
-95,1549152000000,30.278505,-87.71269,Tursiops,truncatus,Female,Fresh Dead,Baldwin,AL,1588749604701,647942,58893
-96,1549324800000,29.61804,-85.08108,Tursiops,truncatus,Male,Moderate Decomposition,Franklin,FL,1588749604701,924744,139069
-97,1549324800000,29.26888,-89.95293,Tursiops,truncatus,Male,Fresh Dead,Jefferson,LA,1588749604701,412306,181242
-98,1549497600000,29.81532,-84.57361,Tursiops,truncatus,Female,Moderate Decomposition,Franklin,FL,1588749604701,978122,115176
-99,1549497600000,30.15584,-93.56744,Tursiops,truncatus,Female,Moderate Decomposition,Calcasieu,LA,1588749604701,32119,73824
-100,1549497600000,29.26894,-89.953,Tursiops,truncatus,Unknown,Advanced Decomposition,Jefferson,LA,1588749604701,412299,181235
-101,1549497600000,30.38162,-89.02577,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,509828,46327
-102,1549497600000,30.272985,-89.37632,Tursiops,truncatus,Male,Moderate Decomposition,Hancock,MS,1588749604701,472956,59565
-103,1549670400000,30.250029,-88.1535,Tursiops,truncatus,Unknown,Moderate Decomposition,Mobile,AL,1588749604701,601576,62361
-104,1549670400000,30.301132,-87.55738,Tursiops,truncatus,Male,Fresh Dead,Baldwin,AL,1588749604701,664278,56137
-105,1549670400000,30.489437,-86.47448,Tursiops,truncatus,Male,Moderate Decomposition,Okaloosa,FL,1588749604701,778182,33174
-106,1549670400000,30.16244,-85.73814,Tursiops,truncatus,Male,Moderate Decomposition,Bay,FL,1588749604701,855633,73021
-107,1549756800000,29.74922,-93.66268,Tursiops,truncatus,Unknown,Advanced Decomposition,Cameron,LA,1588749604701,22101,123187
-108,1549756800000,29.22365,-90.01897,Tursiops,truncatus,Male,Moderate Decomposition,Jefferson,LA,1588749604701,405360,186695
-109,1549756800000,29.76789,-93.49105,Tursiops,truncatus,Female,Moderate Decomposition,Cameron,LA,1588749604701,40154,120925
-110,1550016000000,29.681438,-85.36677,Tursiops,truncatus,Female,Moderate Decomposition,Gulf,FL,1588749604701,894695,131396
-111,1550016000000,29.063805,-90.85734,Tursiops,truncatus,Male,Advanced Decomposition,Terrebonne,LA,1588749604701,317177,205945
-112,1550102400000,30.32812,-89.29169,Tursiops,truncatus,Female,Moderate Decomposition,Harrison,MS,1588749604701,481857,52849
-113,1550275200000,30.306353,-87.5641,Tursiops,truncatus,Male,Fresh Dead,Baldwin,AL,1588749604701,663572,55501
-114,1550275200000,29.246056,-89.96558,Tursiops,truncatus,Unknown,Advanced Decomposition,Jefferson,LA,1588749604701,410975,183994
-115,1550275200000,30.2994,-89.3338,Tursiops,truncatus,Female,Moderate Decomposition,Hancock,MS,1588749604701,477428,56348
-116,1550275200000,30.39369,-88.91837,Tursiops,truncatus,Female,Moderate Decomposition,Harrison,MS,1588749604701,521125,44855
-117,1550275200000,30.36186,-89.08279,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,503830,48736
-118,1550361600000,30.395224,-86.5593,Tursiops,truncatus,Male,Moderate Decomposition,Okaloosa,FL,1588749604701,769260,44669
-119,1550361600000,30.483608,-86.26498,Tursiops,truncatus,Male,Moderate Decomposition,Walton,FL,1588749604701,800218,33886
-120,1550448000000,30.229519,-87.97323,Tursiops,truncatus,Female,Moderate Decomposition,Mobile,AL,1588749604701,620538,64858
-121,1550448000000,29.68404,-85.29016,Tursiops,truncatus,Female,Moderate Decomposition,Gulf,FL,1588749604701,902753,131081
-122,1550448000000,29.732763,-84.9,Tursiops,truncatus,Unknown,Advanced Decomposition,Franklin,FL,1588749604701,943791,125181
-123,1550448000000,29.670584,-92.85375,Tursiops,truncatus,Male,Advanced Decomposition,Cameron,LA,1588749604701,107187,132710
-124,1550448000000,30.21458,-89.08164,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,503951,66677
-125,1550707200000,30.397211,-87.78164,Tursiops,truncatus,Male,Moderate Decomposition,Baldwin,AL,1588749604701,640690,44426
-126,1550880000000,29.750744,-84.89238,Tursiops,truncatus,Female,Mummified/Skeletal,Franklin,FL,1588749604701,944592,123002
-127,1551052800000,30.617222,-87.91333,Tursiops,truncatus,Male,Moderate Decomposition,Baldwin,AL,1588749604701,626838,17566
-128,1551052800000,30.157484,-85.72195,Tursiops,truncatus,Female,Moderate Decomposition,Bay,FL,1588749604701,857335,73624
-129,1551139200000,30.277864,-87.725845,Tursiops,truncatus,Female,Fresh Dead,Baldwin,AL,1588749604701,646559,58971
-130,1551139200000,30.310123,-87.521965,Tursiops,truncatus,Male,Fresh Dead,Baldwin,AL,1588749604701,668003,55041
-131,1551225600000,29.72083,-89.47465,Tursiops,truncatus,Male,Fresh Dead,Saint Bernard,LA,1588749604701,462613,126626
-132,1551225600000,29.76717,-93.51313,Tursiops,truncatus,Male,Advanced Decomposition,Cameron,LA,1588749604701,37831,121012
-133,1562025600000,30.299784,-87.508125,Tursiops,truncatus,Female,Fresh Dead,Baldwin,AL,1588749604701,669459,56301
-134,1562371200000,30.292542,-88.586395,Tursiops,truncatus,Male,Moderate Decomposition,Jackson,MS,1588749604701,556042,57183
-135,1562889600000,30.33666,-89.17035,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,494621,51808
-136,1563408000000,30.34367,-88.73274,Tursiops,truncatus,Female,Fresh Dead,Jackson,MS,1588749604701,540650,50953
-137,1563753600000,29.77706,-93.2403,Tursiops,truncatus,Female,Advanced Decomposition,Cameron,LA,1588749604701,66529,119814
-138,1564185600000,30.235668,-88.11599,Tursiops,truncatus,Unknown,Moderate Decomposition,Mobile,AL,1588749604701,605522,64109
-139,1564185600000,30.249516,-88.14628,Tursiops,truncatus,Male,Moderate Decomposition,Mobile,AL,1588749604701,602336,62423
-140,1564272000000,30.369167,-88.32183,Tursiops,truncatus,Unknown,Moderate Decomposition,Mobile,AL,1588749604701,583870,47845
-141,1564358400000,30.25773,-89.41312,Tursiops,truncatus,Male,Moderate Decomposition,Hancock,MS,1588749604701,469085,61423
-142,1559347200000,30.3797,-89.03309,Tursiops,truncatus,Female,Moderate Decomposition,Harrison,MS,1588749604701,509058,46561
-143,1559347200000,30.37926,-89.03631,Tursiops,truncatus,Female,Moderate Decomposition,Harrison,MS,1588749604701,508719,46615
-144,1559347200000,30.242605,-88.77324,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,536390,63265
-145,1559433600000,30.24898,-89.06699,Tursiops,truncatus,Male,Fresh Dead,Harrison,MS,1588749604701,505492,62489
-146,1559433600000,30.342333,-88.90425,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,522610,51116
-147,1559433600000,30.259428,-89.082375,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,503874,61216
-148,1559520000000,30.22567,-88.97444,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,515227,65327
-149,1559520000000,30.389923,-88.88714,Tursiops,truncatus,Female,Moderate Decomposition,Harrison,MS,1588749604701,524409,45315
-150,1559606400000,30.294718,-88.119835,Tursiops,truncatus,Unknown,Moderate Decomposition,Mobile,AL,1588749604701,605118,56918
-151,1559606400000,30.39151,-88.95066,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,517728,45121
-152,1559606400000,30.245,-88.958336,Tursiops,truncatus,Unknown,Fresh Dead,Harrison,MS,1588749604701,516921,62973
-153,1559606400000,30.389704,-88.89234,Tursiops,truncatus,Female,Advanced Decomposition,Harrison,MS,1588749604701,523862,45342
-154,1559606400000,30.250933,-89.22352,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,489028,62251
-155,1559779200000,30.386763,-89.00419,Tursiops,truncatus,Female,Moderate Decomposition,Harrison,MS,1588749604701,512098,45700
-156,1559865600000,30.2347,-88.88791,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,524328,64227
-157,1559952000000,30.26683,-87.59015,Tursiops,truncatus,Male,Fresh Dead,Baldwin,AL,1588749604701,660832,60315
-158,1559952000000,30.377853,-88.8108,Tursiops,truncatus,Unknown,Moderate Decomposition,Jackson,MS,1588749604701,532439,46786
-159,1559952000000,30.382952,-88.869934,Tursiops,truncatus,Male,Advanced Decomposition,Harrison,MS,1588749604701,526219,46165
-160,1560384000000,30.25389,-88.193886,Tursiops,truncatus,Female,Fresh Dead,Mobile,AL,1588749604701,597328,61891
-161,1560384000000,30.249872,-87.833664,Tursiops,truncatus,Male,Moderate Decomposition,Baldwin,AL,1588749604701,635218,62380
-162,1560384000000,30.3404,-89.2425,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,487031,51352
-163,1560816000000,29.685719,-89.56218,Tursiops,truncatus,Unknown,Advanced Decomposition,St. Bernard,LA,1588749604701,453407,130878
-164,1560902400000,29.7214,-89.48373,Tursiops,truncatus,Female,Moderate Decomposition,St. Bernard,LA,1588749604701,461658,126557
-165,1561161600000,30.2477,-88.2124,Tursiops,truncatus,Female,Moderate Decomposition,Mobile,AL,1588749604701,595381,62645
-166,1561248000000,29.7585,-89.44123,Tursiops,truncatus,Male,Advanced Decomposition,St. Bernard,LA,1588749604701,466128,122063
-167,1561334400000,30.463612,-87.91722,Tursiops,truncatus,Unknown,Moderate Decomposition,Baldwin,AL,1588749604701,626429,36326
-168,1561420800000,29.1599,-90.0995,Tursiops,truncatus,Unknown,Advanced Decomposition,Lafourche,LA,1588749604701,396889,194376
-169,1561507200000,30.00735,-89.14424,Tursiops,truncatus,Unknown,Fresh Dead,St. Bernard,LA,1588749604701,497367,91874
-170,1561593600000,30.274117,-89.21529,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,489894,59428
-171,1551398400000,30.324097,-86.154945,Tursiops,truncatus,Unknown,Moderate Decomposition,Walton,FL,1588749604701,811792,53339
-172,1551484800000,30.10191,-85.67874,Tursiops,truncatus,Female,Fresh Dead,Bay,FL,1588749604701,861880,80383
-173,1551484800000,30.25167,-88.71277,Tursiops,truncatus,Male,Moderate Decomposition,Jackson,MS,1588749604701,542750,62161
-174,1551484800000,30.34482,-89.1451,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,497276,50813
-175,1551571200000,29.735674,-85.38944,Tursiops,truncatus,Female,Moderate Decomposition,Gulf,FL,1588749604701,892310,124828
-176,1551571200000,29.769068,-84.79818,Tursiops,truncatus,Female,Moderate Decomposition,Franklin,FL,1588749604701,954501,120782
-177,1551571200000,30.389261,-88.98337,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,514288,45395
-178,1551744000000,29.72987,-84.88444,Tursiops,truncatus,Male,Alive,Franklin,FL,1588749604701,945428,125531
-179,1551916800000,30.576223,-87.18634,Tursiops,truncatus,Male,Moderate Decomposition,Santa Rosa,FL,1588749604701,703306,22576
-180,1551916800000,29.251759,-89.95636,Tursiops,truncatus,Male,Fresh Dead,Jefferson,LA,1588749604701,411945,183307
-181,1552003200000,30.248629,-88.19648,Tursiops,truncatus,Male,Moderate Decomposition,Mobile,AL,1588749604701,597055,62531
-182,1552003200000,30.36281,-88.76653,Tursiops,truncatus,Male,Moderate Decomposition,Jackson,MS,1588749604701,537096,48620
-183,1552089600000,30.228897,-87.817116,Tursiops,truncatus,Female,Moderate Decomposition,Baldwin,AL,1588749604701,636958,64934
-184,1552089600000,29.686546,-89.73966,Tursiops,truncatus,Unknown,Moderate Decomposition,Plaquemines,LA,1588749604701,434738,130778
-185,1552176000000,30.3152,-87.3406,Tursiops,truncatus,Male,Moderate Decomposition,Escambia,FL,1588749604701,687080,54423
-186,1552176000000,30.395,-86.556,Tursiops,truncatus,Unknown,Advanced Decomposition,Okaloosa,FL,1588749604701,769607,44696
-187,1552176000000,29.76918,-93.45737,Tursiops,truncatus,Male,Advanced Decomposition,Cameron,LA,1588749604701,43696,120769
-188,1552176000000,29.669546,-92.85074,Tursiops,truncatus,Female,Alive,Cameron,LA,1588749604701,107504,132836
-189,1552262400000,30.243816,-88.12686,Tursiops,truncatus,Male,Moderate Decomposition,Mobile,AL,1588749604701,604379,63117
-190,1552348800000,30.484358,-88.10074,Tursiops,truncatus,Female,Moderate Decomposition,Mobile,AL,1588749604701,607126,33794
-191,1552608000000,29.349174,-89.537895,Tursiops,truncatus,Female,Advanced Decomposition,Plaquemines,LA,1588749604701,455960,171557
-192,1552867200000,29.701189,-84.79833,Tursiops,truncatus,Male,Advanced Decomposition,Franklin,FL,1588749604701,954485,129005
-193,1552867200000,29.77292,-93.2933,Tursiops,truncatus,Unknown,Advanced Decomposition,Cameron,LA,1588749604701,60954,120315
-194,1552867200000,29.77472,-93.28161,Tursiops,truncatus,Female,Advanced Decomposition,Cameron,LA,1588749604701,62183,120097
-195,1552867200000,29.77709,-93.2455,Tursiops,truncatus,Male,Advanced Decomposition,Cameron,LA,1588749604701,65982,119810
-196,1552867200000,29.10565,-90.18366,Tursiops,truncatus,Unknown,Advanced Decomposition,La Fourche,LA,1588749604701,388037,200908
-197,1552953600000,29.77255,-93.19239,Tursiops,truncatus,Female,Moderate Decomposition,Cameron,LA,1588749604701,71568,120360
-198,1552953600000,29.76197,-93.5613,Tursiops,truncatus,Male,Moderate Decomposition,Cameron,LA,1588749604701,32765,121642
-199,1552953600000,30.42934,-88.86906,Tursiops,truncatus,Male,Advanced Decomposition,Harrison,MS,1588749604701,526311,40507
-200,1553040000000,29.24117,-89.97577,Tursiops,truncatus,Male,Fresh Dead,Jefferson,LA,1588749604701,409903,184583
-201,1553040000000,29.779266,-89.36697,Tursiops,truncatus,Unknown,Advanced Decomposition,St. Bernard,LA,1588749604701,473940,119546
-202,1553040000000,29.29955,-89.63969,Tursiops,truncatus,Male,Advanced Decomposition,Plaquamine,LA,1588749604701,445254,177544
-203,1553126400000,29.790903,-85.4115,Tursiops,truncatus,Male,Fresh Dead,Gulf,FL,1588749604701,889990,118136
-204,1553212800000,30.451012,-86.49113,Tursiops,truncatus,Female,Fresh Dead,Okaloosa,FL,1588749604701,776430,37864
-205,1553212800000,30.418879,-86.58856,Tursiops,truncatus,Unknown,Advanced Decomposition,Okaloosa,FL,1588749604701,766182,41784
-206,1553212800000,29.345116,-89.74503,Tursiops,truncatus,Unknown,Fresh Dead,Plaquamine,LA,1588749604701,434173,172046
-207,1553299200000,30.3648,-86.3189,Tursiops,truncatus,Unknown,Fresh Dead,Walton,FL,1588749604701,794546,48378
-208,1553299200000,30.22775,-85.76822,Tursiops,truncatus,Male,Moderate Decomposition,Bay,FL,1588749604701,852469,65073
-209,1553299200000,30.25267,-88.88783,Tursiops,truncatus,Female,Fresh Dead,Harrison,MS,1588749604701,524337,62039
-210,1553299200000,30.31175,-89.25088,Tursiops,truncatus,Male,Fresh Dead,Harrison,MS,1588749604701,486150,54843
-211,1553385600000,29.764862,-85.40306,Tursiops,truncatus,Female,Fresh Dead,Gulf,FL,1588749604701,890877,121292
-212,1553385600000,29.26048,-89.5815,Tursiops,truncatus,Male,Advanced Decomposition,St. Bernard,LA,1588749604701,451374,182255
-213,1553385600000,29.48988,-89.90265,Tursiops,truncatus,Unknown,Advanced Decomposition,Plaquemines,LA,1588749604701,417595,154566
-214,1553385600000,29.266333,-89.95433,Tursiops,truncatus,Unknown,Advanced Decomposition,Jefferson,LA,1588749604701,412158,181549
-215,1553385600000,30.237432,-89.073265,Tursiops,truncatus,Unknown,Advanced Decomposition,Harrison,MS,1588749604701,504832,63895
-216,1553558400000,30.253153,-88.141525,Tursiops,truncatus,Male,Moderate Decomposition,Mobile,AL,1588749604701,602836,61981
-217,1553731200000,30.3291,-89.19576,Tursiops,truncatus,Female,Moderate Decomposition,Harrison,MS,1588749604701,491948,52729
-218,1553731200000,30.39255,-88.934975,Tursiops,truncatus,Female,Fresh Dead,Harrison,MS,1588749604701,519378,44995
-219,1553817600000,29.206673,-90.04071,Tursiops,truncatus,Unknown,Condition Unknown,Jefferson,LA,1588749604701,403072,188741
-220,1553817600000,30.393873,-88.91437,Tursiops,truncatus,Male,Fresh Dead,Harrison,MS,1588749604701,521545,44833
-221,1553904000000,30.38358,-89.01844,Tursiops,truncatus,Female,Fresh Dead,Harrison,MS,1588749604701,510599,46088
-222,1553904000000,30.364285,-89.08345,Tursiops,truncatus,Female,Moderate Decomposition,Harrison,MS,1588749604701,503761,48441
-223,1553904000000,30.28591,-89.36423,Tursiops,truncatus,Male,Moderate Decomposition,Hancock,MS,1588749604701,474228,57991
-224,1556668800000,29.55416,-92.22916,Tursiops,truncatus,Male,Advanced Decomposition,Vermillion,LA,1588749604701,172884,146796
-225,1556668800000,30.289179,-89.35715,Tursiops,truncatus,Unknown,Advanced Decomposition,Hancock,MS,1588749604701,474972,57593
-226,1556668800000,30.248327,-89.423035,Tursiops,truncatus,Unknown,Moderate Decomposition,Hancock,MS,1588749604701,468042,62568
-227,1556755200000,29.82635,-89.59966,Tursiops,truncatus,Unknown,Advanced Decomposition,St. Bernard,LA,1588749604701,449464,113839
-228,1556755200000,29.18431,-90.05753,Tursiops,truncatus,Female,Fresh Dead,Jefferson,LA,1588749604701,401304,191435
-229,1556755200000,30.29883,-89.33486,Tursiops,truncatus,Male,Moderate Decomposition,Hancock,MS,1588749604701,477317,56417
-230,1556755200000,30.348713,-89.13739,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,498087,50339
-231,1556755200000,30.3041,-89.27917,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,483174,55775
-232,1556755200000,30.206804,-89.09563,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,502480,67623
-233,1556755200000,30.218622,-89.07835,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,504298,66184
-234,1556755200000,30.27261,-89.37668,Tursiops,truncatus,Unknown,Advanced Decomposition,Hancock,MS,1588749604701,472918,59611
-235,1556841600000,29.70365,-89.51825,Tursiops,truncatus,Male,Advanced Decomposition,St. Bernard,LA,1588749604701,458027,128707
-236,1556841600000,29.856533,-89.59872,Tursiops,truncatus,Unknown,Advanced Decomposition,St. Bernard,LA,1588749604701,449563,110179
-237,1556841600000,30.21432,-89.10426,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,501572,66708
-238,1556841600000,30.345118,-88.50877,Tursiops,truncatus,Unknown,Advanced Decomposition,Jackson,MS,1588749604701,564208,50777
-239,1556841600000,30.30322,-89.32929,Tursiops,truncatus,Female,Moderate Decomposition,Hancock,MS,1588749604701,477902,55882
-240,1556928000000,30.34496,-89.1451,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,497276,50796
-241,1556928000000,30.34905,-89.13695,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,498134,50298
-242,1556928000000,30.388577,-88.990524,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,513535,45479
-243,1556928000000,30.331226,-89.18792,Tursiops,truncatus,Female,Moderate Decomposition,Harrison,MS,1588749604701,492772,52470
-244,1556928000000,29.760283,-89.67768,Tursiops,truncatus,Unknown,Advanced Decomposition,St. Bernard,LA,1588749604701,441257,121847
-245,1557014400000,29.8947,-89.35218,Tursiops,truncatus,Unknown,Advanced Decomposition,Saint Bernard,LA,1588749604701,475495,105549
-246,1557014400000,29.667967,-89.58688,Tursiops,truncatus,Unknown,Advanced Decomposition,St Bernard,LA,1588749604701,450808,133027
-247,1557014400000,30.155785,-89.61303,Tursiops,truncatus,Unknown,Advanced Decomposition,St. Tammany,LA,1588749604701,448058,73831
-248,1557014400000,30.03333,-89.2361,Tursiops,truncatus,Unknown,Advanced Decomposition,St. Bernard,LA,1588749604701,487705,88718
-249,1557014400000,30.00366,-89.36043,Tursiops,truncatus,Unknown,Advanced Decomposition,St. Bernard,LA,1588749604701,474627,92322
-250,1557014400000,30.370647,-89.35115,Tursiops,truncatus,Unknown,Moderate Decomposition,Hancock,MS,1588749604701,475604,47665
-251,1557100800000,29.636232,-89.5026,Tursiops,truncatus,Male,Advanced Decomposition,Saint Bernard,LA,1588749604701,459673,136868
-252,1557100800000,29.673683,-89.55385,Tursiops,truncatus,Male,Advanced Decomposition,St. Bernard,LA,1588749604701,454283,132335
-253,1557100800000,30.29468,-89.3418,Tursiops,truncatus,Female,Moderate Decomposition,Hancock,MS,1588749604701,476587,56923
-254,1557187200000,29.24947,-89.96004,Tursiops,truncatus,Male,Fresh Dead,Jefferson,LA,1588749604701,411558,183582
-255,1557187200000,29.181,-90.064,Tursiops,truncatus,Unknown,Advanced Decomposition,Jefferson,LA,1588749604701,400623,191834
-256,1557187200000,30.12165,-89.2235,Tursiops,truncatus,Unknown,Advanced Decomposition,Saint Bernard,LA,1588749604701,489030,77983
-257,1557187200000,29.741833,-89.55247,Tursiops,truncatus,Female,Advanced Decomposition,St. Bernard,LA,1588749604701,454428,124082
-258,1557187200000,29.662884,-89.4633,Tursiops,truncatus,Female,Moderate Decomposition,St. Bernard,LA,1588749604701,463807,133642
-259,1557187200000,29.24949,-89.96004,Tursiops,truncatus,Unknown,Advanced Decomposition,Jefferson,LA,1588749604701,411558,183580
-260,1557360000000,29.977064,-93.339294,Tursiops,truncatus,Unknown,Condition Unknown,Cameron,LA,1588749604701,56116,95552
-261,1557360000000,30.31911,-89.22984,Tursiops,truncatus,Female,Moderate Decomposition,Harrison,MS,1588749604701,488363,53946
-262,1557532800000,29.72081,-89.52792,Tursiops,truncatus,Unknown,Advanced Decomposition,St. Bernard,LA,1588749604701,457010,126628
-263,1557532800000,29.66537,-89.46658,Tursiops,truncatus,Female,Advanced Decomposition,St. Bernard,LA,1588749604701,463462,133341
-264,1557532800000,30.30349,-89.28182,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,482895,55850
-265,1557792000000,30.26355,-87.550064,Tursiops,truncatus,Male,Moderate Decomposition,Baldwin,AL,1588749604701,665048,60714
-266,1557792000000,30.01478,-89.51727,Tursiops,truncatus,Unknown,Advanced Decomposition,St. Bernard,LA,1588749604701,458130,90972
-267,1557792000000,30.238106,-89.42439,Tursiops,truncatus,Unknown,Moderate Decomposition,Hancock,MS,1588749604701,467899,63813
-268,1557878400000,30.0435,-89.7911,Tursiops,truncatus,Unknown,Advanced Decomposition,Orleans,LA,1588749604701,429328,87482
-269,1557878400000,29.401316,-90.30159,Tursiops,truncatus,Unknown,Alive,La Fourche,LA,1588749604701,375632,165263
-270,1557878400000,29.401316,-90.30159,Tursiops,truncatus,Unknown,Alive,La Fourche,LA,1588749604701,375632,165263
-271,1557878400000,29.191177,-90.04681,Tursiops,truncatus,Male,Advanced Decomposition,Jefferson,LA,1588749604701,402431,190608
-272,1557964800000,29.69886,-89.34862,Tursiops,truncatus,Unknown,Moderate Decomposition,St. Bernard,LA,1588749604701,475870,129287
-273,1557964800000,29.1844,-90.0575,Tursiops,truncatus,Male,Advanced Decomposition,Jefferson,LA,1588749604701,401307,191424
-274,1558051200000,29.603363,-89.653404,Tursiops,truncatus,Unknown,Advanced Decomposition,Plaquemines,LA,1588749604701,443811,140845
-275,1558137600000,30.32931,-89.19528,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,491998,52704
-276,1558224000000,30.281658,-89.36895,Tursiops,truncatus,Unknown,Moderate Decomposition,Hancock,MS,1588749604701,473731,58509
-277,1558224000000,30.33985,-89.16144,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,495558,51419
-278,1558310400000,29.23519,-89.98576,Tursiops,truncatus,Unknown,Moderate Decomposition,Jefferson,LA,1588749604701,408853,185304
-279,1558310400000,29.75492,-93.61913,Tursiops,truncatus,Unknown,Advanced Decomposition,Cameron,LA,1588749604701,26682,122496
-280,1558310400000,30.31208,-89.25124,Tursiops,truncatus,Female,Moderate Decomposition,Harrison,MS,1588749604701,486112,54803
-281,1558310400000,30.335073,-89.17561,Tursiops,truncatus,Unknown,Advanced Decomposition,Harrison,MS,1588749604701,494067,52001
-282,1558396800000,30.36496,-89.08507,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,503590,48358
-283,1558483200000,30.297586,-89.337,Tursiops,truncatus,Unknown,Advanced Decomposition,Hancock,MS,1588749604701,477092,56569
-284,1558569600000,30.22551,-88.90303,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,522738,65346
-285,1558569600000,30.209267,-88.95661,Tursiops,truncatus,Unknown,Mummified/Skeletal,Harrison,MS,1588749604701,517102,67323
-286,1558656000000,30.760838,-87.98141,Tursiops,truncatus,Unknown,Alive,Baldwin,AL,1588749604701,619677,0
-287,1558656000000,30.20888,-89.08693,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,503395,67370
-288,1558742400000,29.30278,-89.95757,Tursiops,truncatus,Male,Advanced Decomposition,Jefferson,LA,1588749604701,411818,177154
-289,1558742400000,30.39098,-88.96728,Tursiops,truncatus,Unknown,Advanced Decomposition,Harrison,MS,1588749604701,515980,45186
-290,1558742400000,30.31909,-89.22983,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,488364,53949
-291,1558828800000,29.660316,-89.564865,Tursiops,truncatus,Unknown,Moderate Decomposition,St. Bernard,LA,1588749604701,453124,133953
-292,1558828800000,30.233421,-89.148796,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,496887,64383
-293,1558828800000,30.354668,-88.91815,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,521148,49613
-294,1558828800000,30.31817,-89.23218,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,488117,54061
-295,1558915200000,30.341984,-88.80127,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,533442,51159
-296,1558915200000,30.324009,-89.21591,Tursiops,truncatus,Female,Fresh Dead,Harrison,MS,1588749604701,489828,53349
-297,1559001600000,30.391043,-88.961296,Tursiops,truncatus,Female,Moderate Decomposition,Harrison,MS,1588749604701,516609,45178
-298,1559001600000,30.39192,-88.94604,Tursiops,truncatus,Female,Moderate Decomposition,Harrison,MS,1588749604701,518214,45071
-299,1559001600000,30.40338,-88.82587,Tursiops,truncatus,Female,Moderate Decomposition,Jackson,MS,1588749604701,530854,43674
-300,1559001600000,30.39343,-88.89512,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,523570,44887
-301,1559001600000,30.39326,-88.89397,Tursiops,truncatus,Female,Moderate Decomposition,Harrison,MS,1588749604701,523691,44908
-302,1559001600000,30.353556,-89.07167,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,505000,49748
-303,1559001600000,30.287167,-89.027,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,509698,57838
-304,1559088000000,30.22518,-89.07366,Tursiops,truncatus,Unknown,Advanced Decomposition,Harrison,MS,1588749604701,504791,65386
-305,1559088000000,30.32752,-89.20377,Tursiops,truncatus,Female,Fresh Dead,Harrison,MS,1588749604701,491105,52922
-306,1559088000000,30.288433,-89.0371,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,508636,57684
-307,1559088000000,30.37606,-89.04391,Tursiops,truncatus,Male,Advanced Decomposition,Harrison,MS,1588749604701,507920,47005
-308,1559088000000,30.39406,-88.90649,Tursiops,truncatus,Female,Moderate Decomposition,Harrison,MS,1588749604701,522374,44810
-309,1559174400000,30.325556,-88.13472,Tursiops,truncatus,Male,Moderate Decomposition,Mobile,AL,1588749604701,603551,53161
-310,1559174400000,30.229181,-87.96436,Tursiops,truncatus,Female,Fresh Dead,Baldwin,AL,1588749604701,621471,64899
-311,1559174400000,30.35058,-89.13371,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,498474,50111
-312,1559174400000,30.21361,-88.94251,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,518585,66795
-313,1559174400000,30.367222,-88.77355,Tursiops,truncatus,Female,Moderate Decomposition,Jackson,MS,1588749604701,536357,48083
-314,1559174400000,30.246447,-89.42398,Tursiops,truncatus,Female,Moderate Decomposition,Hancock,MS,1588749604701,467942,62797
-315,1559260800000,30.3741,-88.8498,Tursiops,truncatus,Female,Moderate Decomposition,Harrison,MS,1588749604701,528337,47244
-316,1559260800000,30.28615,-89.08884,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,503195,57962
-317,1559260800000,30.37053,-89.0747,Tursiops,truncatus,Male,Alive,Harrison,MS,1588749604701,504681,47679
-318,1572739200000,30.251175,-88.07911,Tursiops,truncatus,Female,Fresh Dead,Mobile,AL,1588749604701,609401,62221
-319,1572998400000,30.346254,-88.12372,Tursiops,truncatus,Unknown,Moderate Decomposition,Mobile,AL,1588749604701,604709,50638
-320,1573171200000,29.795427,-93.63093,Tursiops,truncatus,Unknown,Alive,Cameron,LA,1588749604701,25441,117588
-321,1574035200000,29.7494,-93.6597,Tursiops,truncatus,Male,Fresh Dead,Cameron,LA,1588749604701,22415,123165
-322,1574467200000,29.24353,-89.97067,Tursiops,truncatus,Male,Fresh Dead,Jefferson,LA,1588749604701,410439,184298
-323,1574553600000,30.608477,-87.912285,Tursiops,truncatus,Male,Moderate Decomposition,Baldwin,AL,1588749604701,626948,18635
-324,1574726400000,30.223862,-88.91261,Tursiops,truncatus,Female,Moderate Decomposition,Harrison,MS,1588749604701,521730,65547
-325,1575072000000,29.2497,-89.56,Tursiops,truncatus,Unknown,Moderate Decomposition,Plaquemines,LA,1588749604701,453636,183555
-326,1570147200000,30.545279,-87.90274,Tursiops,truncatus,Male,Moderate Decomposition,Baldwin,AL,1588749604701,627952,26356
-327,1570233600000,30.277723,-87.551094,Tursiops,truncatus,Female,Moderate Decomposition,Baldwin,AL,1588749604701,664940,58988
-328,1570320000000,30.181465,-89.74677,Tursiops,truncatus,Male,Moderate Decomposition,St. Tammany,LA,1588749604701,433990,70707
-329,1570406400000,30.305523,-88.598854,Tursiops,truncatus,Male,Moderate Decomposition,Jackson,MS,1588749604701,554732,55602
-330,1572048000000,30.339308,-89.16467,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,495218,51485
-331,1572134400000,30.334106,-88.262764,Tursiops,truncatus,Female,Moderate Decomposition,Mobile,AL,1588749604701,590084,52119
-332,1567296000000,29.27585,-90.13402,Tursiops,truncatus,Male,Moderate Decomposition,Jefferson,LA,1588749604701,393259,180402
-333,1568332800000,30.356886,-88.839485,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,529422,49343
-334,1568419200000,30.3849,-87.42795,Tursiops,truncatus,Male,Moderate Decomposition,Escambia,FL,1588749604701,677892,45927
-335,1569110400000,30.36146,-89.09291,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,502766,48785
-336,1569628800000,30.353064,-88.63855,Tursiops,truncatus,Unknown,Moderate Decomposition,Jackson,MS,1588749604701,550557,49808
-337,1569715200000,30.40886,-88.83839,Tursiops,truncatus,Unknown,Moderate Decomposition,Jackson,MS,1588749604701,529538,43006
+1,2019-04-01,30.393106,-86.52849,Tursiops,truncatus,Male,Fresh Dead,Okaloosa,FL,1588749604701,772501,44927
+2,2019-04-01,30.130453,-85.72718,Tursiops,truncatus,Female,Advanced Decomposition,Bay,FL,1588749604701,856785,76912
+3,2019-04-01,30.358763,-89.09889,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,502137,49114
+4,2019-04-02,30.43639,-88.105835,Tursiops,truncatus,Male,Moderate Decomposition,Mobile,AL,1588749604701,606590,39648
+5,2019-04-02,29.19561,-90.04981,Tursiops,truncatus,Male,Advanced Decomposition,Jefferson,LA,1588749604701,402116,190074
+6,2019-04-03,30.228456,-87.983345,Tursiops,truncatus,Male,Fresh Dead,Baldwin,AL,1588749604701,619474,64987
+7,2019-04-03,30.35408,-89.09911,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,502114,49685
+8,2019-04-04,30.394987,-86.564926,Tursiops,truncatus,Female,Moderate Decomposition,Okaloosa,FL,1588749604701,768668,44697
+9,2019-04-05,30.245283,-88.12726,Tursiops,truncatus,Male,Fresh Dead,Mobile,AL,1588749604701,604336,62939
+10,2019-04-05,29.673449,-84.86974,Tursiops,truncatus,Female,Moderate Decomposition,Franklin,FL,1588749604701,946974,132363
+11,2019-04-05,30.302744,-89.3296,Tursiops,truncatus,Male,Moderate Decomposition,Hancock,MS,1588749604701,477870,55940
+12,2019-04-05,30.318083,-89.31908,Tursiops,truncatus,Male,Fresh Dead,Hancock,MS,1588749604701,478977,54072
+13,2019-04-06,30.22895,-88.29957,Tursiops,truncatus,Female,Moderate Decomposition,Mobile,AL,1588749604701,586213,64927
+14,2019-04-06,30.32087,-87.25886,Tursiops,truncatus,Male,Moderate Decomposition,Escambia,FL,1588749604701,695678,53732
+15,2019-04-06,30.276281,-89.373604,Tursiops,truncatus,Female,Moderate Decomposition,Hancock,MS,1588749604701,473242,59164
+16,2019-04-07,29.712542,-89.64859,Tursiops,truncatus,Unknown,Condition Unknown,St Bernard,LA,1588749604701,444318,127630
+17,2019-04-07,29.712542,-89.64859,Tursiops,truncatus,Unknown,Condition Unknown,St. Bernard,LA,1588749604701,444318,127630
+18,2019-04-07,29.712542,-89.64859,Tursiops,truncatus,Unknown,Condition Unknown,St. Bernard,LA,1588749604701,444318,127630
+19,2019-04-08,30.215097,-85.69774,Tursiops,truncatus,Female,Moderate Decomposition,Bay,FL,1588749604701,859882,66614
+20,2019-04-08,29.431938,-89.54588,Tursiops,truncatus,Unknown,Condition Unknown,Plaquemines,LA,1588749604701,455121,161565
+21,2019-04-09,29.75154,-93.64563,Tursiops,truncatus,Male,Advanced Decomposition,Cameron,LA,1588749604701,23895,122906
+22,2019-04-09,30.3449,-88.5736,Tursiops,truncatus,Unknown,Moderate Decomposition,Jackson,MS,1588749604701,557389,50804
+23,2019-04-10,30.503624,-86.455055,Tursiops,truncatus,Male,Moderate Decomposition,Okaloosa,FL,1588749604701,780225,31442
+24,2019-04-10,29.76045,-93.13283,Tursiops,truncatus,Female,Fresh Dead,Cameron,LA,1588749604701,77833,121826
+25,2019-04-10,29.7145,-89.463715,Tursiops,truncatus,Male,Advanced Decomposition,St. Bernard,LA,1588749604701,463763,127393
+26,2019-04-10,29.737534,-89.51745,Tursiops,truncatus,Male,Advanced Decomposition,St. Bernard,LA,1588749604701,458111,124603
+27,2019-04-10,30.22612,-88.58923,Tursiops,truncatus,Male,Fresh Dead,Jackson,MS,1588749604701,555745,65272
+28,2019-04-11,30.301666,-87.60527,Tursiops,truncatus,Unknown,Fresh Dead,Baldwin,AL,1588749604701,659241,56072
+29,2019-04-11,30.4361,-86.5978,Tursiops,truncatus,Male,Moderate Decomposition,Okaloosa,FL,1588749604701,765210,39683
+30,2019-04-11,30.30342,-89.2896,Tursiops,truncatus,Male,Fresh Dead,Harrison,MS,1588749604701,482077,55858
+31,2019-04-11,30.21999,-88.92065,Tursiops,truncatus,Unknown,Advanced Decomposition,Harrison,MS,1588749604701,520885,66018
+32,2019-04-11,30.2253,-88.90714,Tursiops,truncatus,Female,Advanced Decomposition,Harrison,MS,1588749604701,522306,65372
+33,2019-04-12,30.349377,-88.39358,Tursiops,truncatus,Unknown,Fresh Dead,Mobile,AL,1588749604701,576324,50258
+34,2019-04-12,30.272627,-87.55192,Tursiops,truncatus,Female,Fresh Dead,Baldwin,AL,1588749604701,664853,59609
+35,2019-04-12,30.38751,-88.99926,Tursiops,truncatus,Female,Moderate Decomposition,Harrison,MS,1588749604701,512616,45609
+36,2019-04-12,30.37413,-89.06107,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,506115,47240
+37,2019-04-13,30.3217,-87.5257,Tursiops,truncatus,Male,Moderate Decomposition,Baldwin,AL,1588749604701,667611,53631
+38,2019-04-13,30.294786,-87.473694,Tursiops,truncatus,Unknown,Condition Unknown,Escambia,FL,1588749604701,673081,56910
+39,2019-04-13,29.26254,-89.94899,Tursiops,truncatus,Female,Condition Unknown,Jefferson,LA,1588749604701,412720,182007
+40,2019-04-14,30.346453,-88.695114,Tursiops,truncatus,Unknown,Moderate Decomposition,Jackson,MS,1588749604701,544607,50614
+41,2019-04-16,29.10549,-90.18387,Tursiops,truncatus,Unknown,Advanced Decomposition,La Fourche,LA,1588749604701,388015,200928
+42,2019-04-16,29.10699,-90.18175,Tursiops,truncatus,Unknown,Mummified/Skeletal,Lafourche,LA,1588749604701,388238,200747
+43,2019-04-16,29.12697,-90.15136,Tursiops,truncatus,Unknown,Mummified/Skeletal,Lafourche,LA,1588749604701,391434,198341
+44,2019-04-17,29.691067,-89.74302,Tursiops,truncatus,Unknown,Advanced Decomposition,Plaquemines,LA,1588749604701,434385,130230
+45,2019-04-17,29.702803,-89.707825,Tursiops,truncatus,Unknown,Condition Unknown,Plaquemines,LA,1588749604701,438087,128809
+46,2019-04-18,30.306475,-87.47246,Tursiops,truncatus,Unknown,Fresh Dead,Baldwin,AL,1588749604701,673211,55486
+47,2019-04-18,30.35932,-89.10814,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,501164,49046
+48,2019-04-19,30.37412,-89.06141,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,506079,47242
+49,2019-04-20,29.198027,-90.05994,Tursiops,truncatus,Male,Advanced Decomposition,Jefferson,LA,1588749604701,401050,189782
+50,2019-04-20,30.311302,-87.47689,Tursiops,truncatus,Male,Moderate Decomposition,Escambia,FL,1588749604701,672745,54898
+51,2019-04-20,30.23717,-89.06691,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,505501,63927
+52,2019-04-20,30.215565,-88.939606,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,518891,66557
+53,2019-04-22,30.2284,-88.9196,Tursiops,truncatus,Female,Moderate Decomposition,Harrison,MS,1588749604701,520995,64994
+54,2019-04-22,30.366243,-88.39741,Tursiops,truncatus,Male,Moderate Decomposition,Jackson,MS,1588749604701,575922,48202
+55,2019-04-24,30.317266,-87.870636,Tursiops,truncatus,Female,Moderate Decomposition,Baldwin,AL,1588749604701,631329,54171
+56,2019-04-24,29.96324,-89.37921,Tursiops,truncatus,Unknown,Moderate Decomposition,Saint Bernard,LA,1588749604701,472652,97231
+57,2019-04-24,29.725277,-89.675,Tursiops,truncatus,Unknown,Moderate Decomposition,Saint Bernard,LA,1588749604701,441540,126087
+58,2019-04-26,30.337835,-88.12956,Tursiops,truncatus,Female,Moderate Decomposition,Mobile,AL,1588749604701,604094,51665
+59,2019-04-26,29.876165,-89.22276,Tursiops,truncatus,Female,Moderate Decomposition,St. Bernard,LA,1588749604701,489107,107798
+60,2019-04-26,29.728266,-89.68322,Tursiops,truncatus,Unknown,Advanced Decomposition,Saint Bernard,LA,1588749604701,440675,125725
+61,2019-04-26,29.931341,-89.24205,Tursiops,truncatus,Unknown,Condition Unknown,St. Bernard,LA,1588749604701,487079,101103
+62,2019-04-27,29.70733,-89.55238,Tursiops,truncatus,Unknown,Moderate Decomposition,Saint Bernard,LA,1588749604701,454437,128261
+63,2019-04-27,29.89659,-89.73006,Tursiops,truncatus,Male,Advanced Decomposition,Saint Bernard,LA,1588749604701,435748,105320
+64,2019-04-27,29.995,-89.86222,Tursiops,truncatus,Unknown,Advanced Decomposition,Saint Bernard,LA,1588749604701,421847,93374
+65,2019-04-27,29.741339,-89.68917,Tursiops,truncatus,Unknown,Advanced Decomposition,St. Bernard,LA,1588749604701,440049,124142
+66,2019-04-28,29.759653,-89.67471,Tursiops,truncatus,Unknown,Advanced Decomposition,Saint Bernard,LA,1588749604701,441569,121923
+67,2019-04-28,29.909483,-89.5746,Tursiops,truncatus,Unknown,Advanced Decomposition,St Bernard,LA,1588749604701,452100,103756
+68,2019-04-28,29.693365,-89.34137,Tursiops,truncatus,Unknown,Advanced Decomposition,Saint Bernard,LA,1588749604701,476632,129952
+69,2019-04-28,30.33481,-89.4422,Tursiops,truncatus,Male,Moderate Decomposition,Hancock,MS,1588749604701,466026,52033
+70,2019-04-28,30.241856,-89.13802,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,498021,63356
+71,2019-04-28,30.312056,-89.25085,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,486154,54806
+72,2019-04-29,29.235905,-89.984406,Tursiops,truncatus,Female,Moderate Decomposition,Jefferson,LA,1588749604701,408995,185218
+73,2019-04-29,29.71133,-89.43244,Tursiops,truncatus,Unknown,Advanced Decomposition,St. Bernard,LA,1588749604701,467053,127777
+74,2019-04-29,29.719116,-89.53323,Tursiops,truncatus,Female,Advanced Decomposition,Saint Bernard,LA,1588749604701,456451,126834
+75,2019-04-29,29.652678,-89.64828,Tursiops,truncatus,Male,Advanced Decomposition,Plaquemines,LA,1588749604701,444350,134878
+76,2019-04-29,30.290485,-89.35287,Tursiops,truncatus,Male,Alive,Hancock,MS,1588749604701,475423,57434
+77,2019-04-29,30.303291,-89.286705,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,482382,55874
+78,2019-04-30,30.25825,-85.6976,Tursiops,truncatus,Unknown,Advanced Decomposition,Bay,FL,1588749604701,859897,61360
+79,2019-04-30,30.37944,-89.03456,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,508903,46593
+80,2019-04-30,30.36254,-89.08477,Tursiops,truncatus,Female,Moderate Decomposition,Harrison,MS,1588749604701,503622,48653
+81,2019-04-30,30.280033,-89.37045,Tursiops,truncatus,Female,Moderate Decomposition,Hancock,MS,1588749604701,473573,58707
+82,2019-08-03,30.41583,-88.7936,Tursiops,truncatus,Female,Fresh Dead,Harrison,MS,1588749604701,534248,42155
+83,2019-08-05,30.35369,-89.12609,Tursiops,truncatus,Female,Fresh Dead,Harrison,MS,1588749604701,499276,49732
+84,2019-08-06,29.46902,-89.342,Tursiops,truncatus,Unknown,Advanced Decomposition,Plaquemines,LA,1588749604701,476566,157086
+85,2019-08-07,30.22806,-88.32533,Tursiops,truncatus,Unknown,Moderate Decomposition,Mobile,AL,1588749604701,583503,65036
+86,2019-08-07,30.393335,-88.894424,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,523643,44899
+87,2019-08-09,30.315765,-87.52932,Tursiops,truncatus,Male,Moderate Decomposition,Baldwin,AL,1588749604701,667230,54354
+88,2019-08-12,29.74506,-93.68958,Tursiops,truncatus,Unknown,Mummified/Skeletal,Cameron,LA,1588749604701,19272,123691
+89,2019-08-14,29.7728,-93.3552,Tursiops,truncatus,Male,Alive,Cameron,LA,1588749604701,54443,120330
+90,2019-08-21,29.7427,-93.8728,Tursiops,truncatus,Unknown,Moderate Decomposition,Cameron,LA,1588749604701,0,123977
+91,2019-08-23,30.387983,-88.9913,Tursiops,truncatus,Male,Condition Unknown,Harrison,MS,1588749604701,513453,45551
+92,2019-08-30,30.288757,-88.04901,Tursiops,truncatus,Unknown,Fresh Dead,Mobile,AL,1588749604701,612567,57644
+93,2019-02-02,29.769281,-93.43838,Tursiops,truncatus,Female,Moderate Decomposition,Cameron,LA,1588749604701,45694,120756
+94,2019-02-02,30.37343,-89.06442,Tursiops,truncatus,Male,Fresh Dead,Harrison,MS,1588749604701,505763,47326
+95,2019-02-03,30.278505,-87.71269,Tursiops,truncatus,Female,Fresh Dead,Baldwin,AL,1588749604701,647942,58893
+96,2019-02-05,29.61804,-85.08108,Tursiops,truncatus,Male,Moderate Decomposition,Franklin,FL,1588749604701,924744,139069
+97,2019-02-05,29.26888,-89.95293,Tursiops,truncatus,Male,Fresh Dead,Jefferson,LA,1588749604701,412306,181242
+98,2019-02-07,29.81532,-84.57361,Tursiops,truncatus,Female,Moderate Decomposition,Franklin,FL,1588749604701,978122,115176
+99,2019-02-07,30.15584,-93.56744,Tursiops,truncatus,Female,Moderate Decomposition,Calcasieu,LA,1588749604701,32119,73824
+100,2019-02-07,29.26894,-89.953,Tursiops,truncatus,Unknown,Advanced Decomposition,Jefferson,LA,1588749604701,412299,181235
+101,2019-02-07,30.38162,-89.02577,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,509828,46327
+102,2019-02-07,30.272985,-89.37632,Tursiops,truncatus,Male,Moderate Decomposition,Hancock,MS,1588749604701,472956,59565
+103,2019-02-09,30.250029,-88.1535,Tursiops,truncatus,Unknown,Moderate Decomposition,Mobile,AL,1588749604701,601576,62361
+104,2019-02-09,30.301132,-87.55738,Tursiops,truncatus,Male,Fresh Dead,Baldwin,AL,1588749604701,664278,56137
+105,2019-02-09,30.489437,-86.47448,Tursiops,truncatus,Male,Moderate Decomposition,Okaloosa,FL,1588749604701,778182,33174
+106,2019-02-09,30.16244,-85.73814,Tursiops,truncatus,Male,Moderate Decomposition,Bay,FL,1588749604701,855633,73021
+107,2019-02-10,29.74922,-93.66268,Tursiops,truncatus,Unknown,Advanced Decomposition,Cameron,LA,1588749604701,22101,123187
+108,2019-02-10,29.22365,-90.01897,Tursiops,truncatus,Male,Moderate Decomposition,Jefferson,LA,1588749604701,405360,186695
+109,2019-02-10,29.76789,-93.49105,Tursiops,truncatus,Female,Moderate Decomposition,Cameron,LA,1588749604701,40154,120925
+110,2019-02-13,29.681438,-85.36677,Tursiops,truncatus,Female,Moderate Decomposition,Gulf,FL,1588749604701,894695,131396
+111,2019-02-13,29.063805,-90.85734,Tursiops,truncatus,Male,Advanced Decomposition,Terrebonne,LA,1588749604701,317177,205945
+112,2019-02-14,30.32812,-89.29169,Tursiops,truncatus,Female,Moderate Decomposition,Harrison,MS,1588749604701,481857,52849
+113,2019-02-16,30.306353,-87.5641,Tursiops,truncatus,Male,Fresh Dead,Baldwin,AL,1588749604701,663572,55501
+114,2019-02-16,29.246056,-89.96558,Tursiops,truncatus,Unknown,Advanced Decomposition,Jefferson,LA,1588749604701,410975,183994
+115,2019-02-16,30.2994,-89.3338,Tursiops,truncatus,Female,Moderate Decomposition,Hancock,MS,1588749604701,477428,56348
+116,2019-02-16,30.39369,-88.91837,Tursiops,truncatus,Female,Moderate Decomposition,Harrison,MS,1588749604701,521125,44855
+117,2019-02-16,30.36186,-89.08279,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,503830,48736
+118,2019-02-17,30.395224,-86.5593,Tursiops,truncatus,Male,Moderate Decomposition,Okaloosa,FL,1588749604701,769260,44669
+119,2019-02-17,30.483608,-86.26498,Tursiops,truncatus,Male,Moderate Decomposition,Walton,FL,1588749604701,800218,33886
+120,2019-02-18,30.229519,-87.97323,Tursiops,truncatus,Female,Moderate Decomposition,Mobile,AL,1588749604701,620538,64858
+121,2019-02-18,29.68404,-85.29016,Tursiops,truncatus,Female,Moderate Decomposition,Gulf,FL,1588749604701,902753,131081
+122,2019-02-18,29.732763,-84.9,Tursiops,truncatus,Unknown,Advanced Decomposition,Franklin,FL,1588749604701,943791,125181
+123,2019-02-18,29.670584,-92.85375,Tursiops,truncatus,Male,Advanced Decomposition,Cameron,LA,1588749604701,107187,132710
+124,2019-02-18,30.21458,-89.08164,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,503951,66677
+125,2019-02-21,30.397211,-87.78164,Tursiops,truncatus,Male,Moderate Decomposition,Baldwin,AL,1588749604701,640690,44426
+126,2019-02-23,29.750744,-84.89238,Tursiops,truncatus,Female,Mummified/Skeletal,Franklin,FL,1588749604701,944592,123002
+127,2019-02-25,30.617222,-87.91333,Tursiops,truncatus,Male,Moderate Decomposition,Baldwin,AL,1588749604701,626838,17566
+128,2019-02-25,30.157484,-85.72195,Tursiops,truncatus,Female,Moderate Decomposition,Bay,FL,1588749604701,857335,73624
+129,2019-02-26,30.277864,-87.725845,Tursiops,truncatus,Female,Fresh Dead,Baldwin,AL,1588749604701,646559,58971
+130,2019-02-26,30.310123,-87.521965,Tursiops,truncatus,Male,Fresh Dead,Baldwin,AL,1588749604701,668003,55041
+131,2019-02-27,29.72083,-89.47465,Tursiops,truncatus,Male,Fresh Dead,Saint Bernard,LA,1588749604701,462613,126626
+132,2019-02-27,29.76717,-93.51313,Tursiops,truncatus,Male,Advanced Decomposition,Cameron,LA,1588749604701,37831,121012
+133,2019-07-02,30.299784,-87.508125,Tursiops,truncatus,Female,Fresh Dead,Baldwin,AL,1588749604701,669459,56301
+134,2019-07-06,30.292542,-88.586395,Tursiops,truncatus,Male,Moderate Decomposition,Jackson,MS,1588749604701,556042,57183
+135,2019-07-12,30.33666,-89.17035,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,494621,51808
+136,2019-07-18,30.34367,-88.73274,Tursiops,truncatus,Female,Fresh Dead,Jackson,MS,1588749604701,540650,50953
+137,2019-07-22,29.77706,-93.2403,Tursiops,truncatus,Female,Advanced Decomposition,Cameron,LA,1588749604701,66529,119814
+138,2019-07-27,30.235668,-88.11599,Tursiops,truncatus,Unknown,Moderate Decomposition,Mobile,AL,1588749604701,605522,64109
+139,2019-07-27,30.249516,-88.14628,Tursiops,truncatus,Male,Moderate Decomposition,Mobile,AL,1588749604701,602336,62423
+140,2019-07-28,30.369167,-88.32183,Tursiops,truncatus,Unknown,Moderate Decomposition,Mobile,AL,1588749604701,583870,47845
+141,2019-07-29,30.25773,-89.41312,Tursiops,truncatus,Male,Moderate Decomposition,Hancock,MS,1588749604701,469085,61423
+142,2019-06-01,30.3797,-89.03309,Tursiops,truncatus,Female,Moderate Decomposition,Harrison,MS,1588749604701,509058,46561
+143,2019-06-01,30.37926,-89.03631,Tursiops,truncatus,Female,Moderate Decomposition,Harrison,MS,1588749604701,508719,46615
+144,2019-06-01,30.242605,-88.77324,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,536390,63265
+145,2019-06-02,30.24898,-89.06699,Tursiops,truncatus,Male,Fresh Dead,Harrison,MS,1588749604701,505492,62489
+146,2019-06-02,30.342333,-88.90425,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,522610,51116
+147,2019-06-02,30.259428,-89.082375,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,503874,61216
+148,2019-06-03,30.22567,-88.97444,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,515227,65327
+149,2019-06-03,30.389923,-88.88714,Tursiops,truncatus,Female,Moderate Decomposition,Harrison,MS,1588749604701,524409,45315
+150,2019-06-04,30.294718,-88.119835,Tursiops,truncatus,Unknown,Moderate Decomposition,Mobile,AL,1588749604701,605118,56918
+151,2019-06-04,30.39151,-88.95066,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,517728,45121
+152,2019-06-04,30.245,-88.958336,Tursiops,truncatus,Unknown,Fresh Dead,Harrison,MS,1588749604701,516921,62973
+153,2019-06-04,30.389704,-88.89234,Tursiops,truncatus,Female,Advanced Decomposition,Harrison,MS,1588749604701,523862,45342
+154,2019-06-04,30.250933,-89.22352,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,489028,62251
+155,2019-06-06,30.386763,-89.00419,Tursiops,truncatus,Female,Moderate Decomposition,Harrison,MS,1588749604701,512098,45700
+156,2019-06-07,30.2347,-88.88791,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,524328,64227
+157,2019-06-08,30.26683,-87.59015,Tursiops,truncatus,Male,Fresh Dead,Baldwin,AL,1588749604701,660832,60315
+158,2019-06-08,30.377853,-88.8108,Tursiops,truncatus,Unknown,Moderate Decomposition,Jackson,MS,1588749604701,532439,46786
+159,2019-06-08,30.382952,-88.869934,Tursiops,truncatus,Male,Advanced Decomposition,Harrison,MS,1588749604701,526219,46165
+160,2019-06-13,30.25389,-88.193886,Tursiops,truncatus,Female,Fresh Dead,Mobile,AL,1588749604701,597328,61891
+161,2019-06-13,30.249872,-87.833664,Tursiops,truncatus,Male,Moderate Decomposition,Baldwin,AL,1588749604701,635218,62380
+162,2019-06-13,30.3404,-89.2425,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,487031,51352
+163,2019-06-18,29.685719,-89.56218,Tursiops,truncatus,Unknown,Advanced Decomposition,St. Bernard,LA,1588749604701,453407,130878
+164,2019-06-19,29.7214,-89.48373,Tursiops,truncatus,Female,Moderate Decomposition,St. Bernard,LA,1588749604701,461658,126557
+165,2019-06-22,30.2477,-88.2124,Tursiops,truncatus,Female,Moderate Decomposition,Mobile,AL,1588749604701,595381,62645
+166,2019-06-23,29.7585,-89.44123,Tursiops,truncatus,Male,Advanced Decomposition,St. Bernard,LA,1588749604701,466128,122063
+167,2019-06-24,30.463612,-87.91722,Tursiops,truncatus,Unknown,Moderate Decomposition,Baldwin,AL,1588749604701,626429,36326
+168,2019-06-25,29.1599,-90.0995,Tursiops,truncatus,Unknown,Advanced Decomposition,Lafourche,LA,1588749604701,396889,194376
+169,2019-06-26,30.00735,-89.14424,Tursiops,truncatus,Unknown,Fresh Dead,St. Bernard,LA,1588749604701,497367,91874
+170,2019-06-27,30.274117,-89.21529,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,489894,59428
+171,2019-03-01,30.324097,-86.154945,Tursiops,truncatus,Unknown,Moderate Decomposition,Walton,FL,1588749604701,811792,53339
+172,2019-03-02,30.10191,-85.67874,Tursiops,truncatus,Female,Fresh Dead,Bay,FL,1588749604701,861880,80383
+173,2019-03-02,30.25167,-88.71277,Tursiops,truncatus,Male,Moderate Decomposition,Jackson,MS,1588749604701,542750,62161
+174,2019-03-02,30.34482,-89.1451,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,497276,50813
+175,2019-03-03,29.735674,-85.38944,Tursiops,truncatus,Female,Moderate Decomposition,Gulf,FL,1588749604701,892310,124828
+176,2019-03-03,29.769068,-84.79818,Tursiops,truncatus,Female,Moderate Decomposition,Franklin,FL,1588749604701,954501,120782
+177,2019-03-03,30.389261,-88.98337,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,514288,45395
+178,2019-03-05,29.72987,-84.88444,Tursiops,truncatus,Male,Alive,Franklin,FL,1588749604701,945428,125531
+179,2019-03-07,30.576223,-87.18634,Tursiops,truncatus,Male,Moderate Decomposition,Santa Rosa,FL,1588749604701,703306,22576
+180,2019-03-07,29.251759,-89.95636,Tursiops,truncatus,Male,Fresh Dead,Jefferson,LA,1588749604701,411945,183307
+181,2019-03-08,30.248629,-88.19648,Tursiops,truncatus,Male,Moderate Decomposition,Mobile,AL,1588749604701,597055,62531
+182,2019-03-08,30.36281,-88.76653,Tursiops,truncatus,Male,Moderate Decomposition,Jackson,MS,1588749604701,537096,48620
+183,2019-03-09,30.228897,-87.817116,Tursiops,truncatus,Female,Moderate Decomposition,Baldwin,AL,1588749604701,636958,64934
+184,2019-03-09,29.686546,-89.73966,Tursiops,truncatus,Unknown,Moderate Decomposition,Plaquemines,LA,1588749604701,434738,130778
+185,2019-03-10,30.3152,-87.3406,Tursiops,truncatus,Male,Moderate Decomposition,Escambia,FL,1588749604701,687080,54423
+186,2019-03-10,30.395,-86.556,Tursiops,truncatus,Unknown,Advanced Decomposition,Okaloosa,FL,1588749604701,769607,44696
+187,2019-03-10,29.76918,-93.45737,Tursiops,truncatus,Male,Advanced Decomposition,Cameron,LA,1588749604701,43696,120769
+188,2019-03-10,29.669546,-92.85074,Tursiops,truncatus,Female,Alive,Cameron,LA,1588749604701,107504,132836
+189,2019-03-11,30.243816,-88.12686,Tursiops,truncatus,Male,Moderate Decomposition,Mobile,AL,1588749604701,604379,63117
+190,2019-03-12,30.484358,-88.10074,Tursiops,truncatus,Female,Moderate Decomposition,Mobile,AL,1588749604701,607126,33794
+191,2019-03-15,29.349174,-89.537895,Tursiops,truncatus,Female,Advanced Decomposition,Plaquemines,LA,1588749604701,455960,171557
+192,2019-03-18,29.701189,-84.79833,Tursiops,truncatus,Male,Advanced Decomposition,Franklin,FL,1588749604701,954485,129005
+193,2019-03-18,29.77292,-93.2933,Tursiops,truncatus,Unknown,Advanced Decomposition,Cameron,LA,1588749604701,60954,120315
+194,2019-03-18,29.77472,-93.28161,Tursiops,truncatus,Female,Advanced Decomposition,Cameron,LA,1588749604701,62183,120097
+195,2019-03-18,29.77709,-93.2455,Tursiops,truncatus,Male,Advanced Decomposition,Cameron,LA,1588749604701,65982,119810
+196,2019-03-18,29.10565,-90.18366,Tursiops,truncatus,Unknown,Advanced Decomposition,La Fourche,LA,1588749604701,388037,200908
+197,2019-03-19,29.77255,-93.19239,Tursiops,truncatus,Female,Moderate Decomposition,Cameron,LA,1588749604701,71568,120360
+198,2019-03-19,29.76197,-93.5613,Tursiops,truncatus,Male,Moderate Decomposition,Cameron,LA,1588749604701,32765,121642
+199,2019-03-19,30.42934,-88.86906,Tursiops,truncatus,Male,Advanced Decomposition,Harrison,MS,1588749604701,526311,40507
+200,2019-03-20,29.24117,-89.97577,Tursiops,truncatus,Male,Fresh Dead,Jefferson,LA,1588749604701,409903,184583
+201,2019-03-20,29.779266,-89.36697,Tursiops,truncatus,Unknown,Advanced Decomposition,St. Bernard,LA,1588749604701,473940,119546
+202,2019-03-20,29.29955,-89.63969,Tursiops,truncatus,Male,Advanced Decomposition,Plaquamine,LA,1588749604701,445254,177544
+203,2019-03-21,29.790903,-85.4115,Tursiops,truncatus,Male,Fresh Dead,Gulf,FL,1588749604701,889990,118136
+204,2019-03-22,30.451012,-86.49113,Tursiops,truncatus,Female,Fresh Dead,Okaloosa,FL,1588749604701,776430,37864
+205,2019-03-22,30.418879,-86.58856,Tursiops,truncatus,Unknown,Advanced Decomposition,Okaloosa,FL,1588749604701,766182,41784
+206,2019-03-22,29.345116,-89.74503,Tursiops,truncatus,Unknown,Fresh Dead,Plaquamine,LA,1588749604701,434173,172046
+207,2019-03-23,30.3648,-86.3189,Tursiops,truncatus,Unknown,Fresh Dead,Walton,FL,1588749604701,794546,48378
+208,2019-03-23,30.22775,-85.76822,Tursiops,truncatus,Male,Moderate Decomposition,Bay,FL,1588749604701,852469,65073
+209,2019-03-23,30.25267,-88.88783,Tursiops,truncatus,Female,Fresh Dead,Harrison,MS,1588749604701,524337,62039
+210,2019-03-23,30.31175,-89.25088,Tursiops,truncatus,Male,Fresh Dead,Harrison,MS,1588749604701,486150,54843
+211,2019-03-24,29.764862,-85.40306,Tursiops,truncatus,Female,Fresh Dead,Gulf,FL,1588749604701,890877,121292
+212,2019-03-24,29.26048,-89.5815,Tursiops,truncatus,Male,Advanced Decomposition,St. Bernard,LA,1588749604701,451374,182255
+213,2019-03-24,29.48988,-89.90265,Tursiops,truncatus,Unknown,Advanced Decomposition,Plaquemines,LA,1588749604701,417595,154566
+214,2019-03-24,29.266333,-89.95433,Tursiops,truncatus,Unknown,Advanced Decomposition,Jefferson,LA,1588749604701,412158,181549
+215,2019-03-24,30.237432,-89.073265,Tursiops,truncatus,Unknown,Advanced Decomposition,Harrison,MS,1588749604701,504832,63895
+216,2019-03-26,30.253153,-88.141525,Tursiops,truncatus,Male,Moderate Decomposition,Mobile,AL,1588749604701,602836,61981
+217,2019-03-28,30.3291,-89.19576,Tursiops,truncatus,Female,Moderate Decomposition,Harrison,MS,1588749604701,491948,52729
+218,2019-03-28,30.39255,-88.934975,Tursiops,truncatus,Female,Fresh Dead,Harrison,MS,1588749604701,519378,44995
+219,2019-03-29,29.206673,-90.04071,Tursiops,truncatus,Unknown,Condition Unknown,Jefferson,LA,1588749604701,403072,188741
+220,2019-03-29,30.393873,-88.91437,Tursiops,truncatus,Male,Fresh Dead,Harrison,MS,1588749604701,521545,44833
+221,2019-03-30,30.38358,-89.01844,Tursiops,truncatus,Female,Fresh Dead,Harrison,MS,1588749604701,510599,46088
+222,2019-03-30,30.364285,-89.08345,Tursiops,truncatus,Female,Moderate Decomposition,Harrison,MS,1588749604701,503761,48441
+223,2019-03-30,30.28591,-89.36423,Tursiops,truncatus,Male,Moderate Decomposition,Hancock,MS,1588749604701,474228,57991
+224,2019-05-01,29.55416,-92.22916,Tursiops,truncatus,Male,Advanced Decomposition,Vermillion,LA,1588749604701,172884,146796
+225,2019-05-01,30.289179,-89.35715,Tursiops,truncatus,Unknown,Advanced Decomposition,Hancock,MS,1588749604701,474972,57593
+226,2019-05-01,30.248327,-89.423035,Tursiops,truncatus,Unknown,Moderate Decomposition,Hancock,MS,1588749604701,468042,62568
+227,2019-05-02,29.82635,-89.59966,Tursiops,truncatus,Unknown,Advanced Decomposition,St. Bernard,LA,1588749604701,449464,113839
+228,2019-05-02,29.18431,-90.05753,Tursiops,truncatus,Female,Fresh Dead,Jefferson,LA,1588749604701,401304,191435
+229,2019-05-02,30.29883,-89.33486,Tursiops,truncatus,Male,Moderate Decomposition,Hancock,MS,1588749604701,477317,56417
+230,2019-05-02,30.348713,-89.13739,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,498087,50339
+231,2019-05-02,30.3041,-89.27917,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,483174,55775
+232,2019-05-02,30.206804,-89.09563,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,502480,67623
+233,2019-05-02,30.218622,-89.07835,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,504298,66184
+234,2019-05-02,30.27261,-89.37668,Tursiops,truncatus,Unknown,Advanced Decomposition,Hancock,MS,1588749604701,472918,59611
+235,2019-05-03,29.70365,-89.51825,Tursiops,truncatus,Male,Advanced Decomposition,St. Bernard,LA,1588749604701,458027,128707
+236,2019-05-03,29.856533,-89.59872,Tursiops,truncatus,Unknown,Advanced Decomposition,St. Bernard,LA,1588749604701,449563,110179
+237,2019-05-03,30.21432,-89.10426,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,501572,66708
+238,2019-05-03,30.345118,-88.50877,Tursiops,truncatus,Unknown,Advanced Decomposition,Jackson,MS,1588749604701,564208,50777
+239,2019-05-03,30.30322,-89.32929,Tursiops,truncatus,Female,Moderate Decomposition,Hancock,MS,1588749604701,477902,55882
+240,2019-05-04,30.34496,-89.1451,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,497276,50796
+241,2019-05-04,30.34905,-89.13695,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,498134,50298
+242,2019-05-04,30.388577,-88.990524,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,513535,45479
+243,2019-05-04,30.331226,-89.18792,Tursiops,truncatus,Female,Moderate Decomposition,Harrison,MS,1588749604701,492772,52470
+244,2019-05-04,29.760283,-89.67768,Tursiops,truncatus,Unknown,Advanced Decomposition,St. Bernard,LA,1588749604701,441257,121847
+245,2019-05-05,29.8947,-89.35218,Tursiops,truncatus,Unknown,Advanced Decomposition,Saint Bernard,LA,1588749604701,475495,105549
+246,2019-05-05,29.667967,-89.58688,Tursiops,truncatus,Unknown,Advanced Decomposition,St Bernard,LA,1588749604701,450808,133027
+247,2019-05-05,30.155785,-89.61303,Tursiops,truncatus,Unknown,Advanced Decomposition,St. Tammany,LA,1588749604701,448058,73831
+248,2019-05-05,30.03333,-89.2361,Tursiops,truncatus,Unknown,Advanced Decomposition,St. Bernard,LA,1588749604701,487705,88718
+249,2019-05-05,30.00366,-89.36043,Tursiops,truncatus,Unknown,Advanced Decomposition,St. Bernard,LA,1588749604701,474627,92322
+250,2019-05-05,30.370647,-89.35115,Tursiops,truncatus,Unknown,Moderate Decomposition,Hancock,MS,1588749604701,475604,47665
+251,2019-05-06,29.636232,-89.5026,Tursiops,truncatus,Male,Advanced Decomposition,Saint Bernard,LA,1588749604701,459673,136868
+252,2019-05-06,29.673683,-89.55385,Tursiops,truncatus,Male,Advanced Decomposition,St. Bernard,LA,1588749604701,454283,132335
+253,2019-05-06,30.29468,-89.3418,Tursiops,truncatus,Female,Moderate Decomposition,Hancock,MS,1588749604701,476587,56923
+254,2019-05-07,29.24947,-89.96004,Tursiops,truncatus,Male,Fresh Dead,Jefferson,LA,1588749604701,411558,183582
+255,2019-05-07,29.181,-90.064,Tursiops,truncatus,Unknown,Advanced Decomposition,Jefferson,LA,1588749604701,400623,191834
+256,2019-05-07,30.12165,-89.2235,Tursiops,truncatus,Unknown,Advanced Decomposition,Saint Bernard,LA,1588749604701,489030,77983
+257,2019-05-07,29.741833,-89.55247,Tursiops,truncatus,Female,Advanced Decomposition,St. Bernard,LA,1588749604701,454428,124082
+258,2019-05-07,29.662884,-89.4633,Tursiops,truncatus,Female,Moderate Decomposition,St. Bernard,LA,1588749604701,463807,133642
+259,2019-05-07,29.24949,-89.96004,Tursiops,truncatus,Unknown,Advanced Decomposition,Jefferson,LA,1588749604701,411558,183580
+260,2019-05-09,29.977064,-93.339294,Tursiops,truncatus,Unknown,Condition Unknown,Cameron,LA,1588749604701,56116,95552
+261,2019-05-09,30.31911,-89.22984,Tursiops,truncatus,Female,Moderate Decomposition,Harrison,MS,1588749604701,488363,53946
+262,2019-05-11,29.72081,-89.52792,Tursiops,truncatus,Unknown,Advanced Decomposition,St. Bernard,LA,1588749604701,457010,126628
+263,2019-05-11,29.66537,-89.46658,Tursiops,truncatus,Female,Advanced Decomposition,St. Bernard,LA,1588749604701,463462,133341
+264,2019-05-11,30.30349,-89.28182,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,482895,55850
+265,2019-05-14,30.26355,-87.550064,Tursiops,truncatus,Male,Moderate Decomposition,Baldwin,AL,1588749604701,665048,60714
+266,2019-05-14,30.01478,-89.51727,Tursiops,truncatus,Unknown,Advanced Decomposition,St. Bernard,LA,1588749604701,458130,90972
+267,2019-05-14,30.238106,-89.42439,Tursiops,truncatus,Unknown,Moderate Decomposition,Hancock,MS,1588749604701,467899,63813
+268,2019-05-15,30.0435,-89.7911,Tursiops,truncatus,Unknown,Advanced Decomposition,Orleans,LA,1588749604701,429328,87482
+269,2019-05-15,29.401316,-90.30159,Tursiops,truncatus,Unknown,Alive,La Fourche,LA,1588749604701,375632,165263
+270,2019-05-15,29.401316,-90.30159,Tursiops,truncatus,Unknown,Alive,La Fourche,LA,1588749604701,375632,165263
+271,2019-05-15,29.191177,-90.04681,Tursiops,truncatus,Male,Advanced Decomposition,Jefferson,LA,1588749604701,402431,190608
+272,2019-05-16,29.69886,-89.34862,Tursiops,truncatus,Unknown,Moderate Decomposition,St. Bernard,LA,1588749604701,475870,129287
+273,2019-05-16,29.1844,-90.0575,Tursiops,truncatus,Male,Advanced Decomposition,Jefferson,LA,1588749604701,401307,191424
+274,2019-05-17,29.603363,-89.653404,Tursiops,truncatus,Unknown,Advanced Decomposition,Plaquemines,LA,1588749604701,443811,140845
+275,2019-05-18,30.32931,-89.19528,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,491998,52704
+276,2019-05-19,30.281658,-89.36895,Tursiops,truncatus,Unknown,Moderate Decomposition,Hancock,MS,1588749604701,473731,58509
+277,2019-05-19,30.33985,-89.16144,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,495558,51419
+278,2019-05-20,29.23519,-89.98576,Tursiops,truncatus,Unknown,Moderate Decomposition,Jefferson,LA,1588749604701,408853,185304
+279,2019-05-20,29.75492,-93.61913,Tursiops,truncatus,Unknown,Advanced Decomposition,Cameron,LA,1588749604701,26682,122496
+280,2019-05-20,30.31208,-89.25124,Tursiops,truncatus,Female,Moderate Decomposition,Harrison,MS,1588749604701,486112,54803
+281,2019-05-20,30.335073,-89.17561,Tursiops,truncatus,Unknown,Advanced Decomposition,Harrison,MS,1588749604701,494067,52001
+282,2019-05-21,30.36496,-89.08507,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,503590,48358
+283,2019-05-22,30.297586,-89.337,Tursiops,truncatus,Unknown,Advanced Decomposition,Hancock,MS,1588749604701,477092,56569
+284,2019-05-23,30.22551,-88.90303,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,522738,65346
+285,2019-05-23,30.209267,-88.95661,Tursiops,truncatus,Unknown,Mummified/Skeletal,Harrison,MS,1588749604701,517102,67323
+286,2019-05-24,30.760838,-87.98141,Tursiops,truncatus,Unknown,Alive,Baldwin,AL,1588749604701,619677,0
+287,2019-05-24,30.20888,-89.08693,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,503395,67370
+288,2019-05-25,29.30278,-89.95757,Tursiops,truncatus,Male,Advanced Decomposition,Jefferson,LA,1588749604701,411818,177154
+289,2019-05-25,30.39098,-88.96728,Tursiops,truncatus,Unknown,Advanced Decomposition,Harrison,MS,1588749604701,515980,45186
+290,2019-05-25,30.31909,-89.22983,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,488364,53949
+291,2019-05-26,29.660316,-89.564865,Tursiops,truncatus,Unknown,Moderate Decomposition,St. Bernard,LA,1588749604701,453124,133953
+292,2019-05-26,30.233421,-89.148796,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,496887,64383
+293,2019-05-26,30.354668,-88.91815,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,521148,49613
+294,2019-05-26,30.31817,-89.23218,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,488117,54061
+295,2019-05-27,30.341984,-88.80127,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,533442,51159
+296,2019-05-27,30.324009,-89.21591,Tursiops,truncatus,Female,Fresh Dead,Harrison,MS,1588749604701,489828,53349
+297,2019-05-28,30.391043,-88.961296,Tursiops,truncatus,Female,Moderate Decomposition,Harrison,MS,1588749604701,516609,45178
+298,2019-05-28,30.39192,-88.94604,Tursiops,truncatus,Female,Moderate Decomposition,Harrison,MS,1588749604701,518214,45071
+299,2019-05-28,30.40338,-88.82587,Tursiops,truncatus,Female,Moderate Decomposition,Jackson,MS,1588749604701,530854,43674
+300,2019-05-28,30.39343,-88.89512,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,523570,44887
+301,2019-05-28,30.39326,-88.89397,Tursiops,truncatus,Female,Moderate Decomposition,Harrison,MS,1588749604701,523691,44908
+302,2019-05-28,30.353556,-89.07167,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,505000,49748
+303,2019-05-28,30.287167,-89.027,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,509698,57838
+304,2019-05-29,30.22518,-89.07366,Tursiops,truncatus,Unknown,Advanced Decomposition,Harrison,MS,1588749604701,504791,65386
+305,2019-05-29,30.32752,-89.20377,Tursiops,truncatus,Female,Fresh Dead,Harrison,MS,1588749604701,491105,52922
+306,2019-05-29,30.288433,-89.0371,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,508636,57684
+307,2019-05-29,30.37606,-89.04391,Tursiops,truncatus,Male,Advanced Decomposition,Harrison,MS,1588749604701,507920,47005
+308,2019-05-29,30.39406,-88.90649,Tursiops,truncatus,Female,Moderate Decomposition,Harrison,MS,1588749604701,522374,44810
+309,2019-05-30,30.325556,-88.13472,Tursiops,truncatus,Male,Moderate Decomposition,Mobile,AL,1588749604701,603551,53161
+310,2019-05-30,30.229181,-87.96436,Tursiops,truncatus,Female,Fresh Dead,Baldwin,AL,1588749604701,621471,64899
+311,2019-05-30,30.35058,-89.13371,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,498474,50111
+312,2019-05-30,30.21361,-88.94251,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,518585,66795
+313,2019-05-30,30.367222,-88.77355,Tursiops,truncatus,Female,Moderate Decomposition,Jackson,MS,1588749604701,536357,48083
+314,2019-05-30,30.246447,-89.42398,Tursiops,truncatus,Female,Moderate Decomposition,Hancock,MS,1588749604701,467942,62797
+315,2019-05-31,30.3741,-88.8498,Tursiops,truncatus,Female,Moderate Decomposition,Harrison,MS,1588749604701,528337,47244
+316,2019-05-31,30.28615,-89.08884,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,503195,57962
+317,2019-05-31,30.37053,-89.0747,Tursiops,truncatus,Male,Alive,Harrison,MS,1588749604701,504681,47679
+318,2019-11-03,30.251175,-88.07911,Tursiops,truncatus,Female,Fresh Dead,Mobile,AL,1588749604701,609401,62221
+319,2019-11-06,30.346254,-88.12372,Tursiops,truncatus,Unknown,Moderate Decomposition,Mobile,AL,1588749604701,604709,50638
+320,2019-11-08,29.795427,-93.63093,Tursiops,truncatus,Unknown,Alive,Cameron,LA,1588749604701,25441,117588
+321,2019-11-18,29.7494,-93.6597,Tursiops,truncatus,Male,Fresh Dead,Cameron,LA,1588749604701,22415,123165
+322,2019-11-23,29.24353,-89.97067,Tursiops,truncatus,Male,Fresh Dead,Jefferson,LA,1588749604701,410439,184298
+323,2019-11-24,30.608477,-87.912285,Tursiops,truncatus,Male,Moderate Decomposition,Baldwin,AL,1588749604701,626948,18635
+324,2019-11-26,30.223862,-88.91261,Tursiops,truncatus,Female,Moderate Decomposition,Harrison,MS,1588749604701,521730,65547
+325,2019-11-30,29.2497,-89.56,Tursiops,truncatus,Unknown,Moderate Decomposition,Plaquemines,LA,1588749604701,453636,183555
+326,2019-10-04,30.545279,-87.90274,Tursiops,truncatus,Male,Moderate Decomposition,Baldwin,AL,1588749604701,627952,26356
+327,2019-10-05,30.277723,-87.551094,Tursiops,truncatus,Female,Moderate Decomposition,Baldwin,AL,1588749604701,664940,58988
+328,2019-10-06,30.181465,-89.74677,Tursiops,truncatus,Male,Moderate Decomposition,St. Tammany,LA,1588749604701,433990,70707
+329,2019-10-07,30.305523,-88.598854,Tursiops,truncatus,Male,Moderate Decomposition,Jackson,MS,1588749604701,554732,55602
+330,2019-10-26,30.339308,-89.16467,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,495218,51485
+331,2019-10-27,30.334106,-88.262764,Tursiops,truncatus,Female,Moderate Decomposition,Mobile,AL,1588749604701,590084,52119
+332,2019-09-01,29.27585,-90.13402,Tursiops,truncatus,Male,Moderate Decomposition,Jefferson,LA,1588749604701,393259,180402
+333,2019-09-13,30.356886,-88.839485,Tursiops,truncatus,Unknown,Moderate Decomposition,Harrison,MS,1588749604701,529422,49343
+334,2019-09-14,30.3849,-87.42795,Tursiops,truncatus,Male,Moderate Decomposition,Escambia,FL,1588749604701,677892,45927
+335,2019-09-22,30.36146,-89.09291,Tursiops,truncatus,Male,Moderate Decomposition,Harrison,MS,1588749604701,502766,48785
+336,2019-09-28,30.353064,-88.63855,Tursiops,truncatus,Unknown,Moderate Decomposition,Jackson,MS,1588749604701,550557,49808
+337,2019-09-29,30.40886,-88.83839,Tursiops,truncatus,Unknown,Moderate Decomposition,Jackson,MS,1588749604701,529538,43006
