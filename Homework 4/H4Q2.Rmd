@@ -1,0 +1,13 @@
+---
+title: "Homework 4 Question 1"
+output: html_document
+date: '2022-06-16'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(fig.width = 10)
+library(tidyverse)
+```
+
+### Part A
