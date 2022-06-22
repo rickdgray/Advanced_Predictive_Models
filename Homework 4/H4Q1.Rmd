@@ -8,6 +8,12 @@ date: '2022-06-16'
 knitr::opts_chunk$set(echo = TRUE)
 knitr::opts_chunk$set(fig.width = 10)
 library(tidyverse)
+load("chi_supermarkets_ppp.Rdata")
 ```
 
 ### Part A
+
+```{r}
+x <- read_csv("chi_markets.csv", show_col_types = F)
+x
+```
