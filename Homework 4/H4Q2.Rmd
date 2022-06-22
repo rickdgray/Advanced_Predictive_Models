@@ -8,15 +8,27 @@ date: '2022-06-16'
 knitr::opts_chunk$set(echo = TRUE)
 knitr::opts_chunk$set(fig.width = 10)
 library(tidyverse)
+library(spatstat)
 ```
 
 ### Part A
 
-The data we will be exploring today are the locations of sightings of bottlenose dolphin carcasses in the northern Gulf of Mexico. The data are provided by the __National Marine Fisheries Service (NMFS)__ agency within the __National Oceanic and Atmospheric Administration (NOAA)__.
+The [data](https://www.fisheries.noaa.gov/resource/map/2019-bottlenose-dolphin-northern-gulf-mexico-unusual-mortality-event-dead-animal) we will be exploring today are the locations of sightings of bottlenose dolphin carcasses in the northern Gulf of Mexico. The data are provided by the _National Marine Fisheries Service (NMFS)_ agency within the _National Oceanic and Atmospheric Administration (NOAA)_.
 
 ![2019 Bottlenose Dolphin Northern Gulf of Mexico Unusual Mortality Event Dead Animal Locations](dolphins.png)
 
 ```{r}
 x <- read_csv("dolphins.csv", show_col_types = F)
-x
+dpp <- ppp(x$Lon, x$Lat, owin(c(-94.5, -84), c(28.5, 31.25)))
+plot(dpp, main="Dolphin Carcass Locations")
+```
+
+### Part B
+
+The data plotted above can be understood as a spatial point pattern as the data consists of latitude and longitude, as well as various marks included with each location. They may be interpreted as a stochastic process as the factors that may cause unusual mortality events are difficult or impossible to discern. Deceasement of bottlenose dolphins could be a naturally occurring event or it could be influenced by pollution or other ecological factors. Not only this, the locations of the sightings of the carcasses could be influenced by ocean currents. Sightings may also be influenced simply by where travelers tend to reside. The data are not regular; they appear to exhibit strong clustering by visual inspection.
+
+### Part C
+
+```{r}
+
 ```
