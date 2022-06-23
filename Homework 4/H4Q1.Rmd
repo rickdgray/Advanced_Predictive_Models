@@ -6,14 +6,61 @@ date: '2022-06-16'
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(message = FALSE)
+knitr::opts_chunk$set(warning = FALSE)
 knitr::opts_chunk$set(fig.width = 10)
 library(tidyverse)
-load("chi_supermarkets_ppp.Rdata")
+library(ggmap)
+library(spatstat)
 ```
 
 ### Part A
 
 ```{r}
 x <- read_csv("chi_markets.csv", show_col_types = F)
-x
+
+ggmap(get_map("Chicago")) +
+  geom_point(aes(lon, lat), data = x) +
+  labs(
+    title = "Market Locations in City of Chicago",
+    x = NULL,
+    y = NULL
+  )
 ```
+
+There would not be any supermarkets on the top right corner of the map as this is Lake Michigan. It would not be possible to build a building on water.
+
+### Part B
+
+```{r}
+load("chi_supermarkets_ppp.Rdata")
+plot(markets_ppp, main="Market Locations and City Boundaries for Chicago")
+```
+
+While the data does appear to exhibit events with some regularity, there is a bit of clustering to the north east. The higher intensity in this area may lead us to believe that the data does arise from a homogeneous Poisson process. Because the data is not particularly regular, nor particularly clustered, it could be said to be Complete Spatial Randomness (CSR).
+
+### Part C
+
+```{r}
+fit <- ppm(markets_ppp, ~ polynom(x, y, 2))
+
+plot(markets_ppp, main="Market Locations and City Boundaries for Chicago")
+plot(
+  fit,
+  add = TRUE,
+  how = "image",
+  se = FALSE,
+  col = grey(seq(1, 0, length=128))
+)
+
+fit$coef[1]
+predict(fit, locations = data.frame(x = 443674, y = 4636999))
+```
+
+We report the intercept of the estimated log intensity function to be
+
+<center>$-31395.97$</center>\
+
+We report the numerical value of the intensity function at $(443674,4636999)$ to be
+
+<center>$0.0000$</center>
