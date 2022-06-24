@@ -15,7 +15,7 @@ library(spatstat)
 
 ### Part A
 
-The [data](https://www.fisheries.noaa.gov/resource/map/2019-bottlenose-dolphin-northern-gulf-mexico-unusual-mortality-event-dead-animal) we will be exploring today are the locations of sightings of bottlenose dolphin (_Tursiops truncatus_) carcasses in the northern Gulf of Mexico. The data are provided by the _National Marine Fisheries Service (NMFS)_ agency within the _National Oceanic and Atmospheric Administration (NOAA)_.
+The [data](https://www.fisheries.noaa.gov/resource/map/2019-bottlenose-dolphin-northern-gulf-mexico-unusual-mortality-event-dead-animal) we will be exploring today are the locations of sightings of bottlenose dolphin (_Tursiops truncatus_) carcasses in the northern Gulf of Mexico. The data are provided by the _National Marine Fisheries Service (NMFS)_ agency within the _National Oceanic and Atmospheric Administration (NOAA)_. The data were collection throughout the entirety of the year 2019, within the bounding coordinates of latitude $28^{\circ}N$ to $31.75^{\circ}N$ and longitude $95^{\circ}W$ to $83.5^{\circ}W$.
 
 ![2019 Bottlenose Dolphin Northern Gulf of Mexico Unusual Mortality Event Dead Animal Locations](dolphins.png)
 
@@ -30,12 +30,20 @@ x %>%
     shape = Status
   )) +
   geom_point() +
+  geom_rect(
+    xmin = -94.5,
+    xmax = -84,
+    ymin = 28.5,
+    ymax = 31.25,
+    color = "black",
+    fill = NA
+  ) +
   scale_x_continuous(
-    limits = c(-94.5, -84),
+    limits = c(-95, -83.5),
     name = "Longitude (degrees)"
   ) +
   scale_y_continuous(
-    limits = c(28.5, 31.25),
+    limits = c(28, 31.75),
     name = "Latitude (degrees)"
   ) +
   scale_shape_manual(
@@ -62,7 +70,7 @@ The data plotted above can be understood as a spatial point pattern as the data 
 
 ### Part C
 
-A cursory inspection of the data should immediately indicate strong evidence that the appropriate model for the data is a heterogeneous Poisson process. The data are strongly clustered along the coastline and sightings from $-90^{\circ}$ to $-87.5^{\circ}$ are typically in moderate decomposition while elsewhere, they are often in advanced decomposition. Nonetheless, we will perform a formal $\chi^2$ statistical analysis to verify our assumptions.\
+A cursory inspection of the data should immediately indicate strong evidence that the appropriate model for the data is a heterogeneous Poisson process. The data are strongly clustered along the coastline and sightings from $90^{\circ}W$ to $87.5^{\circ}W$ are typically in moderate decomposition while elsewhere, they are often in advanced decomposition. Nonetheless, we will perform a formal $\chi^2$ statistical analysis to verify our assumptions.\
 
 #### Quadrant Test
 
@@ -71,24 +79,50 @@ A cursory inspection of the data should immediately indicate strong evidence tha
 <center>$H_1:$ The point pattern arises from some other stochastic mechanism.</center>
 
 \
-We use a $\chi^2$ statistical test on quadrants of the study area:
+We use a $\chi^2$ statistical test on 40 quadrants of the study area:
 
 ```{r}
+dolphins <- ppp(
+  x$Lon,
+  x$Lat,
+  c(-94.5, -84),
+  c(28.5, 31.25)
+)
+
+Q <- quadratcount(
+  dolphins,
+  nx = 10,
+  ny = 4
+)
+
+dolphins$n / 40
+
+plot(dolphins, main = "Bottlenose Dolphin Unusual Mortality Event Counts per Quadrant")
+plot(Q, add = TRUE)
+
 quadrat.test(
-  ppp(
-    x$Lon,
-    x$Lat,
-    c(-94.5, -84),
-    c(28.5, 31.25)
-  ),
+  dolphins,
   nx = 10,
   ny = 4
 )
 ```
 
-We report the result of the $\chi^2$ test to have a p-value of
+The actual number of points per quadrant can be seen in the quadrant plot above. Given that an unbiased estimator of $\lambda$ for a homogeneous Poisson process is
 
-<center>$p=2.2{\times}10^{-16}$</center>
+<center>$\hat{\lambda}=\tfrac{N}{|D|}$</center>\
 
-\
-which is virtually zero. We reject the null hypothesis $H_0$ that the point pattern arises from a homogeneous Poisson process.
+then, we can conclude that the expected number of events per quadrant is
+
+<center>$\hat{\lambda}|A|=8.425$</center>\
+
+By the $\chi^2$ statistical test, we report the result of $\chi^2$ to be
+
+<center>$\chi^2=2323.3$</center>\
+
+and have a p-value of
+
+<center>$p\lt2.2{\times}10^{-16}$</center>\
+
+with $39$ degrees of freedom.\
+
+The attained p-value is virtually zero. We reject the null hypothesis $H_0$ that the point pattern arises from a homogeneous Poisson process. This result confirms our visual interpretation of the data that pedestrian sightings of bottlenose dolphin carcasses is highly clustered.

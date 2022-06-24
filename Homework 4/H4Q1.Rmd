@@ -63,4 +63,4 @@ We report the intercept of the estimated log intensity function to be
 
 We report the numerical value of the intensity function at $(443674,4636999)$ to be
 
-<center>$0.0000$</center>
+<center>$7.7057{\times}10^{-7}$</center>
