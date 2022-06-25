@@ -1,0 +1,19 @@
+---
+title: "Homework 5 Question 1"
+output: html_document
+date: '2022-06-25'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(message = FALSE)
+knitr::opts_chunk$set(warning = FALSE)
+knitr::opts_chunk$set(fig.width = 10)
+library(tidyverse)
+```
+
+### Part A
+
+```{r}
+
+```
