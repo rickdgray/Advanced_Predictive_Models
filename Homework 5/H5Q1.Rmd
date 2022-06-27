@@ -5,15 +5,158 @@ date: '2022-06-25'
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-knitr::opts_chunk$set(message = FALSE)
-knitr::opts_chunk$set(warning = FALSE)
+knitr::opts_chunk$set(echo = T)
+knitr::opts_chunk$set(message = F)
+knitr::opts_chunk$set(warning = T)
 knitr::opts_chunk$set(fig.width = 10)
 library(tidyverse)
+library(sf)
+library(geoR)
 ```
 
 ### Part A
 
 ```{r}
+rain <- read.table("rain.txt", header=T)
+rain <- rain |>
+  mutate(
+    altitude = altitude / 5280,
+    sqrt_rainfall = sqrt(rainfall)
+  )
 
+rain |>
+  ggplot(aes(x, y, color = rainfall)) +
+  geom_point(size = 2) +
+  coord_fixed(ratio = 1) +
+  scale_color_continuous(name = "Rainfall (mm)") +
+  labs(
+    title = "Average Yearly Rainfall in Switzerland Scatterplot",
+    x = "X",
+    y = "Y"
+  )
+
+rain |>
+  ggplot(aes(x, y, color = altitude)) +
+  geom_point(size = 2) +
+  coord_fixed(ratio = 1) +
+  scale_color_continuous(name = "Altitude (m)") +
+  labs(
+    title = "Altitude in Switzerland Scatterplot",
+    x = "X",
+    y = "Y"
+  )
 ```
+
+By visual inspection of the two plots, there appears to be some dependence on the amount of rainfall at a particular point, given its altitude. The top right of the plots are similar in darkness and seem to brighten downward and to the left.
+
+### Part B
+
+```{r}
+lr <- lm(sqrt_rainfall~altitude, rain)
+summary(lr)
+```
+
+The estimated regression equation is
+
+<center>$y=14.127-8.368x$</center>
+
+and the estimated error variance is
+
+<center>$y=69.420$</center>
+
+The altitude explains for the square root of rainfall by a proportion of
+
+<center>$y=69.420$</center>
+
+### Part C
+
+```{r}
+distances <- data.frame(matrix(ncol = 7, nrow = 0))
+colnames(distances) <- c("x1", "y1", "x2", "y2", "resid1", "resid2", "distance")
+
+for (i in 1:dim(rain)[1]) {
+  for (j in 1:dim(rain)[1]) {
+    if (i != j) {
+      distances[nrow(distances) + 1,] = c(
+        rain$x[i], rain$y[i], lr$residuals[i],
+        rain$x[j], rain$y[j], lr$residuals[j],
+        st_distance(st_as_sf(data.frame(
+          x = c(rain$x[i], rain$x[j]),
+          y = c(rain$y[i], rain$y[j])
+        ), coords = c("x", "y")))[1, 2]
+      )
+    }
+  }
+}
+
+distances |>
+  ggplot(aes(distance)) +
+  geom_histogram(
+    binwidth = 20,
+    center = 10
+  ) +
+  labs(
+    title = "Frequency of Distances Between Coordinates",
+    x = "Distance (m)",
+    y = "Count"
+  )
+```
+
+### Part D
+
+```{r}
+resid_corr <- data.frame(matrix(ncol = 2, nrow = 0))
+colnames(resid_corr) <- c("bin", "corr")
+
+for (b in seq(0, 280, 20)) {
+  resid_corr[nrow(resid_corr) + 1,] = c(
+    b + 10,
+    (distances |>
+    filter(distance >= b, distance < b + 20) |>
+    select(resid1, resid2) |>
+    cor())[1, 2]
+  )
+}
+
+resid_corr |>
+  ggplot(aes(bin, corr, color = bin)) +
+  geom_point()
+```
+
+### Part E
+
+There is a limited area with which our data is studied. Given this, distances that approach the width of the window are less likely to appear. The data is a _biased_ sample for this reason. We can't observe distances larger than the window. The result of this is that we expect to observe more smaller distances than larger ones.
+
+### Part F
+
+```{r}
+rain_geo <- as.geodata(
+  cbind(
+    rain$sqrt_rainfall,
+    rain$x,
+    rain$y
+  ),
+  data.col = 1,
+  coords.col = 2:3
+)
+
+fit <- likfit(
+  rain_geo,
+  cov.model = "exponential",
+  ini.cov.pars = c(5, .01),
+  fix.nugget=F, 
+  nugget=0)
+
+fit
+```
+
+
+
+
+
+
+
+
+
+
+
