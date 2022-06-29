@@ -7,9 +7,10 @@ date: '2022-06-25'
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = T)
 knitr::opts_chunk$set(message = F)
-knitr::opts_chunk$set(warning = T)
+knitr::opts_chunk$set(warning = F)
 knitr::opts_chunk$set(fig.width = 10)
 library(tidyverse)
+library(scales)
 library(sf)
 library(geoR)
 ```
@@ -54,25 +55,26 @@ By visual inspection of the two plots, there appears to be some dependence on th
 ```{r}
 lr <- lm(sqrt_rainfall~altitude, rain)
 summary(lr)
+
 ```
 
 The estimated regression equation is
 
-<center>$y=14.127-8.368x$</center>
+<center>$y=14.127-8.368x$</center>\
 
 and the estimated error variance is
 
-<center>$y=69.420$</center>
+<center>$var=4.275^2=18.276$</center>\
 
-The altitude explains for the square root of rainfall by a proportion of
+The altitude explains for the $\sqrt[2]{rainfall}$'s variation by a proportion of
 
-<center>$y=69.420$</center>
+<center>$R^2=0.03145$</center>
 
 ### Part C
 
 ```{r}
 distances <- data.frame(matrix(ncol = 7, nrow = 0))
-colnames(distances) <- c("x1", "y1", "x2", "y2", "resid1", "resid2", "distance")
+colnames(distances) <- c("x1", "y1", "resid1", "x2", "y2", "resid2", "distance")
 
 for (i in 1:dim(rain)[1]) {
   for (j in 1:dim(rain)[1]) {
@@ -90,11 +92,9 @@ for (i in 1:dim(rain)[1]) {
 }
 
 distances |>
-  ggplot(aes(distance)) +
-  geom_histogram(
-    binwidth = 20,
-    center = 10
-  ) +
+  ggplot(aes(distance, stat(count)/sum(stat(count)))) +
+  geom_histogram(binwidth = 20, center = 10) +
+  scale_y_continuous(labels = percent) +
   labs(
     title = "Frequency of Distances Between Coordinates",
     x = "Distance (m)",
@@ -105,8 +105,8 @@ distances |>
 ### Part D
 
 ```{r}
-resid_corr <- data.frame(matrix(ncol = 2, nrow = 0))
-colnames(resid_corr) <- c("bin", "corr")
+resid_corr <- data.frame(matrix(ncol = 3, nrow = 0))
+colnames(resid_corr) <- c("bin", "corr", "count")
 
 for (b in seq(0, 280, 20)) {
   resid_corr[nrow(resid_corr) + 1,] = c(
@@ -114,13 +114,24 @@ for (b in seq(0, 280, 20)) {
     (distances |>
     filter(distance >= b, distance < b + 20) |>
     select(resid1, resid2) |>
-    cor())[1, 2]
+    cor())[1, 2],
+    distances |>
+      filter(distance >= b, distance < b + 20) |>
+      count()
   )
 }
 
-resid_corr |>
-  ggplot(aes(bin, corr, color = bin)) +
-  geom_point()
+resid_corr_plot <- resid_corr |>
+  ggplot(aes(bin, corr, color = count)) +
+  geom_point(size = 2.5) +
+  labs(
+    title = "Correlation of Residuals Binned by Distance",
+    x = "Distance",
+    y = "Correlation",
+    color = "Count"
+  )
+
+resid_corr_plot
 ```
 
 ### Part E
@@ -133,30 +144,68 @@ There is a limited area with which our data is studied. Given this, distances th
 rain_geo <- as.geodata(
   cbind(
     rain$sqrt_rainfall,
+    rain$altitude,
     rain$x,
     rain$y
   ),
   data.col = 1,
-  coords.col = 2:3
+  covar.col = 2,
+  covar.names = "altitude",
+  coords.col = 3:4
 )
 
 fit <- likfit(
   rain_geo,
+  trend = ~altitude,
   cov.model = "exponential",
-  ini.cov.pars = c(5, .01),
-  fix.nugget=F, 
+  ini.cov.pars = c(1, 1),
+  fix.nugget=T,
   nugget=0)
 
 fit
 ```
 
+We report the estimated intercept as
 
+<center>$\beta_0=11.5970$</center>
 
+the estimated slope as
 
+<center>$\beta_1=0.0288$</center>
 
+and the estimated covariance parameters as
 
+<center>$\sigma^2=20.9733$ and $\phi=42.4066$</center>
 
+### Part G
 
+```{r}
+resid_corr_plot +
+  geom_function(
+    aes(x = 0),
+    fun = function(x) {
+      exp(x/-42.4066)
+    },
+    color = "red",
+    size = 1.25
+  ) +
+  labs(title = "Correlation of Residuals Binned by Distance With Exponential Fit")
+```
 
+### Part H
 
+```{r}
+summary(fit)
+```
 
+We report the AIC for the non-spatial regression as
+
+<center>$AIC=578.3$</center>
+
+and the AIC for the spatial regression as
+
+<center>$AIC=503.5$</center>
+
+### Part I
+
+The information that would be needed to make predictions in unmonitored locations is the __altitude__ at the desired prediction locations. Our model is fitted both on coordinates _and_ altitude; while we can simply pick coordinates we would like to predict rainfall at, we would need to acquire the altitude at the specified location.
