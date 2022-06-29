@@ -86,3 +86,50 @@ x <- arima.sim(list(order = c(1, 1, 0), ar = 0.9), n = 150)[-1]
 x_train <- window(x, start = 1, end = n_train)
 fit_for <- sarima.for(x_train, n.ahead = 50, 1, 1, 0, plot = F)
 ```
+
+Exponential Parametric Covariance Functions
+```{r}
+exp_cov_func <- function(i, j, sig, l) {
+  sig*exp(-abs(i - j)*l)
+}
+
+sq_exp_cov_func <- function(i, j, sig, l) {
+  sig*exp(-((abs(i - j)*l)^2))
+}
+
+sig_calc <- function(df, sigma2) {
+  n = dim(df)[1]
+  m = as.matrix(df)
+  sigma2 - m[1,2:n] %*% solve(m[2:n,2:n]) %*% m[2:n,1]
+}
+
+mu_calc <- function(df, preds) {
+  n = dim(df)[1]
+  m = as.matrix(df)
+  matrix(preds, nrow = 1, ncol = n-1) %*% solve(m[2:n,2:n]) %*% m[2:n,1]
+}
+
+build_cov_matrix <- function(data, func, sigma, l) {
+  n = length(data)
+  y_df <- data.frame(matrix(ncol = n, nrow = 0))
+  for (i in 1:n) {
+    new_row = c()
+    for (j in 1:n) {
+      new_row = c(new_row, func(data[i], data[j], sigma, l))
+    }
+    
+    y_df[nrow(y_df) + 1,] = new_row
+  }
+  y_df
+}
+
+y <- c(0.6, 0.2, 0.3, 0.9)
+
+y_df <- build_cov_matrix(y, sq_exp_cov_func, 10, 1)
+mu_calc(y_df, c(3, 4, -1))
+sqrt(sig_calc(y_df, 10))
+
+y_df <- build_cov_matrix(y, sq_exp_cov_func, 10.01, 1)
+mu_calc(y_df, c(3, 4, -1))
+sqrt(sig_calc(y_df, 10.01))
+```
