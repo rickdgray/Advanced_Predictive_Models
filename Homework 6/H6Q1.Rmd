@@ -1,0 +1,149 @@
+---
+title: "Homework 6 Question 1"
+output: html_document
+date: '2022-07-02'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = T)
+knitr::opts_chunk$set(message = F)
+knitr::opts_chunk$set(warning = F)
+knitr::opts_chunk$set(fig.width = 10)
+library(tidyverse)
+library(spdep)
+library(spatialreg)
+```
+
+### Part A
+
+```{r}
+load("crime_dat.Rdata")
+
+crime_dat |>
+  ggplot(aes(poverty, crime)) +
+  geom_point() +
+  geom_smooth(
+    method = "lm",
+    formula = y ~ x
+  ) +
+  labs(
+    title = "Crime vs Poverty Linear Regression Model",
+    y = "Crime",
+    x = "Poverty"
+  )
+```
+
+### Part B
+
+The data given are aggregate from census tracts. For this reason, we cannot conclude causation of crimes from poverty as we do not have the individual data. Without the individual data, there may be (and likely is) a confounding covariate influencing our results. Furthermore, using spatial regression models also will not solve the __modifiable areal unit problem (MAUP)__.
+
+### Part C
+
+```{r}
+crime_dat |>
+  ggplot() +
+  geom_sf(aes(fill = log(crime))) +
+  labs(
+    title = "Crime Rate by Census Tracts in Franklin County, OH",
+    y = "Longitude",
+    x = "Latitude",
+    fill = "Crime"
+  )
+
+crime_dat |>
+  ggplot() +
+  geom_sf(aes(fill = poverty)) +
+  labs(
+    title = "Poverty by Census Tracts in Franklin County, OH",
+    y = "Longitude",
+    x = "Latitude",
+    fill = "Poverty"
+  )
+```
+
+### Part D
+
+```{r}
+nb <- poly2nb(crime_dat)
+
+nb_coords <- coordinates(as(crime_dat, "Spatial"))
+
+nb_lines <- nb |>
+  nb2lines(coords = nb_coords) |>
+  as("sf") |>
+  st_set_crs(st_crs(crime_dat))
+
+crime_dat |>
+  ggplot() +
+  geom_sf(fill = "white", color = "lightgrey") + 
+  geom_sf(data = nb_lines, col = "red") +
+  labs(
+    title = "Adjacent Census Tracts",
+    y = "Longitude",
+    x = "Latitude"
+  )
+```
+
+### Part E
+
+```{r}
+nb |>
+  subset(subset = card(nb) == 0) |>
+  attr("region.id") %>%
+  nb_coords[.,]
+```
+
+There is only one region with no links at
+
+<center>$39.81671^{\circ}N, 82.93626^{\circ}W$</center>
+
+### Part F
+
+```{r}
+nb <- crime_dat |>
+  filter(crime > 0) |>
+  poly2nb() %>%
+  subset(subset = card(.) > 0)
+
+W_mat <- nb2listw(
+  nb,
+  style = 'B',
+  zero.policy = T
+)
+
+spautolm(
+  log(crime) ~ poverty,
+  listw = W_mat,
+  family = "SMA",
+  data = crime_dat
+)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
