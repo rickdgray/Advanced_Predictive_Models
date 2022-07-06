@@ -35,14 +35,17 @@ crime_dat |>
 
 ### Part B
 
-The data given are aggregate from census tracts. For this reason, we cannot conclude causation of crimes from poverty as we do not have the individual data. Without the individual data, there may be (and likely is) a confounding covariate influencing our results. Furthermore, using spatial regression models also will not solve the __modifiable areal unit problem (MAUP)__.
+The data given are aggregate from census tracts. For this reason, we cannot conclude causation of crimes from poverty as we do not have the __individual data__. Without the individual data, there may be (and likely is) a confounding covariate influencing our results. Furthermore, using spatial regression models also will not solve the __modifiable areal unit problem (MAUP)__.
 
 ### Part C
 
 ```{r}
+crime_dat <- crime_dat |>
+  mutate(log_crime = log(crime))
+
 crime_dat |>
   ggplot() +
-  geom_sf(aes(fill = log(crime))) +
+  geom_sf(aes(fill = log_crime)) +
   labs(
     title = "Crime Rate by Census Tracts in Franklin County, OH",
     y = "Longitude",
@@ -89,8 +92,8 @@ crime_dat |>
 ```{r}
 nb |>
   subset(subset = card(nb) == 0) |>
-  attr("region.id") %>%
-  nb_coords[.,]
+  attr("region.id") |>
+  (function(id) nb_coords[id,])()
 ```
 
 There is only one region with no links at
@@ -100,50 +103,127 @@ There is only one region with no links at
 ### Part F
 
 ```{r}
-nb <- crime_dat |>
-  filter(crime > 0) |>
-  poly2nb() %>%
-  subset(subset = card(.) > 0)
+crime_dat <- crime_dat |>
+  subset(subset = card(nb) > 0) |>
+  filter(crime > 0)
 
-W_mat <- nb2listw(
-  nb,
-  style = 'B',
-  zero.policy = T
-)
-
-spautolm(
-  log(crime) ~ poverty,
-  listw = W_mat,
+spatial <- spautolm(
+  log_crime ~ poverty,
+  listw = nb2listw(
+    poly2nb(crime_dat),
+    style = 'B',
+    zero.policy = T
+  ),
   family = "SMA",
   data = crime_dat
 )
+
+summary(spatial)
 ```
 
+The estimated intercept and standard errors are
 
+<center>$Intercept=2.00\pm0.118$</center>\
 
+and the estimated poverty coefficient and standard errors are
 
+<center>$poverty=0.0459\pm0.00467$</center>\
 
+Given that the p-value for the poverty coefficient is $2.2\times10^{-16}$, we have very strong evidence that crime does have a positive spatial autocorrelation with poverty.
 
+### Part G
 
+```{r}
+nonspatial <- lm(
+  log_crime ~ poverty,
+  crime_dat
+)
 
+summary(nonspatial)
+AIC(nonspatial)
+```
 
+The estimated intercept and standard errors are
 
+<center>$Intercept=1.92\pm0.0949$</center>\
 
+and the estimated poverty coefficient and standard errors are
 
+<center>$poverty=0.0574\pm0.00447$</center>\
 
+The non-spatial model shows a stronger correlation between poverty and log crime than the spatial model. This makes sense as the spatial model has neighboring data with which to learn on. The non-spatial model is too simple and is forced to rely on poverty alone. The standard errors of poverty are nearly identical between the two models.
 
+The AIC for the spatial model is
 
+<center>$429.5$</center>\
 
+and the AIC for the non-spatial model is
 
+<center>$484.0$</center>\
 
+The best model for the data is the spatial model as it has a lower AIC value.
 
+### Part H
 
+```{r}
+stadium <- st_point(c(-83.019707, 40.001633))
 
+tract <- crime_dat %>%
+  filter(as.numeric(st_contains(.$geometry, stadium)) == 1)
 
+tract_centroid <- tract |>
+  attr("row.names") %>%
+  nb_coords[.,]
 
+crime_dat |>
+  ggplot() +
+  geom_sf() +
+  geom_sf(data = tract, fill = "blue") +
+  geom_point(
+    aes(
+      x = tract_centroid[1],
+      y = tract_centroid[2]
+    ),
+    color = "red",
+    size = 2
+  ) +
+  labs(
+    title = "Census Tract Containing Ohio Stadium in Franklin County, OH",
+    y = "Longitude",
+    x = "Latitude"
+  )
+```
 
+### Part I
 
+```{r}
+tract |>
+  attr("row.names") %>%
+  spatial$fit$fitted.values[.]
 
+tract |>
+  attr("row.names") %>%
+  nonspatial$fitted.values[.]
 
+tract$log_crime
+```
 
+The spatial model prediction is
 
+<center>$2.138$</center>\
+
+The non-spatial model prediction is
+
+<center>$3.473$</center>\
+
+The observed is
+
+<center>$1.379$</center>\
+
+The observed log crime rate is noticeably lower than either model predicted.\
+
+As the non-spatial model predicts only on the poverty rate, it predicts that the crime rate will actually be much higher. Given that Ohio University is located within this tract, we can surmise that the poverty rate is driven higher by students.\
+
+The spatial model, on the other hand, does make a better prediction, but is still not accurate. Close observation of the maps in Part C reveal that there are many neighboring tracts with much higher poverty levels and log crimes that influence the prediction spatially. There is also missing data directly west of the tract of study which may have lower crime and poverty rates that would aid the spatial model in prediction. 
+
+Regardless, the spatial model is clearly superior in this case.
