@@ -1,0 +1,1753 @@
+Place,Name
+1,Abbott city
+2,Abernathy city
+3,Abilene city
+4,Abram CDP
+5,Ackerly city
+6,Addison town
+7,Adrian city
+8,Agua Dulce CDP
+9,Agua Dulce city
+10,Aguilares CDP
+11,Airport Heights CDP
+12,Airport Road Addition CDP
+13,Alamo city
+14,Alamo Heights city
+15,Alba town
+16,Albany city
+17,Aldine CDP
+18,Aledo city
+19,Alfred CDP
+20,Alice city
+21,Alice Acres CDP
+22,Allen city
+23,Alma town
+24,Alpine city
+25,Alto town
+26,Alto Bonito Heights CDP
+27,Alton city
+28,Alvarado city
+29,Alvin city
+30,Alvord town
+31,Amada Acres CDP
+32,Amargosa CDP
+33,Amarillo city
+34,Amaya CDP
+35,Ames city
+36,Amherst city
+37,Amistad CDP
+38,Anacua CDP
+39,Anahuac city
+40,Anderson city
+41,Andrews city
+42,Angleton city
+43,Angus city
+44,Anna city
+45,Annetta town
+46,Annetta North town
+47,Annetta South town
+48,Annona town
+49,Anson city
+50,Anthony town
+51,Anton city
+52,Appleby city
+53,Aquilla city
+54,Aransas Pass city
+55,Archer City city
+56,Arcola city
+57,Argyle city
+58,Arlington city
+59,Arp city
+60,Arroyo Colorado Estates CDP
+61,Arroyo Gardens CDP
+62,Asherton city
+63,Aspermont town
+64,Atascocita CDP
+65,Athens city
+66,Atlanta city
+67,Aubrey city
+68,Aurora city
+69,Austin city
+70,Austwell city
+71,Avery town
+72,Avinger town
+73,Azle city
+74,Bacliff CDP
+75,Bailey city
+76,Bailey's Prairie village
+77,Baird city
+78,Balch Springs city
+79,Balcones Heights city
+80,Ballinger city
+81,Balmorhea city
+82,B and E CDP
+83,Bandera city
+84,Bangs city
+85,Banquete CDP
+86,Bardwell city
+87,Barrera CDP
+88,Barrett CDP
+89,Barry city
+90,Barstow city
+91,Bartlett city
+92,Barton Creek CDP
+93,Bartonville town
+94,Bastrop city
+95,Batesville CDP
+96,Bay City city
+97,Bayou Vista city
+98,Bayside town
+99,Baytown city
+100,Bayview town
+101,Beach City city
+102,Bear Creek village
+103,Beasley city
+104,Beaumont city
+105,Beckville city
+106,Bedford city
+107,Bedias city
+108,Bee Cave city
+109,Beeville city
+110,Bellaire city
+111,Bellevue city
+112,Bellmead city
+113,Bells town
+114,Bellville city
+115,Belton city
+116,Benavides city
+117,Benbrook city
+118,Benjamin city
+119,Benjamin Perez CDP
+120,Berryville town
+121,Bertram city
+122,Beverly Hills city
+123,Bevil Oaks city
+124,Bigfoot CDP
+125,Big Lake city
+126,Big Sandy town
+127,Big Spring city
+128,Big Thicket Lake Estates CDP
+129,Big Wells city
+130,Bishop city
+131,Bishop Hills town
+132,Bixby CDP
+133,Blackwell city
+134,Blanco city
+135,Blanket town
+136,Blessing CDP
+137,Bloomburg town
+138,Blooming Grove town
+139,Bloomington CDP
+140,Blossom city
+141,Blue Berry Hill CDP
+142,Blue Mound city
+143,Blue Ridge city
+144,Bluetown CDP
+145,Blum town
+146,Boerne city
+147,Bogata city
+148,Boling CDP
+149,Bolivar Peninsula CDP
+150,Bonanza Hills CDP
+151,Bonham city
+152,Bonney village
+153,Booker town
+154,Borger city
+155,Botines CDP
+156,Bovina city
+157,Bowie city
+158,Box Canyon CDP
+159,Boyd town
+160,Boys Ranch CDP
+161,Brackettville city
+162,Brady city
+163,Brazoria city
+164,Brazos Bend city
+165,Brazos Country city
+166,Breckenridge city
+167,Bremond city
+168,Brenham city
+169,Briar CDP
+170,Briarcliff village
+171,Briaroaks city
+172,Bridge City city
+173,Bridgeport city
+174,Bristol CDP
+175,Broaddus town
+176,Bronte town
+177,Brookshire city
+178,Brookside Village city
+179,Browndell city
+180,Brownfield city
+181,Brownsboro city
+182,Brownsville city
+183,Brownwood city
+184,Bruceville-Eddy city
+185,Brundage CDP
+186,Bruni CDP
+187,Brushy Creek CDP
+188,Bryan city
+189,Bryson city
+190,Buchanan Dam CDP
+191,Buchanan Lake Village CDP
+192,Buckholts town
+193,Buda city
+194,Buena Vista CDP
+195,Buffalo city
+196,Buffalo Gap town
+197,Buffalo Springs village
+198,Bullard town
+199,Bulverde city
+200,Buna CDP
+201,Bunker Hill Village city
+202,Burkburnett city
+203,Burke city
+204,Burleson city
+205,Burnet city
+206,Burton city
+207,Butterfield CDP
+208,Byers city
+209,Bynum town
+210,Cactus city
+211,Caddo Mills city
+212,Caldwell city
+213,Callender Lake CDP
+214,Callisburg city
+215,Calvert city
+216,Camargito CDP
+217,Cameron city
+218,Cameron Park CDP
+219,Campbell city
+220,Campo Verde CDP
+221,Camp Swift CDP
+222,Camp Wood city
+223,Canadian city
+224,Caney City town
+225,Canton city
+226,Cantu Addition CDP
+227,Canutillo CDP
+228,Canyon city
+229,Canyon Creek CDP
+230,Canyon Lake CDP
+231,Cape Royale CDP
+232,Carbon town
+233,Carlsbad CDP
+234,Carl's Corner town
+235,Carmine city
+236,Carrizo Hill CDP
+237,Carrizo Springs city
+238,Carrollton city
+239,Carthage city
+240,Casa Blanca CDP
+241,Casas CDP
+242,Cashion Community city
+243,Castle Hills city
+244,Castroville city
+245,Catarina CDP
+246,Cedar Hill city
+247,Cedar Park city
+248,Cedar Point CDP
+249,Celeste city
+250,Celina city
+251,Center city
+252,Centerville city
+253,Central Gardens CDP
+254,Cesar Chavez CDP
+255,Chandler city
+256,Channelview CDP
+257,Channing city
+258,Chaparrito CDP
+259,Chapeno CDP
+260,Charlotte city
+261,Chester town
+262,Chico city
+263,Childress city
+264,Chillicothe city
+265,Chilton CDP
+266,China city
+267,China Grove town
+268,China Spring CDP
+269,Chireno city
+270,Christine town
+271,Christoval CDP
+272,Chula Vista CDP
+273,Chula Vista CDP
+274,Chula Vista CDP
+275,Cibolo city
+276,Cienegas Terrace CDP
+277,Cinco Ranch CDP
+278,Circle D-KC Estates CDP
+279,Cisco city
+280,Citrus City CDP
+281,Clarendon city
+282,Clarksville city
+283,Clarksville City city
+284,Claude city
+285,Clear Lake Shores city
+286,Cleburne city
+287,Cleveland city
+288,Clifton city
+289,Clint town
+290,Cloverleaf CDP
+291,Clute city
+292,Clyde city
+293,Coahoma town
+294,Cockrell Hill city
+295,Coffee City town
+296,Coldspring city
+297,Coleman city
+298,College Station city
+299,Colleyville city
+300,Collinsville town
+301,Colmesneil city
+302,Colorado Acres CDP
+303,Colorado City city
+304,Columbus city
+305,Comanche city
+306,Combes town
+307,Combine city
+308,Comfort CDP
+309,Commerce city
+310,Como town
+311,Concepcion CDP
+312,Conroe city
+313,Converse city
+314,Cool city
+315,Coolidge town
+316,Cooper city
+317,Coppell city
+318,Copperas Cove city
+319,Copper Canyon town
+320,Corinth city
+321,Corpus Christi city
+322,Corral City town
+323,Corrigan town
+324,Corsicana city
+325,Cottonwood city
+326,Cottonwood Shores city
+327,Cotulla city
+328,Country Acres CDP
+329,Cove city
+330,Covington city
+331,Coyanosa CDP
+332,Coyote Acres CDP
+333,Coyote Flats CDP
+334,Crandall city
+335,Crane city
+336,Cranfills Gap city
+337,Crawford town
+338,Creedmoor city
+339,Cresson city
+340,Crockett city
+341,Crosby CDP
+342,Crosbyton city
+343,Cross Mountain CDP
+344,Cross Plains town
+345,Cross Roads town
+346,Cross Timber town
+347,Crowell city
+348,Crowley city
+349,Crystal City city
+350,Cuero city
+351,Cuevitas CDP
+352,Cumby city
+353,Cumings CDP
+354,Cuney town
+355,Cushing city
+356,Cut and Shoot city
+357,Daingerfield city
+358,Daisetta city
+359,Dalhart city
+360,Dallas city
+361,Dalworthington Gardens city
+362,Damon CDP
+363,Danbury city
+364,Darrouzett town
+365,Dawson town
+366,Dayton city
+367,Dayton Lakes city
+368,Dean city
+369,Decatur city
+370,DeCordova city
+371,Deer Park city
+372,De Kalb city
+373,De Leon city
+374,Dell City city
+375,Del Mar Heights CDP
+376,Delmita CDP
+377,Del Rio city
+378,Del Sol CDP
+379,Denison city
+380,Denton city
+381,Denver City town
+382,Deport city
+383,DeSoto city
+384,Detroit town
+385,Devers city
+386,Devine city
+387,Deweyville CDP
+388,D'Hanis CDP
+389,Diboll city
+390,Dickens city
+391,Dickinson city
+392,Dilley city
+393,Dimmitt city
+394,DISH town
+395,Dodd City town
+396,Dodson town
+397,Doffing CDP
+398,Domino town
+399,Donna city
+400,Doolittle CDP
+401,Dorchester city
+402,Double Oak town
+403,Douglassville town
+404,Doyle CDP
+405,Driftwood CDP
+406,Dripping Springs city
+407,Driscoll city
+408,Dublin city
+409,Dumas city
+410,Duncanville city
+411,Eagle Lake city
+412,Eagle Pass city
+413,Early city
+414,Earth city
+415,East Alto Bonito CDP
+416,East Bernard city
+417,Eastland city
+418,East Lopez CDP
+419,East Mountain city
+420,Easton city
+421,East Tawakoni city
+422,Ector city
+423,Edcouch city
+424,Eden city
+425,Edgecliff Village town
+426,Edgewater Estates CDP
+427,Edgewood town
+428,Edinburg city
+429,Edmonson town
+430,Edna city
+431,Edom city
+432,Edroy CDP
+433,Eidson Road CDP
+434,Elbert CDP
+435,El Brazil CDP
+436,El Camino Angosto CDP
+437,El Campo city
+438,El Castillo CDP
+439,El Cenizo CDP
+440,El Cenizo city
+441,El Chaparral CDP
+442,Eldorado city
+443,Electra city
+444,Elgin city
+445,Elias-Fela Solis CDP
+446,El Indio CDP
+447,Elkhart town
+448,El Lago city
+449,Elm Creek CDP
+450,Elmendorf city
+451,El Mesquite CDP
+452,Elmo CDP
+453,El Paso city
+454,El Quiote CDP
+455,El Rancho Vela CDP
+456,El Refugio CDP
+457,Elsa city
+458,El Socio CDP
+459,Emerald Bay CDP
+460,Emhouse town
+461,Emory city
+462,Encantada-Ranchito-El Calaboz CDP
+463,Enchanted Oaks town
+464,Encinal city
+465,Encino CDP
+466,Ennis city
+467,Escobares city
+468,Escobar I CDP
+469,Estelline town
+470,Eugenio Saenz CDP
+471,Euless city
+472,Eureka city
+473,Eustace city
+474,Evadale CDP
+475,Evant town
+476,Evergreen CDP
+477,Everman city
+478,Fabens CDP
+479,Fabrica CDP
+480,Fairchilds village
+481,Fairfield city
+482,Fair Oaks Ranch city
+483,Fairview town
+484,Falconaire CDP
+485,Falcon Heights CDP
+486,Falcon Lake Estates CDP
+487,Falcon Mesa CDP
+488,Falcon Village CDP
+489,Falfurrias city
+490,Falls City city
+491,Falman CDP
+492,Fannett CDP
+493,Farmers Branch city
+494,Farmersville city
+495,Farwell city
+496,Fate city
+497,Fayetteville city
+498,Faysville CDP
+499,Fernando Salinas CDP
+500,Ferris city
+501,Fifth Street CDP
+502,Flatonia town
+503,Flor del Rio CDP
+504,Florence city
+505,Floresville city
+506,Flowella CDP
+507,Flower Mound town
+508,Floydada city
+509,Follett city
+510,Forest Hill city
+511,Forney city
+512,Forsan city
+513,Fort Bliss CDP
+514,Fort Clark Springs CDP
+515,Fort Davis CDP
+516,Fort Hancock CDP
+517,Fort Hood CDP
+518,Fort Stockton city
+519,Fort Worth city
+520,Four Corners CDP
+521,Four Points CDP
+522,Fowlerton CDP
+523,Franklin city
+524,Frankston town
+525,Fredericksburg city
+526,Freeport city
+527,Freer city
+528,Fresno CDP
+529,Friendswood city
+530,Friona city
+531,Frisco city
+532,Fritch city
+533,Fronton CDP
+534,Fronton Ranchettes CDP
+535,Frost city
+536,Fruitvale city
+537,Fulshear city
+538,Fulton town
+539,Gail CDP
+540,Gainesville city
+541,Galena Park city
+542,Gallatin city
+543,Galveston city
+544,Ganado city
+545,Garceno CDP
+546,Garciasville CDP
+547,Garden City CDP
+548,Gardendale CDP
+549,Garden Ridge city
+550,Garfield CDP
+551,Garland city
+552,Garrett town
+553,Garrison city
+554,Gary City town
+555,Garza-Salinas II CDP
+556,Gatesville city
+557,Georgetown city
+558,George West city
+559,Geronimo CDP
+560,Gholson city
+561,Giddings city
+562,Gilmer city
+563,Girard CDP
+564,Gladewater city
+565,Glenn Heights city
+566,Glen Rose city
+567,Glidden CDP
+568,Godley city
+569,Goldsmith city
+570,Goldthwaite city
+571,Goliad city
+572,Golinda city
+573,Gonzales city
+574,Goodlow city
+575,Goodrich city
+576,Gordon city
+577,Goree city
+578,Gorman city
+579,Graford city
+580,Graham city
+581,Granbury city
+582,Grand Acres CDP
+583,Grandfalls town
+584,Grand Prairie city
+585,Grand Saline city
+586,Grandview city
+587,Granger city
+588,Granite Shoals city
+589,Granjeno city
+590,Grape Creek CDP
+591,Grapeland city
+592,Grapevine city
+593,Grays Prairie village
+594,Greatwood CDP
+595,Green Valley Farms CDP
+596,Greenville city
+597,Gregory city
+598,Grey Forest city
+599,Groesbeck city
+600,Groom town
+601,Groves city
+602,Groveton city
+603,Gruver city
+604,Guadalupe-Guerra CDP
+605,Guerra CDP
+606,Gun Barrel City city
+607,Gunter city
+608,Gustine town
+609,Guthrie CDP
+610,Gutierrez CDP
+611,Hackberry town
+612,Hale Center city
+613,Hallettsville city
+614,Hallsburg city
+615,Hallsville city
+616,Haltom City city
+617,Hamilton city
+618,Hamlin city
+619,Happy town
+620,Hardin city
+621,Hargill CDP
+622,Harker Heights city
+623,Harlingen city
+624,Harper CDP
+625,Hart city
+626,Hartley CDP
+627,Haskell city
+628,Haslet city
+629,Havana CDP
+630,Hawk Cove city
+631,Hawkins city
+632,Hawley city
+633,Hays city
+634,H. Cuellar Estates CDP
+635,Hearne city
+636,Heath city
+637,Hebbronville CDP
+638,Hebron town
+639,Hedley city
+640,Hedwig Village city
+641,Heidelberg CDP
+642,Helotes city
+643,Hemphill city
+644,Hempstead city
+645,Henderson city
+646,Henrietta city
+647,Hereford city
+648,Hermleigh CDP
+649,Hewitt city
+650,Hickory Creek town
+651,Hico city
+652,Hidalgo city
+653,Hideaway city
+654,Higgins city
+655,Highland Haven city
+656,Highland Park town
+657,Highlands CDP
+658,Highland Village city
+659,Hill Country Village city
+660,Hillcrest village
+661,Hillsboro city
+662,Hillside Acres CDP
+663,Hilltop CDP
+664,Hilltop CDP
+665,Hilltop Lakes CDP
+666,Hilshire Village city
+667,Hitchcock city
+668,Holiday Beach CDP
+669,Holiday Lakes town
+670,Holland town
+671,Holliday city
+672,Holly Lake Ranch CDP
+673,Hollywood Park town
+674,Homestead Meadows North CDP
+675,Homestead Meadows South CDP
+676,Hondo city
+677,Honey Grove city
+678,Hooks city
+679,Horizon City city
+680,Hornsby Bend CDP
+681,Horseshoe Bay city
+682,Horseshoe Bend CDP
+683,Houston city
+684,Howardwick city
+685,Howe town
+686,Hubbard city
+687,Hudson city
+688,Hudson Bend CDP
+689,Hudson Oaks city
+690,Hughes Springs city
+691,Hull CDP
+692,Humble city
+693,Hungerford CDP
+694,Hunters Creek Village city
+695,Huntington city
+696,Huntsville city
+697,Hurst city
+698,Hutchins city
+699,Hutto city
+700,Huxley city
+701,Iago CDP
+702,Idalou city
+703,Iglesia Antigua CDP
+704,Impact town
+705,Imperial CDP
+706,Indian Hills CDP
+707,Indian Lake town
+708,Indian Springs CDP
+709,Indio CDP
+710,Industry city
+711,Inez CDP
+712,Ingleside city
+713,Ingleside on the Bay city
+714,Ingram city
+715,Iola city
+716,Iowa Colony village
+717,Iowa Park city
+718,Iraan city
+719,Iredell city
+720,Irving city
+721,Italy town
+722,Itasca city
+723,Ivanhoe city
+724,Ivanhoe North city
+725,Jacinto City city
+726,Jacksboro city
+727,Jacksonville city
+728,Jamaica Beach city
+729,Jardin de San Julian CDP
+730,Jarrell city
+731,Jasper city
+732,Jayton city
+733,Jefferson city
+734,Jersey Village city
+735,Jewett city
+736,JF Villarreal CDP
+737,Joaquin city
+738,Johnson City city
+739,Jolly city
+740,Jollyville CDP
+741,Jones Creek village
+742,Jonestown city
+743,Josephine city
+744,Joshua city
+745,Jourdanton city
+746,Juarez CDP
+747,Junction city
+748,Justin city
+749,Karnes City city
+750,Katy city
+751,Kaufman city
+752,K-Bar Ranch CDP
+753,Keene city
+754,Keller city
+755,Kemah city
+756,Kemp city
+757,Kempner city
+758,Kendleton city
+759,Kenedy city
+760,Kenefick town
+761,Kennard city
+762,Kennedale city
+763,Kerens city
+764,Kermit city
+765,Kerrville city
+766,Kilgore city
+767,Killeen city
+768,Kingsbury CDP
+769,Kingsland CDP
+770,Kingsville city
+771,Kirby city
+772,Kirbyville city
+773,Kirvin town
+774,Knippa CDP
+775,Knollwood city
+776,Knox City town
+777,Kosse town
+778,Kountze city
+779,Kress city
+780,Krugerville city
+781,Krum city
+782,Kurten town
+783,Kyle city
+784,La Blanca CDP
+785,La Carla CDP
+786,La Casita CDP
+787,La Chuparosa CDP
+788,Lackland AFB CDP
+789,La Coma CDP
+790,LaCoste city
+791,Lacy-Lakeview city
+792,Ladonia town
+793,La Escondida CDP
+794,La Esperanza CDP
+795,La Feria city
+796,La Feria North CDP
+797,Lago CDP
+798,Lago Vista city
+799,Lago Vista CDP
+800,La Grange city
+801,La Grulla city
+802,Laguna Heights CDP
+803,Laguna Park CDP
+804,Laguna Seca CDP
+805,Laguna Vista town
+806,La Homa CDP
+807,La Joya city
+808,Lake Bridgeport city
+809,Lake Brownwood CDP
+810,Lake Bryan CDP
+811,Lake Cherokee CDP
+812,Lake City town
+813,Lake Colorado City CDP
+814,Lake Dallas city
+815,Lake Dunlap CDP
+816,Lakehills CDP
+817,Lake Jackson city
+818,Lake Kiowa CDP
+819,Lake Medina Shores CDP
+820,Lake Meredith Estates CDP
+821,Lakeport city
+822,Lakeshore Gardens-Hidden Acres CDP
+823,Lakeside town
+824,Lakeside town
+825,Lakeside City town
+826,Lake Tanglewood village
+827,Lakeview town
+828,Lake View CDP
+829,Lakeway city
+830,Lakewood Village city
+831,Lake Worth city
+832,La Loma de Falcon CDP
+833,Lamar CDP
+834,La Marque city
+835,Lamesa city
+836,La Minita CDP
+837,Lampasas city
+838,Lancaster city
+839,Lantana CDP
+840,La Paloma CDP
+841,La Paloma Addition CDP
+842,La Paloma-Lost Creek CDP
+843,La Paloma Ranchettes CDP
+844,La Porte city
+845,La Presa CDP
+846,La Pryor CDP
+847,La Puerta CDP
+848,Laredo city
+849,Laredo Ranchettes CDP
+850,Laredo Ranchettes West CDP
+851,La Rosita CDP
+852,Lasana CDP
+853,Lasara CDP
+854,Las Haciendas CDP
+855,Las Lomas CDP
+856,Las Lomitas CDP
+857,Las Palmas CDP
+858,Las Palmas II CDP
+859,Las Pilas CDP
+860,Las Quintas Fronterizas CDP
+861,Latexo city
+862,La Tina Ranch CDP
+863,Laughlin AFB CDP
+864,Laureles CDP
+865,La Vernia city
+866,La Victoria CDP
+867,La Villa city
+868,Lavon city
+869,La Ward city
+870,Lawn town
+871,League City city
+872,Leakey city
+873,Leander city
+874,Leary city
+875,Lefors town
+876,Leming CDP
+877,Leona city
+878,Leonard city
+879,Leon Valley city
+880,Leroy city
+881,Levelland city
+882,Lewisville city
+883,Lexington town
+884,Liberty city
+885,Liberty City CDP
+886,Liberty Hill city
+887,Lincoln Park town
+888,Lindale city
+889,Linden city
+890,Lindsay city
+891,Lindsay CDP
+892,Linn CDP
+893,Lipan city
+894,Lipscomb CDP
+895,Little Elm city
+896,Littlefield city
+897,Little River-Academy city
+898,Live Oak city
+899,Liverpool city
+900,Livingston town
+901,Llano city
+902,Llano Grande CDP
+903,Lockhart city
+904,Lockney town
+905,Log Cabin city
+906,Lolita CDP
+907,Loma Grande CDP
+908,Loma Linda CDP
+909,Loma Linda East CDP
+910,Loma Linda East CDP
+911,Loma Linda West CDP
+912,Loma Vista CDP
+913,Lometa city
+914,Lone Oak city
+915,Lone Star city
+916,Longoria CDP
+917,Longview city
+918,Loop CDP
+919,Lopeño CDP
+920,Lopezville CDP
+921,Loraine town
+922,Lorena city
+923,Lorenzo city
+924,Los Altos CDP
+925,Los Alvarez CDP
+926,Los Angeles CDP
+927,Los Arcos CDP
+928,Los Arrieros CDP
+929,Los Barreras CDP
+930,Los Centenarios CDP
+931,Los Corralitos CDP
+932,Los Ebanos CDP
+933,Los Ebanos CDP
+934,Los Fresnos city
+935,Los Fresnos CDP
+936,Los Huisaches CDP
+937,Los Indios town
+938,Los Lobos CDP
+939,Los Minerales CDP
+940,Los Nopalitos CDP
+941,Lost Creek CDP
+942,Los Veteranos I CDP
+943,Los Veteranos II CDP
+944,Los Ybanez city
+945,Lott city
+946,Louise CDP
+947,Lovelady city
+948,Lowry Crossing city
+949,Lozano CDP
+950,Lubbock city
+951,Lucas city
+952,Lueders city
+953,Lufkin city
+954,Luling city
+955,Lumberton city
+956,Lyford city
+957,Lytle city
+958,Mabank town
+959,McAllen city
+960,McCamey city
+961,McDade CDP
+962,Macdona CDP
+963,McGregor city
+964,McKinney city
+965,McKinney Acres CDP
+966,McLean town
+967,McLendon-Chisholm city
+968,McQueeney CDP
+969,Madisonville city
+970,Magnolia city
+971,Malakoff city
+972,Malone town
+973,Manchaca CDP
+974,Manor city
+975,Mansfield city
+976,Manuel Garcia CDP
+977,Manuel Garcia II CDP
+978,Manvel city
+979,Marathon CDP
+980,Marble Falls city
+981,Marfa city
+982,Marietta town
+983,Marion city
+984,Markham CDP
+985,Marlin city
+986,Marquez city
+987,Marshall city
+988,Mart city
+989,Martindale city
+990,Martinez CDP
+991,Mason city
+992,Matador town
+993,Matagorda CDP
+994,Mathis city
+995,Maud city
+996,Mauriceville CDP
+997,Maypearl city
+998,Meadow town
+999,Meadowlakes city
+1000,Meadows Place city
+1001,Medina CDP
+1002,Megargel town
+1003,Melissa city
+1004,Melvin town
+1005,Memphis city
+1006,Menard city
+1007,Mentone CDP
+1008,Mercedes city
+1009,Meridian city
+1010,Merkel town
+1011,Mertens town
+1012,Mertzon city
+1013,Mesquite city
+1014,Mesquite CDP
+1015,Mexia city
+1016,Miami city
+1017,Midland city
+1018,Midlothian city
+1019,Midway city
+1020,Midway North CDP
+1021,Midway South CDP
+1022,Miguel Barrera CDP
+1023,Mikes CDP
+1024,Mila Doce CDP
+1025,Milam CDP
+1026,Milano city
+1027,Mildred town
+1028,Miles city
+1029,Milford town
+1030,Miller's Cove town
+1031,Millican town
+1032,Millsap town
+1033,Mineola city
+1034,Mineral Wells city
+1035,Mingus city
+1036,Mi Ranchito Estate CDP
+1037,Mirando City CDP
+1038,Mission city
+1039,Mission Bend CDP
+1040,Missouri City city
+1041,Mobeetie city
+1042,Mobile City city
+1043,Monahans city
+1044,Montague CDP
+1045,Mont Belvieu city
+1046,Monte Alto CDP
+1047,Montgomery city
+1048,Moody city
+1049,Moore CDP
+1050,Moore Station city
+1051,Moraida CDP
+1052,Morales-Sanchez CDP
+1053,Moran city
+1054,Morgan city
+1055,Morgan Farm CDP
+1056,Morgan's Point city
+1057,Morgan's Point Resort city
+1058,Morning Glory CDP
+1059,Morse CDP
+1060,Morton city
+1061,Moulton town
+1062,Mountain City city
+1063,Mount Calm city
+1064,Mount Enterprise city
+1065,Mount Pleasant city
+1066,Mount Vernon town
+1067,Muenster city
+1068,Muleshoe city
+1069,Mullin town
+1070,Munday city
+1071,Muniz CDP
+1072,Murchison city
+1073,Murillo CDP
+1074,Murphy city
+1075,Mustang town
+1076,Mustang Ridge city
+1077,Myrtle Springs CDP
+1078,Nacogdoches city
+1079,Naples city
+1080,Narciso Pena CDP
+1081,Nash city
+1082,Nassau Bay city
+1083,Natalia city
+1084,Navarro town
+1085,Navasota city
+1086,Nazareth city
+1087,Nederland city
+1088,Needville city
+1089,Nesbitt town
+1090,Netos CDP
+1091,Nevada city
+1092,Newark city
+1093,New Berlin city
+1094,New Boston city
+1095,New Braunfels city
+1096,Newcastle city
+1097,New Chapel Hill city
+1098,New Deal town
+1099,New Fairview city
+1100,New Falcon CDP
+1101,New Home city
+1102,New Hope town
+1103,New London city
+1104,New Summerfield city
+1105,New Territory CDP
+1106,Newton city
+1107,New Waverly city
+1108,Neylandville town
+1109,Niederwald city
+1110,Nina CDP
+1111,Nixon city
+1112,Nocona city
+1113,Nocona Hills CDP
+1114,Nolanville city
+1115,Nome city
+1116,Noonday city
+1117,Nordheim city
+1118,Normangee town
+1119,Normanna CDP
+1120,North Alamo CDP
+1121,North Cleveland city
+1122,North Escobares CDP
+1123,Northlake town
+1124,North Pearsall CDP
+1125,North Richland Hills city
+1126,Northridge CDP
+1127,North San Pedro CDP
+1128,Novice city
+1129,Oak Grove town
+1130,Oakhurst CDP
+1131,Oak Island CDP
+1132,Oak Leaf city
+1133,Oak Point city
+1134,Oak Ridge town
+1135,Oak Ridge town
+1136,Oak Ridge North city
+1137,Oak Trail Shores CDP
+1138,Oak Valley town
+1139,Oakwood town
+1140,O'Brien city
+1141,Odem city
+1142,Odessa city
+1143,O'Donnell city
+1144,Oglesby city
+1145,Oilton CDP
+1146,Old Escobares CDP
+1147,Old River-Winfree city
+1148,Olivarez CDP
+1149,Olivia Lopez de Gutierrez CDP
+1150,Olmito CDP
+1151,Olmito and Olmito CDP
+1152,Olmos Park city
+1153,Olney city
+1154,Olton city
+1155,Omaha city
+1156,Onalaska city
+1157,Opdyke West town
+1158,Orange city
+1159,Orange Grove city
+1160,Orason CDP
+1161,Orchard city
+1162,Ore City city
+1163,Overton city
+1164,Ovilla city
+1165,Owl Ranch CDP
+1166,Oyster Creek city
+1167,Ozona CDP
+1168,Pablo Pena CDP
+1169,Paducah town
+1170,Paint Rock town
+1171,Paisano Park CDP
+1172,Palacios city
+1173,Palestine city
+1174,Palisades village
+1175,Palmer town
+1176,Palmhurst city
+1177,Palm Valley city
+1178,Palmview city
+1179,Palmview South CDP
+1180,Palo Blanco CDP
+1181,Paloma Creek CDP
+1182,Paloma Creek South CDP
+1183,Palo Pinto CDP
+1184,Pampa city
+1185,Panhandle town
+1186,Panorama Village city
+1187,Pantego town
+1188,Paradise city
+1189,Paris city
+1190,Parker city
+1191,Pasadena city
+1192,Pattison city
+1193,Patton Village city
+1194,Pawnee CDP
+1195,Payne Springs town
+1196,Pearland city
+1197,Pearsall city
+1198,Pecan Acres CDP
+1199,Pecan Gap city
+1200,Pecan Grove CDP
+1201,Pecan Hill city
+1202,Pecan Plantation CDP
+1203,Pecos city
+1204,Pelican Bay city
+1205,Pena CDP
+1206,Penelope town
+1207,Penitas city
+1208,Perezville CDP
+1209,Perrin CDP
+1210,Perryton city
+1211,Petersburg city
+1212,Petrolia city
+1213,Petronila city
+1214,Pettus CDP
+1215,Pflugerville city
+1216,Pharr city
+1217,Pilot Point city
+1218,Pine Forest city
+1219,Pine Harbor CDP
+1220,Pinehurst CDP
+1221,Pinehurst city
+1222,Pine Island town
+1223,Pineland city
+1224,Pinewood Estates CDP
+1225,Piney Point Village city
+1226,Pittsburg city
+1227,Placedo CDP
+1228,Plains town
+1229,Plainview city
+1230,Plano city
+1231,Pleak village
+1232,Pleasant Hill CDP
+1233,Pleasanton city
+1234,Pleasant Valley town
+1235,Plum Grove city
+1236,Point city
+1237,Point Blank city
+1238,Point Comfort city
+1239,Point Venture village
+1240,Ponder town
+1241,Port Aransas city
+1242,Port Arthur city
+1243,Porter Heights CDP
+1244,Port Isabel city
+1245,Portland city
+1246,Port Lavaca city
+1247,Port Mansfield CDP
+1248,Port Neches city
+1249,Port O'Connor CDP
+1250,Post city
+1251,Post Oak Bend City town
+1252,Poteet city
+1253,Poth town
+1254,Potosi CDP
+1255,Pottsboro town
+1256,Powderly CDP
+1257,Powell town
+1258,Poynor town
+1259,Prado Verde CDP
+1260,Prairie View city
+1261,Premont city
+1262,Presidio city
+1263,Preston CDP
+1264,Primera town
+1265,Princeton city
+1266,Progreso city
+1267,Progreso Lakes city
+1268,Prosper town
+1269,Providence CDP
+1270,Pueblo East CDP
+1271,Pueblo Nuevo CDP
+1272,Putnam town
+1273,Pyote town
+1274,Quail CDP
+1275,Quail Creek CDP
+1276,Quanah city
+1277,Queen City city
+1278,Quemado CDP
+1279,Quesada CDP
+1280,Quinlan city
+1281,Quintana town
+1282,Quitaque city
+1283,Quitman city
+1284,Radar Base CDP
+1285,Rafael Pena CDP
+1286,Ralls city
+1287,Ramireno CDP
+1288,Ramirez-Perez CDP
+1289,Ramos CDP
+1290,Ranchette Estates CDP
+1291,Ranchitos Del Norte CDP
+1292,Ranchitos East CDP
+1293,Ranchitos Las Lomas CDP
+1294,Rancho Alegre CDP
+1295,Rancho Banquete CDP
+1296,Rancho Chico CDP
+1297,Ranchos Penitas West CDP
+1298,Rancho Viejo town
+1299,Rancho Viejo CDP
+1300,Randolph AFB CDP
+1301,Ranger city
+1302,Rangerville village
+1303,Rankin city
+1304,Ransom Canyon town
+1305,Ratamosa CDP
+1306,Ravenna city
+1307,Raymondville city
+1308,Realitos CDP
+1309,Redfield CDP
+1310,Redford CDP
+1311,Redland CDP
+1312,Red Lick city
+1313,Red Oak city
+1314,Redwater city
+1315,Redwood CDP
+1316,Refugio town
+1317,Regino Ramirez CDP
+1318,Reid Hope King CDP
+1319,Reklaw city
+1320,Relampago CDP
+1321,Rendon CDP
+1322,Reno city
+1323,Reno city
+1324,Retreat town
+1325,Rhome city
+1326,Ricardo CDP
+1327,Rice city
+1328,Richardson city
+1329,Richland town
+1330,Richland Hills city
+1331,Richland Springs town
+1332,Richmond city
+1333,Richwood city
+1334,Riesel city
+1335,Rio Bravo city
+1336,Rio Grande City city
+1337,Rio Hondo city
+1338,Rio Vista city
+1339,Rising Star town
+1340,Rivera CDP
+1341,Rivereno CDP
+1342,River Oaks city
+1343,Riverside city
+1344,Riviera CDP
+1345,Roanoke city
+1346,Roaring Springs town
+1347,Robert Lee city
+1348,Robinson city
+1349,Robstown city
+1350,Roby city
+1351,Rochester town
+1352,Rockdale city
+1353,Rockport city
+1354,Rocksprings town
+1355,Rockwall city
+1356,Rocky Mound town
+1357,Rogers town
+1358,Rollingwood city
+1359,Roma city
+1360,Roma Creek CDP
+1361,Roman Forest town
+1362,Ropesville city
+1363,Roscoe city
+1364,Rosebud city
+1365,Rose City city
+1366,Rose Hill Acres city
+1367,Rosenberg city
+1368,Rosharon CDP
+1369,Rosita CDP
+1370,Ross city
+1371,Rosser village
+1372,Rotan city
+1373,Round Mountain town
+1374,Round Rock city
+1375,Round Top town
+1376,Rowlett city
+1377,Roxton city
+1378,Royse City city
+1379,Rule town
+1380,Runaway Bay city
+1381,Runge town
+1382,Rusk city
+1383,Sabinal city
+1384,Sachse city
+1385,Sadler city
+1386,Saginaw city
+1387,St. Hedwig town
+1388,St. Jo city
+1389,St. Paul town
+1390,St. Paul CDP
+1391,Salado village
+1392,Salineño CDP
+1393,Salineño North CDP
+1394,Sammy Martinez CDP
+1395,Samnorwood CDP
+1396,Sam Rayburn CDP
+1397,San Angelo city
+1398,San Antonio city
+1399,San Augustine city
+1400,San Benito city
+1401,San Carlos CDP
+1402,San Carlos I CDP
+1403,San Carlos II CDP
+1404,Sanctuary town
+1405,Sanderson CDP
+1406,Sandia CDP
+1407,San Diego city
+1408,Sandoval CDP
+1409,Sand Springs CDP
+1410,Sandy Hollow-Escondidas CDP
+1411,San Elizario CDP
+1412,San Felipe town
+1413,San Fernando CDP
+1414,Sanford town
+1415,Sanger city
+1416,San Isidro CDP
+1417,San Juan city
+1418,San Juan CDP
+1419,San Leanna village
+1420,San Leon CDP
+1421,San Marcos city
+1422,San Patricio city
+1423,San Pedro CDP
+1424,San Perlita city
+1425,San Saba town
+1426,Sansom Park city
+1427,Santa Anna town
+1428,Santa Anna CDP
+1429,Santa Clara city
+1430,Santa Cruz CDP
+1431,Santa Fe city
+1432,Santa Maria CDP
+1433,Santa Monica CDP
+1434,Santa Rosa town
+1435,Santa Rosa CDP
+1436,Santel CDP
+1437,San Ygnacio CDP
+1438,Sarita CDP
+1439,Savannah CDP
+1440,Savoy city
+1441,Scenic Oaks CDP
+1442,Schertz city
+1443,Schulenburg city
+1444,Scissors CDP
+1445,Scotland city
+1446,Scottsville city
+1447,Scurry town
+1448,Seabrook city
+1449,Seadrift city
+1450,Seagoville city
+1451,Seagraves city
+1452,Sealy city
+1453,Sebastian CDP
+1454,Seco Mines CDP
+1455,Seguin city
+1456,Selma city
+1457,Seminole city
+1458,Serenada CDP
+1459,Seth Ward CDP
+1460,Seven Oaks city
+1461,Seven Points city
+1462,Seymour city
+1463,Shadybrook CDP
+1464,Shady Hollow CDP
+1465,Shady Shores town
+1466,Shallowater city
+1467,Shamrock city
+1468,Shavano Park city
+1469,Sheldon CDP
+1470,Shenandoah city
+1471,Shepherd city
+1472,Sherman city
+1473,Sherwood Shores CDP
+1474,Shiner city
+1475,Shoreacres city
+1476,Sienna Plantation CDP
+1477,Sierra Blanca CDP
+1478,Siesta Acres CDP
+1479,Siesta Shores CDP
+1480,Silsbee city
+1481,Silverton city
+1482,Simonton city
+1483,Sinton city
+1484,Skellytown town
+1485,Skidmore CDP
+1486,Slaton city
+1487,Smiley city
+1488,Smithville city
+1489,Smyer town
+1490,Snook city
+1491,Snyder city
+1492,Socorro city
+1493,Solis CDP
+1494,Somerset city
+1495,Somerville city
+1496,Sonora city
+1497,Sour Lake city
+1498,South Alamo CDP
+1499,South Fork Estates CDP
+1500,South Houston city
+1501,Southlake city
+1502,South La Paloma CDP
+1503,Southmayd city
+1504,South Mountain town
+1505,South Padre Island town
+1506,South Point CDP
+1507,Southside Place city
+1508,South Toledo Bend CDP
+1509,Spade CDP
+1510,Sparks CDP
+1511,Spearman city
+1512,Splendora city
+1513,Spofford city
+1514,Spring CDP
+1515,Spring Gardens CDP
+1516,Springlake town
+1517,Springtown city
+1518,Spring Valley Village city
+1519,Spur city
+1520,Stafford city
+1521,Stagecoach town
+1522,Stamford city
+1523,Stanton city
+1524,Staples city
+1525,Star Harbor city
+1526,Stephenville city
+1527,Sterling City city
+1528,Stinnett city
+1529,Stockdale city
+1530,Stonewall CDP
+1531,Stowell CDP
+1532,Stratford city
+1533,Strawn city
+1534,Streetman town
+1535,Study Butte CDP
+1536,Sudan city
+1537,Sugar Land city
+1538,Sullivan City city
+1539,Sulphur Springs city
+1540,Sundown city
+1541,Sunnyvale town
+1542,Sunray city
+1543,Sunrise Beach Village city
+1544,Sunset CDP
+1545,Sunset CDP
+1546,Sunset Acres CDP
+1547,Sunset Valley city
+1548,Sun Valley city
+1549,Surfside Beach city
+1550,Sweeny city
+1551,Sweetwater city
+1552,Taft city
+1553,Taft Southwest CDP
+1554,Tahoka city
+1555,Talco city
+1556,Talty town
+1557,Tanquecitos South Acres CDP
+1558,Tanquecitos South Acres II CDP
+1559,Tatum city
+1560,Taylor city
+1561,Taylor Lake Village city
+1562,Taylor Landing city
+1563,Teague city
+1564,Tehuacana town
+1565,Temple city
+1566,Tenaha town
+1567,Terlingua CDP
+1568,Terrell city
+1569,Terrell Hills city
+1570,Texarkana city
+1571,Texas City city
+1572,Texhoma city
+1573,Texline town
+1574,The Colony city
+1575,The Hills village
+1576,The Woodlands CDP
+1577,Thompsons town
+1578,Thompsonville CDP
+1579,Thorndale city
+1580,Thornton town
+1581,Thorntonville town
+1582,Thrall city
+1583,Three Rivers city
+1584,Throckmorton town
+1585,Thunderbird Bay CDP
+1586,Tierra Bonita CDP
+1587,Tierra Dorada CDP
+1588,Tierra Grande CDP
+1589,Tierra Verde CDP
+1590,Tiki Island village
+1591,Tilden CDP
+1592,Timbercreek Canyon village
+1593,Timberwood Park CDP
+1594,Timpson city
+1595,Tioga town
+1596,Tira town
+1597,Tivoli CDP
+1598,Toco city
+1599,Todd Mission city
+1600,Tolar city
+1601,Tomball city
+1602,Tom Bean city
+1603,Tool city
+1604,Tornillo CDP
+1605,Toyah town
+1606,Tradewinds CDP
+1607,Travis Ranch CDP
+1608,Trent town
+1609,Trenton city
+1610,Trinidad city
+1611,Trinity city
+1612,Trophy Club town
+1613,Troup city
+1614,Troy city
+1615,Tuleta CDP
+1616,Tulia city
+1617,Tulsita CDP
+1618,Turkey city
+1619,Tuscola city
+1620,Tye city
+1621,Tyler city
+1622,Tynan CDP
+1623,Uhland city
+1624,Uncertain city
+1625,Union Grove city
+1626,Union Valley city
+1627,Universal City city
+1628,University Park city
+1629,Utopia CDP
+1630,Uvalde city
+1631,Uvalde Estates CDP
+1632,Valentine town
+1633,Valle Hermoso CDP
+1634,Valle Verde CDP
+1635,Valle Vista CDP
+1636,Valley Mills city
+1637,Valley View city
+1638,Val Verde Park CDP
+1639,Van city
+1640,Van Alstyne city
+1641,Vanderbilt CDP
+1642,Van Horn town
+1643,Van Vleck CDP
+1644,Vega city
+1645,Venus town
+1646,Vernon city
+1647,Victoria city
+1648,Victoria Vera CDP
+1649,Vidor city
+1650,Villa del Sol CDP
+1651,Villa Pancho CDP
+1652,Villarreal CDP
+1653,Villa Verde CDP
+1654,Vinton village
+1655,Volente village
+1656,Von Ormy city
+1657,Waco city
+1658,Waelder city
+1659,Wake Village city
+1660,Waller city
+1661,Wallis city
+1662,Walnut Springs city
+1663,Warren CDP
+1664,Warren City city
+1665,Waskom city
+1666,Watauga city
+1667,Waxahachie city
+1668,Weatherford city
+1669,Webberville village
+1670,Webster city
+1671,Weimar city
+1672,Weinert city
+1673,Weir city
+1674,Welch CDP
+1675,Wellington city
+1676,Wellman city
+1677,Wells town
+1678,Wells Branch CDP
+1679,Weslaco city
+1680,West city
+1681,West Alto Bonito CDP
+1682,Westbrook city
+1683,West Columbia city
+1684,Westdale CDP
+1685,Western Lake CDP
+1686,Westlake town
+1687,West Lake Hills city
+1688,West Livingston CDP
+1689,Westminster CDP
+1690,West Odessa CDP
+1691,Weston city
+1692,Weston Lakes city
+1693,West Orange city
+1694,Westover Hills town
+1695,West Sharyland CDP
+1696,West Tawakoni city
+1697,West University Place city
+1698,Westway CDP
+1699,Westwood Shores CDP
+1700,Westworth Village city
+1701,Wharton city
+1702,Wheeler city
+1703,White Deer town
+1704,Whiteface town
+1705,Whitehouse city
+1706,White Oak city
+1707,Whitesboro city
+1708,White Settlement city
+1709,Whitewright town
+1710,Whitney town
+1711,Wichita Falls city
+1712,Wickett town
+1713,Wild Peach Village CDP
+1714,Wildwood CDP
+1715,Willis city
+1716,Willow Park city
+1717,Wills Point city
+1718,Wilmer city
+1719,Wilson city
+1720,Wimberley city
+1721,Windcrest city
+1722,Windemere CDP
+1723,Windom town
+1724,Windthorst town
+1725,Winfield city
+1726,Wink city
+1727,Winnie CDP
+1728,Winnsboro city
+1729,Winona town
+1730,Winters city
+1731,Wixon Valley city
+1732,Wolfe City city
+1733,Wolfforth city
+1734,Woodbranch city
+1735,Woodcreek city
+1736,Woodloch town
+1737,Woodsboro town
+1738,Woodson town
+1739,Woodville town
+1740,Woodway city
+1741,Wortham town
+1742,Wyldwood CDP
+1743,Wylie city
+1744,Yantis town
+1745,Yoakum city
+1746,Yorktown city
+1747,Yznaga CDP
+1748,Zapata CDP
+1749,Zapata Ranch CDP
+1750,Zarate CDP
+1751,Zavalla city
+1752,Zuehl CDP
